@@ -1,33 +1,4 @@
-state	n_entries
-Andaman and Nicobar Islands	6
-Andhra Pradesh	34
-Arunachal Pradesh	16
-Assam	30
-Bihar	33
-Chhattisgarh	42
-Dadra and Nagar Haveli and Daman and Diu	12
-Goa	8
-Gujarat	32
-Himachal Pradesh	11
-Jammu and Kashmir	16
-Jharkhand	33
-Karnataka	50
-Kerala	43
-Ladakh	12
-Lakshadweep	1
-Madhya Pradesh	46
-Maharashtra	47
-Manipur	34
-Meghalaya	17
-Mizoram	15
-Nagaland	5
-Odisha	64
-Puducherry	1
-Rajasthan	12
-Sikkim	4
-Tamil Nadu	37
-Telangana	32
-Tripura	19
-Uttar Pradesh	15
-Uttarakhand	5
-West Bengal	40
+edition_id	notified_date	n_states	n_entries	n_synonyms	n_area_restricted	barren_pages
+st_list_current-072	2025-09-26	32	753	1802	54	
+st_list_prior-073	2024	32	754	1799	55	
+st_list_prior-074	2023-08-04	32	747	1790	50	

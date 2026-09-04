@@ -20,12 +20,32 @@ All seven of those are one gazetted tribe, entry 5 for Odisha. That comma list
 is the Order supplying its own alias table, and it is what makes matching a
 recorded jati label tractable later without inventing synonyms of our own.
 
+**One row per synonym, not per entry, and every edition in one table.** The
+grain matters and the reason is measurable. Between the 2023 and 2025 editions,
+12 of Odisha's 62 shared entry numbers changed their printed name, and nearly
+every change is a synonym being *added* to a community that did not otherwise
+move:
+
+    6  Bhuiya, Bhuyan   ->  Bhuiya, Bhuyan, Pauri Bhuyan, Paudi Bhuyan
+    9  Bhunjia          ->  Bhunjia, Chuktia Bhunjia
+   28  Kawar, Kanwar    ->  Kawar, Kanwar, Kaur, Kunwar, Kaonr, Kuanr, ...
+
+Compared as whole strings that reads as twelve communities disappearing and
+fourteen appearing. Compared at synonym grain it reads as `Pauri Bhuyan` joining
+an existing entry, which is what happened. `name_as_printed` is carried on every
+row so the exploded form can always be collapsed back to what the gazette says.
+
+`notified_date` is what makes the table answer a question about time at all. It
+is parsed from the source title, where the ministry states it, and without it
+there is no axis to put the editions on.
+
 Run:
 
-    python scripts/20_parse_st_list.py [--source-id st_list_current-072]
+    python scripts/03_parse_st_list.py [--source-id ...] [--all]
 
-Writes `lists/st_entries.tsv`: state, entry_no, name_as_printed, synonyms,
-source_id, page.
+Writes `lists/st_entries.tsv`: edition_id, notified_date, category, state,
+state_as_printed, section, entry_no, synonym, synonym_rank, name_as_printed,
+area_restriction, source_id, page.
 """
 
 from __future__ import annotations
@@ -33,7 +53,6 @@ from __future__ import annotations
 import argparse
 import csv
 import re
-from collections import Counter
 from pathlib import Path
 
 import pdfplumber
@@ -42,6 +61,30 @@ HERE = Path(__file__).resolve().parent.parent
 MANIFEST = HERE / "sources/manifest.tsv"
 RAW = HERE / "sources/raw"
 OUT = HERE / "lists/st_entries.tsv"
+
+# The ministry states the notified date in the document title and nowhere
+# machine-readable, so it is read from there: "(26-09-2025)", "(as on
+# 04-08-2023)", or a bare year.
+DATED = re.compile(r"(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})")
+YEARED = re.compile(r"\b(19|20)(\d{2})\b")
+
+
+def notified_date(title: str) -> str:
+    """Return the edition date stated in a source title.
+
+    Args:
+        title: The registry title of the document.
+
+    Returns:
+        An ISO date, a bare year, or an empty string when neither is stated.
+    """
+    match = DATED.search(title)
+    if match:
+        day, month, year = match.groups()
+        return f"{year}-{int(month):02d}-{int(day):02d}"
+    match = YEARED.search(title)
+    return f"{match.group(0)}" if match else ""
+
 
 # A state heading is matched against the fixed set of States and Union
 # Territories, not against a shape. An earlier version accepted any capitalised
@@ -129,6 +172,13 @@ def is_state(line: str) -> bool:
     Returns:
         True when the line names a State or UT.
     """
+    # No State or UT name contains a digit. Without this test the normaliser,
+    # which strips punctuation, read the joined pair "43. Goa" as "goa": the
+    # wrapped-heading join then fired, the entry regex claimed it as entry 43
+    # named "Goa" under the previous state, and Goa and Telangana vanished from
+    # the 2023 edition entirely -- 40 entries lost to a stray line number.
+    if any(character.isdigit() for character in line):
+        return False
     return re.sub(r"[^a-z& ]", "", line.lower()).strip() in CANONICAL
 
 
@@ -271,6 +321,7 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                 rows.append(pending)
             if len(rows) == before:
                 barren.append(str(number))
+    exploded = []
     for row in rows:
         printed = NOTE.sub("", row["name_as_printed"]).rstrip(" .,;")
         restrictions = [m.group(1).strip() for m in AREA.finditer(printed)]
@@ -282,64 +333,105 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
         row["name_as_printed"] = printed
         # The Order's own comma list is the synonym set. The first is the head
         # name only by printing order, not by any legal precedence.
-        row["synonyms"] = "|".join(p.strip(" .,;") for p in without.split(",") if p.strip(" .,;"))
-    return rows, barren
+        names = [p.strip(" .,;") for p in without.split(",") if p.strip(" .,;")]
+        for rank, synonym in enumerate(names or [printed], 1):
+            exploded.append({**row, "synonym": synonym, "synonym_rank": rank})
+    return exploded, barren
 
 
 def main() -> None:
-    """Parse the ST Order named on the command line into `lists/`."""
+    """Parse ST Orders into one table of synonym-grain rows."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-id", default="st_list_current-072")
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="parse every ST list edition in the manifest, not just one",
+    )
     arguments = parser.parse_args()
 
     with MANIFEST.open(encoding="utf8") as handle:
-        manifest = {r["source_id"]: r for r in csv.DictReader(handle, delimiter="\t")}
-    if arguments.source_id not in manifest:
-        raise SystemExit(f"{arguments.source_id} is not in the manifest; run step 10 first")
-    record = manifest[arguments.source_id]
-    if not record.get("stored_as"):
-        raise SystemExit(f"{arguments.source_id} has no bytes; step 10 could not fetch it")
+        manifest = list(csv.DictReader(handle, delimiter="\t"))
+    by_id = {r["source_id"]: r for r in manifest}
 
-    rows, barren = parse(RAW / record["stored_as"], arguments.source_id)
+    if arguments.all:
+        wanted = [r for r in manifest if r["kind"].startswith("st_list") and r["stored_as"]]
+        if not wanted:
+            raise SystemExit("no ST list editions with bytes; run step 01 first")
+    else:
+        if arguments.source_id not in by_id:
+            raise SystemExit(f"{arguments.source_id} is not in the manifest; run step 01 first")
+        record = by_id[arguments.source_id]
+        if not record.get("stored_as"):
+            raise SystemExit(f"{arguments.source_id} has no bytes; step 01 could not fetch it")
+        wanted = [record]
+
+    rows: list[dict] = []
+    summary = []
+    for record in sorted(wanted, key=lambda r: r["source_id"]):
+        parsed, barren = parse(RAW / record["stored_as"], record["source_id"])
+        date = notified_date(record["title"])
+        for row in parsed:
+            row["edition_id"] = record["source_id"]
+            row["notified_date"] = date
+            row["category"] = "ST"
+        rows.extend(parsed)
+        entries = {(r["state"], r["entry_no"]) for r in parsed}
+        states = {r["state"] for r in parsed if r["state"]}
+        summary.append(
+            {
+                "edition_id": record["source_id"],
+                "notified_date": date,
+                "n_states": len(states),
+                "n_entries": len(entries),
+                "n_synonyms": len(parsed),
+                "n_area_restricted": sum(1 for r in parsed if r["area_restriction"]),
+                "barren_pages": ",".join(barren),
+            }
+        )
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", encoding="utf8", newline="") as handle:
         writer = csv.DictWriter(
             handle,
             fieldnames=[
+                "edition_id",
+                "notified_date",
+                "category",
                 "state",
                 "state_as_printed",
                 "section",
                 "entry_no",
+                "synonym",
+                "synonym_rank",
                 "name_as_printed",
-                "synonyms",
                 "area_restriction",
                 "source_id",
                 "page",
             ],
             delimiter="\t",
+            extrasaction="ignore",
         )
         writer.writeheader()
         writer.writerows(rows)
 
-    states = sorted({r["state"] for r in rows if r["state"]})
-    restricted = sum(1 for r in rows if r["area_restriction"])
-    print(f"{len(rows):,} entries across {len(states)} states -> {OUT}")
-    print(f"{restricted:,} entries carry an area restriction")
-    if barren:
-        print(f"pages yielding no entry: {', '.join(barren)}")
-
-    # States that have Scheduled Tribes but produced nothing are a gap in this
-    # read, not a fact about the country. Naming them is the point.
-    counts = Counter(r["state"] for r in rows)
     report = HERE / "lists/st_parse_report.tsv"
     with report.open("w", encoding="utf8", newline="") as handle:
-        writer = csv.writer(handle, delimiter="\t")
-        writer.writerow(["state", "n_entries"])
-        for name in sorted(counts):
-            writer.writerow([name, counts[name]])
-    seen = set(states)
+        writer = csv.DictWriter(handle, fieldnames=list(summary[0]), delimiter="\t")
+        writer.writeheader()
+        writer.writerows(summary)
+
+    print(f"{len(rows):,} synonym rows across {len(summary)} edition(s) -> {OUT}")
+    for line in summary:
+        print(
+            f"  {line['edition_id']:<22} {line['notified_date']:<11} "
+            f"{line['n_states']:>2} states  {line['n_entries']:>4} entries  "
+            f"{line['n_synonyms']:>5} synonyms"
+        )
+    print(f"per-edition summary -> {report}")
+
+    seen = {r["state"] for r in rows if r["state"]}
     missing = sorted(set(CANONICAL.values()) - seen - NO_SCHEDULED_TRIBES)
-    print(f"per-state counts -> {report}")
     if missing:
         print(f"States/UTs with STs but no entry read: {', '.join(missing)}")
     else:
