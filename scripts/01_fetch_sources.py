@@ -62,6 +62,10 @@ MANIFEST = HERE / "sources/manifest.tsv"
 # manifest can record which rows it applied to.
 UNVERIFIED_HOSTS = {"tribal.nic.in"}
 
+# The archive answers a burst with 429 and a Retry-After header.
+RATE_LIMIT_RETRIES = 4
+RATE_LIMIT_WAIT = 60.0
+
 AVAILABILITY = "https://archive.org/wayback/available"
 SAVE = "https://web.archive.org/save/"
 UA = "anusuchi/0.1 (statutory caste list archive; research use)"
@@ -69,6 +73,7 @@ UA = "anusuchi/0.1 (statutory caste list archive; research use)"
 FIELDS = [
     "source_id",
     "kind",
+    "capture_timestamp",
     "authority",
     "publisher",
     "title",
@@ -163,6 +168,12 @@ def fetch_one(row: dict, session: requests.Session) -> dict:
         The manifest row, with empty checksum fields when the fetch failed.
     """
     url = row["url"]
+    # A registry row may pin a capture. Superseded editions live at URLs the
+    # publisher later reused: `LatestListofScheduledtribes.pdf` held one ST list
+    # from 2017 to 2020 and a different one from 2021, so fetching it live gets
+    # today's edition twice and the history never. Pinning the capture is the
+    # only way to get the bytes that were there then.
+    capture = (row.get("capture_timestamp") or "").strip()
     host = urllib.parse.urlparse(url).netloc
     verify = host not in UNVERIFIED_HOSTS
     record = dict(row)
@@ -178,8 +189,11 @@ def fetch_one(row: dict, session: requests.Session) -> dict:
     )
 
     body = b""
-    for attempt, target in enumerate((url, "")):
-        if attempt == 1:
+    attempts = [f"http://web.archive.org/web/{capture}id_/{url}"] if capture else [url, ""]
+    for attempt, target in enumerate(attempts):
+        if capture:
+            record["note"] = f"pinned to capture {capture}"
+        elif attempt == 1:
             # The live site failed. Fall back to the archive, which is why the
             # archive is queried for every source rather than only for the
             # ones that happen to break.
@@ -188,16 +202,31 @@ def fetch_one(row: dict, session: requests.Session) -> dict:
                 record["note"] = "live fetch failed and no wayback capture"
                 break
             record["note"] = "recovered from wayback"
-        try:
-            response = session.get(target, timeout=120, verify=verify, headers={"User-Agent": UA})
+        for retry in range(RATE_LIMIT_RETRIES):
+            try:
+                response = session.get(
+                    target, timeout=120, verify=verify, headers={"User-Agent": UA}
+                )
+            except requests.RequestException as error:
+                record["http_status"] = "0"
+                record["note"] = type(error).__name__
+                break
             record["http_status"] = str(response.status_code)
             record["content_type"] = response.headers.get("content-type", "").split(";")[0]
             if response.ok and response.content:
                 body = response.content
                 break
-        except requests.RequestException as error:
-            record["http_status"] = "0"
-            record["note"] = type(error).__name__
+            # The archive rate-limits with 429 and names the wait in a header.
+            # Treating that as a dead source loses the document; waiting costs
+            # a minute and keeps it.
+            if response.status_code != 429:
+                break
+            wait = float(response.headers.get("retry-after", RATE_LIMIT_WAIT))
+            record["note"] = f"rate limited, waited {wait:.0f}s"
+            print(f"      429; sleeping {wait:.0f}s", file=sys.stderr)
+            time.sleep(wait)
+        if body:
+            break
 
     if body:
         digest = hashlib.sha256(body).hexdigest()
@@ -261,7 +290,9 @@ def main() -> None:
         time.sleep(arguments.pause)
 
     with MANIFEST.open("w", encoding="utf8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS, delimiter="\t", extrasaction="ignore")
+        writer = csv.DictWriter(
+            handle, fieldnames=FIELDS, delimiter="\t", lineterminator="\n", extrasaction="ignore"
+        )
         writer.writeheader()
         writer.writerows(sorted(existing, key=lambda r: (r["source_id"], r["fetched_at"])))
 

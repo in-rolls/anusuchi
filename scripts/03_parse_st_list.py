@@ -410,6 +410,7 @@ def main() -> None:
                 "page",
             ],
             delimiter="\t",
+            lineterminator="\n",
             extrasaction="ignore",
         )
         writer.writeheader()
@@ -417,7 +418,9 @@ def main() -> None:
 
     report = HERE / "lists/st_parse_report.tsv"
     with report.open("w", encoding="utf8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(summary[0]), delimiter="\t")
+        writer = csv.DictWriter(
+            handle, fieldnames=list(summary[0]), delimiter="\t", lineterminator="\n"
+        )
         writer.writeheader()
         writer.writerows(summary)
 

@@ -275,7 +275,10 @@ def main() -> None:
     counts = counts_table(rows, dates)
     with COUNTS.open("w", encoding="utf8", newline="") as handle:
         writer = csv.DictWriter(
-            handle, fieldnames=["state", "notified_date", "n_entries", "n_synonyms"], delimiter="\t"
+            handle,
+            fieldnames=["state", "notified_date", "n_entries", "n_synonyms"],
+            delimiter="\t",
+            lineterminator="\n",
         )
         writer.writeheader()
         writer.writerows(counts)
@@ -283,7 +286,7 @@ def main() -> None:
     matrix = presence(rows, dates, arguments.state)
     with MATRIX.open("w", encoding="utf8", newline="") as handle:
         fields = ["state", "synonym", *dates, "n_editions", "first_seen", "last_seen", "in_all"]
-        writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t")
+        writer = csv.DictWriter(handle, fieldnames=fields, delimiter="\t", lineterminator="\n")
         writer.writeheader()
         writer.writerows(matrix)
 

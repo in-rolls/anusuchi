@@ -1,15 +1,243 @@
 url	title_as_linked	index_page	first_seen	last_seen	n_captures	in_registry
-DivisionsFiles/orgChart01042017.pdf	Organisation Chart	st_index	20170512235904	20170616023203	3	false
-DivisionsFiles/workAllocation.pdf	Work Allocation	st_index	20170512235904	20170606073918	2	false
-ST/3-STinindiaascensus2011_compressed.pdf	ST in India as Revealed in Census 2011	st_index	20170512235904	20170616023203	3	false
-ST/DistrictwiseinformationonLowSTLiteracyRate.pdf	District wise information of Scheduled Tribes on very low literacy rate	st_index	20170512235904	20170616023203	3	false
-ST/LatestListofScheduledtribes.pdf	State wise List of Scheduled Tribes in India	st_index	20170512235904	20170616023203	3	false
-ST/ListofITDPITDAMADAPockets.pdf	List of ITDP, ITDA, MADA Pockets	st_index	20170512235904	20170616023203	3	false
-ST/ListofScheduledTribes(STs)withVerylowliteracyrate.pdf	List of Scheduled Tribes (STs) with very low literacy rate (less than 30 percent)	st_index	20170512235904	20170616023203	3	false
-ST/Statement-State-DistrictwiseSTLiteracyRate-edited.pdf	State wise and District wise information on very low ST literacy rate (where Female LR below 35 %	st_index	20170512235904	20170616023203	3	false
-ST/StatewisePvTGsList.pdf	State wise List of PVTGs	st_index	20170512235904	20170616023203	3	false
-ST/StatisticalProfileofSTs2013.pdf	Statistical Profile of STs 2013	st_index	20170512235904	20170616023203	3	false
-ST/Tribal Profile.pdf	Scheduled Tribes - At a Glance	st_index	20170512235904	20170512235904	1	false
-ST/Tribeswiseinformationonverylowliteracyrate.pdf	List of Scheduled Tribes with very low literacy rate	st_index	20170512235904	20170616023203	3	false
-data/VKYOperationalGuidelines.pdf	Guidelines	st_index	20170512235904	20170616023203	3	false
-DivisionsFiles/workAllocation_08062017.pdf	Work Allocation	st_index	20170616023203	20170616023203	1	false
+https://ncbc.nic.in/User_Panel/Images/STQC_Certificate.pdf		obc_index	20141014123922	20150315100744	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER (AMDT) ACT 2002-1.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 (ADDITION and DELETION) dated 24.05.2002	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER (AMDT) ACT 2002-2.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 (ADDITION) dated 03.06.2002	sc_index	20220518095812	20251022201213	30	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER (AMDT) ACT 2002-4.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 dated 07.01.2003	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER (AMENDMENT) ACT 1990.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 1990 dated 03.06.1990	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER (SEC AMDT) ACT 2002-3.pdf	CONSTITUTION (SC) ORDER (SECOND AMENDMENT) ACT 2002 dated 17.12.2002	sc_index	20220518095812	20251018105448	29	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION (SC) ORDER 1950 dated 10081950.pdf	CONSTITUTION (SC) ORDER 1950 dated 10.08.1950	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/CONSTITUTION ORDER 1951 dated 20091951636359886626769077.pdf	CONSTITUTION (PART C STATES) ORDER 1951 dated 20.09.1951	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Compendium-2016.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated up to 26-10-2017)	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/GOI-SC-ORDER-1936.pdf	GOI (SC) ORDER 1936 dated 06.06.1936	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Letter-dated-15032018.PDF	Avoid nomenclature Dalit/Harijan/Girijan for the members of Scheduled Castes	sc_index	20220518095812	20260618233823	37	true
+https://socialjustice.gov.in/writereaddata/UploadFile/Letter-dated-15112016.PDF	Issue of Scheduled Caste Certificate to the members of Buddhism Religion	sc_index	20220518095812	20260220165634	34	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Letter-dated-22022018.PDF	Issue of Scheduled Caste Certificate to migrants from other States/UTs	sc_index	20220518095812	20241111172322	19	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Mod-incl-excl-SC636017833100514524.pdf	Modalities for deciding claims for inclusion in, exclusion from and other modifications in the orders specifying Scheduled Castes and Scheduled Tribes	sc_index	20220518095812	20260618233823	37	true
+https://socialjustice.gov.in/writereaddata/UploadFile/Order-2007.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2007 dated 29.08.2007	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Order-2014.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2014 dated 17.12.2014	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Order-2015.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2015 dated 20.03.2015	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Order-2016.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2016 dated 06.05.2016	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Order-2017.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2017 dated 28.04.2017	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/SC ST LISTS (MODIFICATION) ORDER 1956.pdf	SC and ST LISTS (MODIFICATION) ORDER 1956 dated 29.10.1956	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/SC ST ORDER (AMENDMENT) ACT 1956636359887389305949.pdf	SC and ST ORDER (AMENDMENT) ACT 1956 dated 25.09.1956	sc_index	20220518095812	20260618233823	37	true
+https://socialjustice.gov.in/writereaddata/UploadFile/SC ST ORDER (AMENDMENT) ACT 1976.pdf	SC and ST ORDER (AMENDMENT) ACT 1976 dated 18.09.1976	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/Updated%20Organization%20Chart-II.pdf	Organisation Chart	sc_index	20220518095812	20230521083013	9	false
+https://socialjustice.gov.in/writereaddata/UploadFile/guide-certificate636017830879050722.pdf	Compilation of Central Government Instructions and Guidelines regarding issue of Scheduled Caste and Scheduled Tribe Certificates	sc_index	20220518095812	20260618233823	37	true
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1950636011777382153618.pdf		sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1951636011777921451566.pdf	The Constitution (Scheduled Castes) (Union Territories) Order, 1951	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1956636011778281191227.pdf	The Constitution (Jammu and Kashmir) Scheduled Castes Order, 1956	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1962636011778591011112.pdf	The Constitution (Dadra and Nagar Haveli) Scheduled Castes Order, 1962	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1964636011778926570322.pdf	The Constitution (Pondicherry) Scheduled Castes Order, 1964	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/writereaddata/UploadFile/scorder1978636011779232333887.pdf	The Constitution (Sikkim) Scheduled Castes Order, 1978	sc_index	20220518095812	20221202063644	6	false
+https://socialjustice.gov.in/public/ckeditor/upload/11301676262859.pdf	Lokur Committee Report- The Report of the Advisory Committee on the revision of the lists of Scheduled Castes and Scheduled Tribes	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/17701673325183.pdf	CONSTITUTION (SC) ORDER 1950 dated 10.08.1950	sc_index	20230401075757	20250326145128	17	false
+https://socialjustice.gov.in/public/ckeditor/upload/22661673325348.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 dated 07.01.2003	sc_index	20230401075757	20251022201213	24	false
+https://socialjustice.gov.in/public/ckeditor/upload/25591673325512.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2021 dated 13.04.2021	sc_index	20230401075757	20250831142705	22	false
+https://socialjustice.gov.in/public/ckeditor/upload/31281673324550.pdf	The SC and ST Orders (Amendment) Act, 1976- Hindi Translation	sc_index	20230401075757	20241006232259	12	false
+https://socialjustice.gov.in/public/ckeditor/upload/38021673325422.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2014 dated 17.12.2014	sc_index	20230401075757	20251022201213	24	false
+https://socialjustice.gov.in/public/ckeditor/upload/40091673325296.pdf	The SC and ST ORDER (AMENDMENT) ACT 1976 dated 18.09.1976	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/41341676957576.pdf	The Constitution (Sikkim) Scheduled Castes Order, 1978	sc_index	20230401075757	20250629090718	20	false
+https://socialjustice.gov.in/public/ckeditor/upload/42431673325265.pdf	SC and ST LISTS (MODIFICATION) ORDER 1956 dated 29.10.1956	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/43371673325485.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2016 dated 06.05.2016	sc_index	20230401075757	20251018105448	23	false
+https://socialjustice.gov.in/public/ckeditor/upload/48021673325306.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 1990 dated 03.06.1990	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/49281676957387.pdf	The Constitution (Dadra and Nagar Haveli) Scheduled Castes Order, 1962	sc_index	20230401075757	20250831142705	22	false
+https://socialjustice.gov.in/public/ckeditor/upload/49891676957151.pdf	The Constitution (Scheduled Castes) (Union Territories) Order, 1951	sc_index	20230401075757	20241111172322	13	false
+https://socialjustice.gov.in/public/ckeditor/upload/51781673325358.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2007 dated 29.08.2007	sc_index	20230401075757	20251022201213	24	false
+https://socialjustice.gov.in/public/ckeditor/upload/56821673325318.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 (ADDITION and DELETION) dated 24.05.2002	sc_index	20230401075757	20251022201213	24	false
+https://socialjustice.gov.in/public/ckeditor/upload/60481676957283.pdf	The Constitution (Jammu and Kashmir) Scheduled Castes Order, 1956	sc_index	20230401075757	20241006232259	12	false
+https://socialjustice.gov.in/public/ckeditor/upload/60731673325221.pdf	CONSTITUTION (PART C STATES) ORDER 1951 dated 20.09.1951	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/67681676957482.pdf	The Constitution (Pondicherry) Scheduled Castes Order, 1964	sc_index	20230401075757	20230521083013	3	false
+https://socialjustice.gov.in/public/ckeditor/upload/76871673325496.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2017 dated 28.04.2017	sc_index	20230401075757	20250831142705	22	false
+https://socialjustice.gov.in/public/ckeditor/upload/80241672891268.pdf	Verification of caste certificates and punishment for holding false SC certificates and issuing authority	sc_index	20230401075757	20260421144222	30	false
+https://socialjustice.gov.in/public/ckeditor/upload/82951673327147.PDF	Government of India (Scheduled Castes) Order 1936 dated 30.04.1936	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/83831676958183.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 21-02-2023)	sc_index	20230401075757	20230521083013	3	false
+https://socialjustice.gov.in/public/ckeditor/upload/86221676007212.pdf	Notification No. S.O. 4742(E) dated 06.10.2022:- Commission under Commissions of Inquiry Act, 1952 to examine the matter of according Scheduled Caste status to new persons, who claim to historically have belonged to the Scheduled Castes, but have converted to religion other than those mentioned in the Presidential Orders issued from time to time under article 341 of the Constitution	sc_index	20230401075757	20230401075757	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/89971673325431.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2015 dated 20.03.2015	sc_index	20230401075757	20251018105448	23	false
+https://socialjustice.gov.in/public/ckeditor/upload/93101672829095.pdf	Tamil Nadu	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/94911672891518.pdf	Acceptance of caste/ community certificates produced by Scheduled Caste candidates	sc_index	20230401075757	20260220165634	28	false
+https://socialjustice.gov.in/public/ckeditor/upload/98661672891374.pdf	Caste status of offspring of separated/ diverced/ single woman	sc_index	20230401075757	20260618233823	31	true
+https://socialjustice.gov.in/public/ckeditor/upload/72301683023078.pdf	Notification No. S.O. 4742(E) dated 06.10.2022:- Commission under Commissions of Inquiry Act, 1952 to examine the matter of according Scheduled Caste status to new persons, who claim to historically have belonged to the Scheduled Castes, but have converted to religion other than those mentioned in the Presidential Orders issued from time to time under article 341 of the Constitution	sc_index	20230521082824	20260618233823	30	true
+https://socialjustice.gov.in/public/ckeditor/upload/77631684132316.pdf	Constitution of India- English version	sc_index	20230521082824	20241006232259	11	false
+https://socialjustice.gov.in/public/ckeditor/upload/91011684132333.pdf	Constitution of India- Hindi version	sc_index	20230521082824	20241006232259	11	false
+https://socialjustice.gov.in/writereaddata/DOSJE_STQC.pdf		sc_index	20230521082824	20260618233823	30	false
+https://socialjustice.gov.in/public/ckeditor/upload/22001687773710.pdf	Organisation Chart	sc_index	20230805212908	20260618233823	28	true
+https://socialjustice.gov.in/public/ckeditor/upload/22061686895727.pdf	Jharkhand	sc_index	20230805212908	20260618233823	28	true
+https://socialjustice.gov.in/public/ckeditor/upload/26551686896228.pdf	CONSTITUTION (SC&ST) ORDERS (SECOND AMENDMENT) ACT 2022 dated 24.12.2022	sc_index	20230805212908	20251018105448	20	false
+https://socialjustice.gov.in/public/ckeditor/upload/27981687258665.pdf	Kerala	sc_index	20230805212908	20260618233823	28	false
+https://socialjustice.gov.in/public/ckeditor/upload/60281686908319.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 16-06-2023)	sc_index	20230805212908	20230805212908	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/75851686895944.pdf	Uttar Pradesh	sc_index	20230805212908	20260618233823	28	true
+https://socialjustice.gov.in/public/ckeditor/upload/82501686896498.pdf	CONSTITUTION (SC&ST) ORDERS (AMENDMENT) ACT 2022 dated 08.04.2022	sc_index	20230805212908	20251018105448	20	false
+https://socialjustice.gov.in/public/ckeditor/upload/87221686895542.pdf	The Constitution (Puducherry) Scheduled Castes Order, 1964	sc_index	20230805212908	20260618233823	28	true
+https://socialjustice.gov.in/public/ckeditor/upload/42041692246852.pdf	CONSTITUTION (Scheduled Castes) ORDERS (AMENDMENT) ACT 2023 dated 14.08.2023	sc_index	20231001175038	20250831142705	18	false
+https://socialjustice.gov.in/public/ckeditor/upload/68121692250739.pdf	Chhattisgarh	sc_index	20231001175038	20241111172322	9	false
+https://socialjustice.gov.in/public/ckeditor/upload/97321692251201.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 17-08-2023)	sc_index	20231001175038	20231210234117	3	false
+https://socialjustice.gov.in/public/ckeditor/upload/32131696419878.pdf	FAQs	sc_index	20231012132531	20231210234117	2	false
+https://socialjustice.gov.in/public/ckeditor/upload/30671704187952.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 16-01-2024)	sc_index	20240525173139	20241006232259	5	false
+https://socialjustice.gov.in/public/ckeditor/upload/34751705491299.pdf	Format for sending details on amendments to list of Scheduled Castes to be enclosed with the proposals by State/UT.	sc_index	20240525173139	20260618233823	24	true
+https://socialjustice.gov.in/public/ckeditor/upload/69711704187858.pdf	Madhya Pradesh	sc_index	20240525173139	20250831142705	15	false
+https://socialjustice.gov.in/public/ckeditor/upload/70771707971512.pdf	CONSTITUTION (JAMMU AND kASHMIR) SCHEDULED CASTES ORDER (AMENDMENT) ACT, 2024 dated 12.02.2024	sc_index	20240525173139	20251018105448	16	false
+https://socialjustice.gov.in/public/ckeditor/upload/30391731055925.pdf	The SC and ST Orders (Amendment) Act, 1976- Hindi Translation	sc_index	20241111172322	20260618233823	19	true
+https://socialjustice.gov.in/public/ckeditor/upload/31681731055105.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 16-01-2024)	sc_index	20241111172322	20250326145128	5	false
+https://socialjustice.gov.in/public/ckeditor/upload/44191731320856.pdf	Laddakh	sc_index	20241111172322	20241111172322	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/51271731054942.pdf	The SC and ST Orders (Amendment) Bill, 1976- Hindi [As introduced (pp.1-67) and as passed (pp.68-95) by Lok Sabha	sc_index	20241111172322	20260618233823	19	true
+https://socialjustice.gov.in/public/ckeditor/upload/56361731321050.pdf	The Constitution (Jammu and Kashmir) Scheduled Castes Order, 1956	sc_index	20241111172322	20241111172322	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/59941731055382.pdf	Constitution of India- English version	sc_index	20241111172322	20260618233823	19	true
+https://socialjustice.gov.in/public/ckeditor/upload/66631731055875.pdf	Jammu and Kashmir	sc_index	20241111172322	20241111172322	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/73881731326481.pdf	Constitution of India- Hindi version	sc_index	20241111172322	20260618233823	19	true
+https://socialjustice.gov.in/public/ckeditor/upload/83351730891165.pdf	Notification No. S.O. 4780(E) dated 30.10.2024:- Extension of tenure of the Commission under Commissions of Inquiry Act, 1952	sc_index	20241111172322	20260618233823	19	true
+https://socialjustice.gov.in/public/ckeditor/upload/28011732098502.pdf	Delhi	sc_index	20250118012013	20260618233823	18	false
+https://socialjustice.gov.in/public/ckeditor/upload/55061732518294.pdf	CONSTITUTION (SCHEDULED CASTES AND SCHEDULED TRIBES) ORDERS (AMENDMENT) ACT, 2024 dated 15.02.2024	sc_index	20250118012013	20251018105448	10	false
+https://socialjustice.gov.in/public/ckeditor/upload/55771732701316.pdf	Chhattisgarh	sc_index	20250118012013	20260618233823	18	true
+https://socialjustice.gov.in/public/ckeditor/upload/74231733141001.pdf	Laddakh	sc_index	20250118012013	20260618233823	18	false
+https://socialjustice.gov.in/public/ckeditor/upload/74301733141100.pdf	The Constitution (Jammu and Kashmir) Scheduled Castes Order, 1956	sc_index	20250118012013	20260618233823	18	true
+https://socialjustice.gov.in/public/ckeditor/upload/88061734948587.pdf	Odisha	sc_index	20250118012013	20260618233823	18	false
+https://socialjustice.gov.in/public/ckeditor/upload/90861732162327.pdf	The Constitution (Scheduled Castes) (Union Territories) Order, 1951	sc_index	20250118012013	20260618233823	18	true
+https://socialjustice.gov.in/public/ckeditor/upload/93511733804554.pdf	Issue of Scheduled Caste Certificate to migrants from other States/UTs	sc_index	20250118012013	20260618233823	18	true
+https://socialjustice.gov.in/public/ckeditor/upload/95401733140992.pdf	Jammu and Kashmir	sc_index	20250118012013	20260618233823	18	true
+https://socialjustice.gov.in/public/ckeditor/upload/32771743500203.pdf	CONSTITUTION (SC) ORDER 1950 dated 10.08.1950	sc_index	20250525092348	20260618233823	14	true
+https://socialjustice.gov.in/public/ckeditor/upload/76951743500186.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 01-04-2025)	sc_index	20250525092348	20250831142705	5	false
+https://socialjustice.gov.in/public/ckeditor/upload/68181749551382.pdf	Issue of caste/ tribe certificate consequent upon reorganization of States- clarification	sc_index	20250614171643	20260618233823	13	true
+https://socialjustice.gov.in/public/ckeditor/upload/48261753330562.pdf	The Constitution (Sikkim) Scheduled Castes Order, 1978	sc_index	20250821100601	20260618233823	11	true
+https://socialjustice.gov.in/public/ckeditor/upload/14621758178712.pdf	Dadra and Nagar Haveli	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/41791758178592.pdf	Karnataka	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/44641758177828.pdf	The Constitution (Scheduled Castes) Order, 1950 (updated upto 18-09-2025)	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/52601760610435.pdf	CONSTITUTION (Scheduled Castes) ORDERS (AMENDMENT) ACT 2023 dated 14.08.2023	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/66141760612571.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2021 dated 13.04.2021	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/74001758177791.pdf	Madhya Pradesh	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/88021758177843.pdf	The Constitution (Dadra and Nagar Haveli) Scheduled Castes Order, 1962	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/99031760696477.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2017 dated 28.04.2017	sc_index	20251018105448	20260618233823	9	true
+https://socialjustice.gov.in/public/ckeditor/upload/30011761024382.pdf	CONSTITUTION (SC&ST) ORDERS (AMENDMENT) ACT 2022 dated 08.04.2022	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/46381761024058.pdf	CONSTITUTION (SC&ST) ORDERS (SECOND AMENDMENT) ACT 2022 dated 24.12.2022	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/61621761025169.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2015 dated 20.03.2015	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/64981761024628.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2016 dated 06.05.2016	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/70471761023606.pdf	CONSTITUTION (SCHEDULED CASTES AND SCHEDULED TRIBES) ORDERS (AMENDMENT) ACT, 2024 dated 15.02.2024	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/70821761042793.pdf	CONSTITUTION (JAMMU AND KASHMIR) SCHEDULED CASTES ORDER (AMENDMENT) ACT, 2024 dated 12.02.2024	sc_index	20251022201213	20260618233823	8	true
+https://socialjustice.gov.in/public/ckeditor/upload/74921761024132.pdf	CONSTITUTION (SC) ORDER (SECOND AMENDMENT) ACT 2002 dated 17.12.2002	sc_index	20251022201213	20251022201213	1	false
+https://socialjustice.gov.in/public/ckeditor/upload/18541764301808.pdf	Constitution of India- English & Hindi version	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/21921762421000.pdf	Notification No. S.O. 5000(E) dated 04.11.2025:- Extension of tenure of the Commission under Commissions of Inquiry Act, 1952	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/33911762421747.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 (ADDITION) dated 03.06.2002	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/39961762421374.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2002 (ADDITION and DELETION) dated 24.05.2002	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/42531762422032.pdf	CONSTITUTION (SC) ORDER (SECOND AMENDMENT) ACT 2002 dated 17.12.2002	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/56951762485904.pdf	The SC and ST Orders (Amendment) Act,2002 dated 07.01.2003	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/61571762486303.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2014 dated 17.12.2014	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/65101762486168.pdf	CONSTITUTION (SC) ORDER (AMENDMENT) ACT 2007 dated 29.08.2007	sc_index	20251208051842	20260618233823	7	true
+https://socialjustice.gov.in/public/ckeditor/upload/79641768813913.pdf	Re-iteration of instructions-Acceptance of caste/ community cerfiicates produced by Scheduled Caste candidates	sc_index	20260122225014	20260618233823	5	true
+https://socialjustice.gov.in/public/ckeditor/upload/10831773920111.pdf	Issue of Scheduled Caste Certificate to the members of Buddhism Religion	sc_index	20260413082324	20260618233823	3	true
+https://socialjustice.gov.in/public/ckeditor/upload/71251774242036.pdf	Acceptance of caste/ community certificates produced by Scheduled Caste candidates	sc_index	20260413082324	20260618233823	3	true
+https://socialjustice.gov.in/public/ckeditor/upload/98131776232696.pdf	Notification No. S.O. 1818(E) dated 09.04.2026:- Extension of tenure of the Commission under Commissions of Inquiry Act, 1952	sc_index	20260421144222	20260618233823	2	true
+https://socialjustice.gov.in/public/ckeditor/upload/28701776835518.pdf	Verification of caste certificates and punishment for holding false SC certificates and issuing authority	sc_index	20260618233823	20260618233823	1	true
+https://tribal.nic.in/DivisionsFiles/orgChart01042017.pdf	Organisation Chart	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/DivisionsFiles/workAllocation.pdf	Work Allocation	st_index	20170512235904	20170606073918	2	false
+https://tribal.nic.in/ST/3-STinindiaascensus2011_compressed.pdf	ST in India as Revealed in Census 2011	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/DistrictwiseinformationonLowSTLiteracyRate.pdf	District wise information of Scheduled Tribes on very low literacy rate	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/LatestListofScheduledtribes.pdf	State wise List of Scheduled Tribes in India	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/ListofITDPITDAMADAPockets.pdf	List of ITDP, ITDA, MADA Pockets	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/ListofScheduledTribes(STs)withVerylowliteracyrate.pdf	List of Scheduled Tribes (STs) with very low literacy rate (less than 30 percent)	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/Statement-State-DistrictwiseSTLiteracyRate-edited.pdf	State wise and District wise information on very low ST literacy rate (where Female LR below 35 %	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/StatewisePvTGsList.pdf	State wise List of PVTGs	st_index	20170512235904	20191020111320	16	false
+https://tribal.nic.in/ST/StatisticalProfileofSTs2013.pdf	Statistical Profile of STs 2013	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/ST/Tribal Profile.pdf	Scheduled Tribes - At a Glance	st_index	20170512235904	20170512235904	1	false
+https://tribal.nic.in/ST/Tribeswiseinformationonverylowliteracyrate.pdf	List of Scheduled Tribes with very low literacy rate	st_index	20170512235904	20201028105804	25	false
+https://tribal.nic.in/data/VKYOperationalGuidelines.pdf	Guidelines	st_index	20170512235904	20170819110325	7	false
+https://tribal.nic.in/DivisionsFiles/workAllocation_08062017.pdf	Work Allocation	st_index	20170616023203	20170819110325	5	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2004-05.pdf	2004-2005	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2005-06.pdf	2005-2006	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2006-07.pdf	2006-2007	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2008-09.pdf	2008-2009	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2009-10.pdf	2009-2010	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2010-11.pdf	2010-2011	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2011-12.pdf	2011-2012	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2012-13.pdf	2012-2013	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2013-14.pdf	2013-2014	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AnnualReport2014-15.pdf	2014-2015	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AnnualReport2015-16.pdf	2015-2016	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/AnnualReport2016-17.pdf	2016-2017	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/BhuriaReportFinal.pdf	Bhuria Commission Report	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/DevelopmentChallengesinExtremistAffectedAreas.pdf	Development Challenges in Extremist Affected Areas	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/LokurCommitteeReport.pdf	Lokur Committee Report	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/Mungekar3rdreport2.pdf	Mungekar Committe Report	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/NACRecommendationsforPVTGs.pdf	NAC Recommendations for PVTGs	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/ScheduledTribesinIndiaasRevealedinCensus2011.pdf	Scheduled Tribes in India as revealed in Census 2011 (RGI Report)	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/writereaddata/AnnualReport/TwelfthFiveYearPlan2012-17.pdf	Twelfth Five Year Plan 2012-17 (Scheduled Tribes)	st_index	20170712135750	20201028105804	20	false
+https://tribal.nic.in/ST/Hindi/भारतमेंअनुसूचितजनजातियोंकीराज्य-वारसंघराज्यक्षेत्र-वारसूची.pdf	भारत में अनुसूचित जनजातियों की राज्य-वार / संघ राज्यक्षेत्र-वार सूची	st_index	20170819110325	20170819110325	1	false
+https://tribal.nic.in/DivisionsFiles/SwachhaBharat/SwachhBharatSummerInternship9thMay-ENGLISH.pdf	Photo(s)	st_index	20181212061836	20181223211517	2	false
+https://tribal.nic.in/DivisionsFiles/SwachhaBharat/SwachhaBharatPakhwada17-18.pdf	Swachhta Pakhwada	st_index	20181212061836	20190414152157	3	false
+https://tribal.nic.in/DivisionsFiles/WorkAllocation091018.pdf	Work Allocation	st_index	20181212061836	20181212061836	1	false
+https://tribal.nic.in/ST/Statistics8518.pdf	ST Statistical Profile - at a glance	st_index	20181212061836	20201028105804	18	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2007-08.pdf	2007-2008	st_index	20181212061836	20201028105804	18	false
+https://tribal.nic.in/writereaddata/AnnualReport/AR2017-18.pdf	2017-2018	st_index	20181212061836	20201028105804	18	false
+https://tribal.nic.in/DivisionsFiles/Workallocation20122018.pdf	Work Allocation	st_index	20181223211517	20181223211517	1	false
+https://tribal.nic.in/DivisionsFiles/STQC1232019.pdf		st_index	20190414152157	20220922090813	38	false
+https://tribal.nic.in/DivisionsFiles/Workallocation18032019.pdf	Work Allocation	st_index	20190414152157	20190414152157	1	false
+https://tribal.nic.in/writereaddata/AnnualReport/AREnglish1819.pdf	2018-2019	st_index	20191016003846	20201028105804	11	false
+https://tribal.nic.in/DivisionsFiles/workallocation011119.pdf	Work Allocation	st_index	20191215015522	20200514012945	5	false
+https://tribal.nic.in/ST/ListofPVTGs191212.pdf	State wise List of PVTGs	st_index	20191215015522	20201028105804	9	false
+https://tribal.nic.in/DivisionsFiles/workallocation16062020.pdf	Work Allocation	st_index	20200808171650	20201028105804	4	false
+https://tribal.nic.in/writereaddata/AnnualReport/AREnglish1920.pdf	2019-2020	st_index	20200808171650	20201028105804	4	false
+https://tribal.nic.in/Statistics/OutcomeBudget2016-17.pdf	Outcome Budget 2016-17 (321 KB)	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/3-STinindiaascensus2011_compressed.pdf	ST in India as Revealed in Census 2011	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2004-05.pdf	2004-2005	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2005-06.pdf	2005-2006	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2006-07.pdf	2006-2007	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2007-08.pdf	2007-2008	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2008-09.pdf	2008-2009	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2009-10.pdf	2009-2010	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2010-11.pdf	2010-2011	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2011-12.pdf	2011-2012	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2012-13.pdf	2012-2013	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2013-14.pdf	2013-2014	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AR2017-18.pdf	2017-2018	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish1819.pdf	2018-2019	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish1920.pdf	2019-2020	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish2021.pdf	2020-2021	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AnnualReport2014-15.pdf	2014-2015	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AnnualReport2015-16.pdf	2015-2016	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AnnualReport2016-17.pdf	2016-2017	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/LatestListofScheduledtribes.pdf	State wise List of Scheduled Tribes in India	st_index	20210328132058	20240107033351	17	false
+https://tribal.nic.in/downloads/Statistics/ListofScheduledTribes(STs)withVerylowliteracyrate.pdf	List of Scheduled Tribes (STs) with very low literacy rate (less than 30 percent)	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/BhuriaReportFinal.pdf	Bhuria Commission Report	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/DevelopmentChallengesinExtremistAffectedAreas.pdf	Development Challenges in Extremist Affected Areas	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/LokurCommitteeReport.pdf	Lokur Committee Report	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/Mungekar3rdreport2.pdf	Mungekar Committe Report	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/NACRecommendationsforPVTGs.pdf	NAC Recommendations for PVTGs	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/ScheduledTribesinIndiaasRevealedinCensus2011.pdf	Scheduled Tribes in India as revealed in Census 2011 (RGI Report)	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/OtherReport/TwelfthFiveYearPlan2012-17.pdf	Twelfth Five Year Plan 2012-17 (Scheduled Tribes)	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/Statement-State-DistrictwiseSTLiteracyRate-edited.pdf	State wise and District wise information on very low ST literacy rate (where Female LR below 35 %)	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/StatisticalProfileofSTs2013.pdf	Statistical Profile of STs 2013 State wise List of PVTGs	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Statistics/Statistics8518.pdf	ST Statistical Profile - at a glance	st_index	20210328132058	20240107033351	17	false
+https://tribal.nic.in/downloads/Tribal/Workallocation28012021.pdf	Work Allocation	st_index	20210328132058	20210421072442	4	false
+https://tribal.nic.in/downloads/Tribal/orgChartI030202021.pdf	Organisational Chart	st_index	20210328132058	20210330052306	2	false
+https://tribal.nic.in/downloads/tribal/FAQ.pdf	FAQ	st_index	20210328132058	20260829140654	28	false
+https://tribal.nic.in/downloads/Tribal/OrgChart06042021.pdf	Organisational Chart	st_index	20210415003211	20210421072442	2	false
+https://tribal.nic.in/downloads/Tribal/OrgChart20072021.pdf	Organisational Chart	st_index	20210908052232	20220222020621	4	false
+https://tribal.nic.in/downloads/Tribal/Workallocation16062021.pdf	Work Allocation	st_index	20210908052232	20210908052232	1	false
+https://tribal.nic.in/downloads/Tribal/levelofdisposal19042021new.pdf	Channel of submission & Level of disposal	st_index	20210908052232	20260829140654	24	false
+https://tribal.nic.in/downloads/Tribal/Workallocation05102021.pdf	Work Allocation	st_index	20211111081248	20211111081248	1	false
+https://tribal.nic.in/downloads/Tribal/Workallocation29122021.pdf	Work Allocation	st_index	20220205062502	20220222020621	2	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish2122.pdf	2021-2022	st_index	20220512144653	20260829140654	20	false
+https://tribal.nic.in/downloads/Tribal/Workallocation270422.pdf	Work Allocation	st_index	20220512144653	20220519204323	2	false
+https://tribal.nic.in/downloads/Tribal/orgchart28042022.pdf	Organisational Chart	st_index	20220512144653	20220922090813	3	false
+https://tribal.nic.in/downloads/Tribal/Workallocation120822.pdf	Work Allocation	st_index	20220922090813	20220922090813	1	false
+https://tribal.nic.in/DivisionsFiles/STQC13022023.pdf		st_index	20230316101225	20260829140654	17	false
+https://tribal.nic.in/downloads/Statistics/ListofPVTGs191212.pdf	State wise List of PVTGs	st_index	20230316101225	20260829140654	17	true
+https://tribal.nic.in/downloads/Tribal/Workallocation240223.pdf	Work Allocation	st_index	20230316101225	20230512143548	5	false
+https://tribal.nic.in/downloads/Tribal/orgchart25112022.pdf	Organisational Chart	st_index	20230316101225	20230512143548	5	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish2223.pdf	2022-2023	st_index	20240107033351	20260829140654	12	false
+https://tribal.nic.in/downloads/Statistics/NotifiedSTslistsason040823.pdf	State wise List of Scheduled Tribes in India	st_index	20240107033351	20260829140654	12	true
+https://tribal.nic.in/downloads/Tribal/Workallocation12092023.pdf	Work Allocation	st_index	20240107033351	20240107033351	1	false
+https://tribal.nic.in/downloads/Tribal/orgchart12092023.pdf	Organisational Chart	st_index	20240107033351	20240107033351	1	false
+https://tribal.nic.in/downloads/Statistics/AnnualReport/AREnglish2324.pdf	2023-2024	st_index	20250115002332	20260829140654	11	false
+https://tribal.nic.in/downloads/Statistics/LatestListScheduledTribes2024.pdf	State wise List of Scheduled Tribes in India	st_index	20250115002332	20260829140654	11	true
+https://tribal.nic.in/downloads/Statistics/STsStatisticalProfileAtaGlance_09072024.pdf	ST Statistical Profile - at a glance	st_index	20250115002332	20260829140654	11	false
+https://tribal.nic.in/downloads/Tribal/Orgchart17072024.pdf	Organisational Chart	st_index	20250115002332	20251216172527	7	false
+https://tribal.nic.in/downloads/Tribal/Workallocation140125.pdf	Work Allocation	st_index	20250115002332	20250115002332	1	false
+https://tribal.nic.in/downloads/statistics/ListScheduledTribes25112024.pdf	State wise List of Scheduled Tribes in India	st_index	20250115002332	20250813220316	6	false
+https://tribal.nic.in/downloads/Tribal/Workallocation15052025.pdf	Work Allocation	st_index	20250523011139	20250523011139	1	false
+https://tribal.nic.in/downloads/Tribal/WorkAllocation20062025.pdf	Work Allocation	st_index	20250626154655	20250813220316	4	false
+https://tribal.nic.in/downloads/Tribal/Workallocation27112025.pdf	Work Allocation	st_index	20251216172527	20251216172527	1	false
+https://tribal.nic.in/downloads/statistics/ListScheduledTribes26092025.pdf	State wise List of Scheduled Tribes in India	st_index	20251216172527	20260829140654	5	true
+https://tribal.nic.in/downloads/Tribal/Orgchart19122025.pdf	Organisational Chart	st_index	20260418001126	20260829140654	4	false
+https://tribal.nic.in/downloads/Tribal/Workallocation06022026.pdf	Work Allocation	st_index	20260418001126	20260418001126	1	false
+https://tribal.nic.in/DivisionsFiles/CitizensCharter19052026.pdf	Citizen's / Client's Charter	st_index	20260605112119	20260829140654	3	false
+https://tribal.nic.in/downloads/Tribal/Workallocation26052026.pdf	Work Allocation	st_index	20260605112119	20260605112124	2	false
+https://tribal.nic.in/downloads/Tribal/Workallocation31072026.pdf	Work Allocation	st_index	20260829140654	20260829140654	1	false

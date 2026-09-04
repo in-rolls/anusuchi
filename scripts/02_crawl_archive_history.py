@@ -219,6 +219,7 @@ def promote(rows: list[dict], registry: list[dict]) -> int:
             handle,
             fieldnames=["source_id", "kind", "authority", "publisher", "title", "url"],
             delimiter="\t",
+            lineterminator="\n",
         )
         writer.writerows(added)
     return len(added)
@@ -248,7 +249,9 @@ def main() -> None:
     rows = sorted(seen.values(), key=lambda r: (r["index_page"], r["first_seen"], r["url"]))
     DISCOVERED.parent.mkdir(parents=True, exist_ok=True)
     with DISCOVERED.open("w", encoding="utf8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=FIELDS, delimiter="\t", extrasaction="ignore")
+        writer = csv.DictWriter(
+            handle, fieldnames=FIELDS, delimiter="\t", lineterminator="\n", extrasaction="ignore"
+        )
         writer.writeheader()
         writer.writerows(rows)
 
