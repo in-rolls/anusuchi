@@ -1,0 +1,8 @@
+# Fetched bytes are large and reproducible from sources/registry.tsv plus the
+# manifest's checksums and archive URLs. The manifest is what is versioned.
+sources/raw/
+
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
