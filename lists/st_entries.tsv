@@ -1,774 +1,773 @@
-state	entry_no	name_as_printed	synonyms	area_restriction	source_id	page
-Andhra Pradesh	1	Andh, Sadhu Andh	Andh|Sadhu Andh		st_list_current-072	1
-Andhra Pradesh	2	Bagata	Bagata		st_list_current-072	1
-Andhra Pradesh	3	Bhil	Bhil		st_list_current-072	1
-Andhra Pradesh	4	Chenchu	Chenchu		st_list_current-072	1
-Andhra Pradesh	5	Gadabas, Bodo Gadaba, Gutob Gadaba, Kallayi Gadaba, Parangi Gadaba, Kathera Gadaba, Kapu Gadaba	Gadabas|Bodo Gadaba|Gutob Gadaba|Kallayi Gadaba|Parangi Gadaba|Kathera Gadaba|Kapu Gadaba		st_list_current-072	1
-Andhra Pradesh	6	Gond, Naikpod, Rajgond, Koitur	Gond|Naikpod|Rajgond|Koitur		st_list_current-072	1
-Andhra Pradesh	7	Goudu (in the Agency tracts)	Goudu (in the Agency tracts)		st_list_current-072	1
-Andhra Pradesh	8	Hill Reddis	Hill Reddis		st_list_current-072	1
-Andhra Pradesh	9	Jatapus	Jatapus		st_list_current-072	1
-Andhra Pradesh	10	Kammara	Kammara		st_list_current-072	1
-Andhra Pradesh	11	Kattunayakan	Kattunayakan		st_list_current-072	1
-Andhra Pradesh	12	Kolam, Kolawar	Kolam|Kolawar		st_list_current-072	1
-Andhra Pradesh	13	Konda Dhoras, Kubi	Konda Dhoras|Kubi		st_list_current-072	1
-Andhra Pradesh	14	Konda Kapus	Konda Kapus		st_list_current-072	1
-Andhra Pradesh	15	Kondareddis	Kondareddis		st_list_current-072	1
-Andhra Pradesh	16	Kondhs, Kodi, Kodhu, Desaya Kondhs, Dongria Kondhs, Kuttiya Kondhs, Tikiria Kondhs, Yenity Kondhs, Kuvinga	Kondhs|Kodi|Kodhu|Desaya Kondhs|Dongria Kondhs|Kuttiya Kondhs|Tikiria Kondhs|Yenity Kondhs|Kuvinga		st_list_current-072	1
-Andhra Pradesh	17	Kotia, Bentho Oriya, Bartika, Dulia, Holva, Sanrona, Sidhopaiko	Kotia|Bentho Oriya|Bartika|Dulia|Holva|Sanrona|Sidhopaiko		st_list_current-072	2
-Andhra Pradesh	18	Koya, Doli Koya, Gutta Koya, Kammara Koya, Musara Koya, Oddi Koya, Pattidi Koya, Rajah, Rasha Koya, Lingadhari Koya (ordinary), Kottu Koya, Bhine Koya, Rajkoya	Koya|Doli Koya|Gutta Koya|Kammara Koya|Musara Koya|Oddi Koya|Pattidi Koya|Rajah|Rasha Koya|Lingadhari Koya (ordinary)|Kottu Koya|Bhine Koya|Rajkoya		st_list_current-072	2
-Andhra Pradesh	19	Kulia	Kulia		st_list_current-072	2
-Andhra Pradesh	20	Malis	Malis		st_list_current-072	2
-Andhra Pradesh	21	Manna Dhora	Manna Dhora		st_list_current-072	2
-Andhra Pradesh	22	Mukha Dhora, Nooka Dhora	Mukha Dhora|Nooka Dhora		st_list_current-072	2
-Andhra Pradesh	23	Nayaks (in the Agency tracts)	Nayaks (in the Agency tracts)		st_list_current-072	2
-Andhra Pradesh	24	Pardhan	Pardhan		st_list_current-072	2
-Andhra Pradesh	25	Porja, Bondo Porja, Khond Porja, Parangiperja	Porja|Bondo Porja|Khond Porja|Parangiperja		st_list_current-072	2
-Andhra Pradesh	26	Reddi Dhoras	Reddi Dhoras		st_list_current-072	2
-Andhra Pradesh	27	Rona, Rena	Rona|Rena		st_list_current-072	2
-Andhra Pradesh	28	Savaras, Kapu Savaras, Maliya Savaras, Konda Savaras, Khutto Savaras	Savaras|Kapu Savaras|Maliya Savaras|Konda Savaras|Khutto Savaras		st_list_current-072	2
-Andhra Pradesh	29	Sugalis, Lambadis, Banjara	Sugalis|Lambadis|Banjara		st_list_current-072	2
-Andhra Pradesh	30	Valmiki (Scheduled Areas of Vishakhapatnam, Srikakulam, Vijayanagram, East Godavari and West Godavari districts)	Valmiki	Scheduled Areas of Vishakhapatnam, Srikakulam, Vijayanagram, East Godavari and West Godavari districts	st_list_current-072	2
-Andhra Pradesh	31	Yenadis, Chella Yenadi, KappalaYenadi, Manchi Yenadi, Reddi Yenadi	Yenadis|Chella Yenadi|KappalaYenadi|Manchi Yenadi|Reddi Yenadi		st_list_current-072	2
-Andhra Pradesh	32	Yerukulas, Koracha, Dabba Yerukula, Kunchapuri Yerukula, Uppu Yerukula	Yerukulas|Koracha|Dabba Yerukula|Kunchapuri Yerukula|Uppu Yerukula		st_list_current-072	3
-Andhra Pradesh	33	Nakkala, Kurvikaran	Nakkala|Kurvikaran		st_list_current-072	3
-Andhra Pradesh	34	Dhulia, Paiko, Putiya (in the districts of Vishakhapatnam and Vijayanagaram)	Dhulia|Paiko|Putiya	in the districts of Vishakhapatnam and Vijayanagaram	st_list_current-072	3
-Arunachal Pradesh	0	All tribes in the State including:	All tribes in the State including:		st_list_current-072	3
-Arunachal Pradesh	1	Omitted	Omitted		st_list_current-072	3
-Arunachal Pradesh	2	Aka	Aka		st_list_current-072	3
-Arunachal Pradesh	3	Apatani	Apatani		st_list_current-072	3
-Arunachal Pradesh	4	Nyishi	Nyishi		st_list_current-072	3
-Arunachal Pradesh	5	Galo	Galo		st_list_current-072	3
-Arunachal Pradesh	6	Tai Khamti	Tai Khamti		st_list_current-072	3
-Arunachal Pradesh	7	Khowa	Khowa		st_list_current-072	3
-Arunachal Pradesh	8	Mishmi-Kaman (Miju Mishmi), Idu (Mishmi), Taraon (Digaru Mishmi)	Mishmi-Kaman (Miju Mishmi)|Idu (Mishmi)|Taraon (Digaru Mishmi)		st_list_current-072	3
-Arunachal Pradesh	9	Monpa, Memba, Sartang, Sajolang (Miji)	Monpa|Memba|Sartang|Sajolang (Miji)		st_list_current-072	3
-Arunachal Pradesh	10	Nocte, Tangsa, Tutsa, Wancho	Nocte|Tangsa|Tutsa|Wancho		st_list_current-072	3
-Arunachal Pradesh	11	Sherdukpen	Sherdukpen		st_list_current-072	3
-Arunachal Pradesh	12	Singpho	Singpho		st_list_current-072	3
-Arunachal Pradesh	13	Hrusso	Hrusso		st_list_current-072	3
-Arunachal Pradesh	14	Tagin	Tagin		st_list_current-072	3
-Arunachal Pradesh	15	Khamba	Khamba		st_list_current-072	4
-Arunachal Pradesh	16	Adi	Adi		st_list_current-072	4
-Assam	0	I. In the autonomous Districts of Karbi Anglong and North Cachar Hills	I. In the autonomous Districts of Karbi Anglong|North Cachar Hills		st_list_current-072	4
-Assam	1	Chakma	Chakma		st_list_current-072	4
-Assam	2	Dimasa, Kachari	Dimasa|Kachari		st_list_current-072	4
-Assam	3	Garo	Garo		st_list_current-072	4
-Assam	4	Hajong	Hajong		st_list_current-072	4
-Assam	5	Hmar	Hmar		st_list_current-072	4
-Assam	6	Khasi, Jaintia, Synteng, Pnar,War, Bhoi, Lyngngam	Khasi|Jaintia|Synteng|Pnar|War|Bhoi|Lyngngam		st_list_current-072	4
-Assam	7	Any Kuki tribes, including: - (i) Biate, Biete (ii) Changsan (iii) Chongloi (iv) Doungel (v) Gamalhou (vi) Gangte (vii) Guite (viii) Hanneng (ix) Haokip, Haupit (x) Haolai (xi) Hengna	Any Kuki tribes|including: - (i) Biate|Biete (ii) Changsan (iii) Chongloi (iv) Doungel (v) Gamalhou (vi) Gangte (vii) Guite (viii) Hanneng (ix) Haokip|Haupit (x) Haolai (xi) Hengna		st_list_current-072	4
-Assam	8	Lakher 8	Lakher 8		st_list_current-072	5
-Assam	9	Man (Tai- speaking)	Man (Tai- speaking)		st_list_current-072	6
-Assam	10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	6
-Assam	11	Karbi	Karbi		st_list_current-072	6
-Assam	12	Any Naga tribes	Any Naga tribes		st_list_current-072	6
-Assam	13	Pawi	Pawi		st_list_current-072	6
-Assam	14	Syntheng	Syntheng		st_list_current-072	6
-Assam	15	Lalung II. In the State of Assam including the Bodoland Territorial Areas District and excluding the autonomous districts of Karbi Anglong and North Cachar Hills:	Lalung II. In the State of Assam including the Bodoland Territorial Areas District|excluding the autonomous districts of Karbi Anglong|North Cachar Hills:		st_list_current-072	6
-Assam	1	Barmans in Cachar	Barmans in Cachar		st_list_current-072	6
-Assam	2	Boro, Boro kachari	Boro|Boro kachari		st_list_current-072	6
-Assam	3	Deori	Deori		st_list_current-072	6
-Assam	4	Hojai	Hojai		st_list_current-072	6
-Assam	5	Kachari, Sonwal	Kachari|Sonwal		st_list_current-072	6
-Assam	6	Lalung	Lalung		st_list_current-072	6
-Assam	7	Mech	Mech		st_list_current-072	6
-Assam	8	Miri	Miri		st_list_current-072	6
-Assam	9	Rabha	Rabha		st_list_current-072	6
-Assam	10	Dimasa	Dimasa		st_list_current-072	6
-Assam	11	Hajong	Hajong		st_list_current-072	6
-Assam	12	Singhpho	Singhpho		st_list_current-072	6
-Assam	13	Khampti	Khampti		st_list_current-072	6
-Assam	14	Garo	Garo		st_list_current-072	6
-Bihar	1	Asur, Agaria	Asur|Agaria		st_list_current-072	7
-Bihar	2	Baiga	Baiga		st_list_current-072	7
-Bihar	3	Banjara	Banjara		st_list_current-072	7
-Bihar	4	Bathudi	Bathudi		st_list_current-072	7
-Bihar	5	Bedia	Bedia		st_list_current-072	7
-Bihar	6	Omitted	Omitted		st_list_current-072	7
-Bihar	7	Binjhia	Binjhia		st_list_current-072	7
-Bihar	8	Birhor	Birhor		st_list_current-072	7
-Bihar	9	Birjia	Birjia		st_list_current-072	7
-Bihar	10	Chero	Chero		st_list_current-072	7
-Bihar	11	Chik Baraik	Chik Baraik		st_list_current-072	7
-Bihar	12	Gond	Gond		st_list_current-072	7
-Bihar	13	Gorait	Gorait		st_list_current-072	7
-Bihar	14	Ho	Ho		st_list_current-072	7
-Bihar	15	Karmali	Karmali		st_list_current-072	7
-Bihar	16	Kharia, Dhelki Kharia, Dudh Kharia, Hill Kharia	Kharia|Dhelki Kharia|Dudh Kharia|Hill Kharia		st_list_current-072	7
-Bihar	17	Kharwar	Kharwar		st_list_current-072	7
-Bihar	18	Khond	Khond		st_list_current-072	7
-Bihar	19	Kisan, Nagesia	Kisan|Nagesia		st_list_current-072	7
-Bihar	20	Kora, Mudi-Kora	Kora|Mudi-Kora		st_list_current-072	7
-Bihar	21	Korwa	Korwa		st_list_current-072	7
-Bihar	22	Lohara, Lohra	Lohara|Lohra		st_list_current-072	7
-Bihar	23	Mahli	Mahli		st_list_current-072	7
-Bihar	24	Mal Paharia, Kumarbhag Paharia	Mal Paharia|Kumarbhag Paharia		st_list_current-072	7
-Bihar	25	Munda, Patar	Munda|Patar		st_list_current-072	8
-Bihar	26	Oraon, Dhangar (Oraon)	Oraon|Dhangar (Oraon)		st_list_current-072	8
-Bihar	27	Parhaiya	Parhaiya		st_list_current-072	8
-Bihar	28	Santal	Santal		st_list_current-072	8
-Bihar	29	Sauria Paharia	Sauria Paharia		st_list_current-072	8
-Bihar	30	Savar	Savar		st_list_current-072	8
-Bihar	31	Kawar	Kawar		st_list_current-072	8
-Bihar	32	Kol	Kol		st_list_current-072	8
-Bihar	33	Tharu	Tharu		st_list_current-072	8
-Chhattisgarh	1	Agariya	Agariya		st_list_current-072	8
-Chhattisgarh	2	Andh	Andh		st_list_current-072	8
-Chhattisgarh	3	Baiga	Baiga		st_list_current-072	8
-Chhattisgarh	4	Bhaina	Bhaina		st_list_current-072	8
-Chhattisgarh	5	Bharia Bhumia, Bhuinhar Bhumia, Bhumiya, Bharia, Bhuinya, Bhuiyan, Bhuyan, Paliha, Pando	Bharia Bhumia|Bhuinhar Bhumia|Bhumiya|Bharia|Bhuinya|Bhuiyan|Bhuyan|Paliha|Pando		st_list_current-072	8
-Chhattisgarh	6	Bhattra	Bhattra		st_list_current-072	8
-Chhattisgarh	7	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	8
-Chhattisgarh	8	Bhil Mina	Bhil Mina		st_list_current-072	8
-Chhattisgarh	9	Bhunjia	Bhunjia		st_list_current-072	8
-Chhattisgarh	10	Biar, Biyar	Biar|Biyar		st_list_current-072	8
-Chhattisgarh	11	Binjhwar	Binjhwar		st_list_current-072	8
-Chhattisgarh	12	Birhul, Birhor	Birhul|Birhor		st_list_current-072	8
-Chhattisgarh	13	Damor, Damaria	Damor|Damaria		st_list_current-072	8
-Chhattisgarh	14	Dhanwar, Dhanuhar, Dhanuwar	Dhanwar|Dhanuhar|Dhanuwar		st_list_current-072	9
-Chhattisgarh	15	Gadaba, Gadba	Gadaba|Gadba		st_list_current-072	9
-Chhattisgarh	16	Gond, Arakh, Arrakh, Agaria, Asur, Abhuj Maria, Badi Maria, Bada Maria, Bhatola, Bhimma, Bhuta, Koilabhuta, Koliabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Nagwanshi, Ojha, Raj, Sonjhari, Jhareka, Thatia, Thotya, Wade Maria, Vade Maria, Daroi	Gond|Arakh|Arrakh|Agaria|Asur|Abhuj Maria|Badi Maria|Bada Maria|Bhatola|Bhimma|Bhuta|Koilabhuta|Koliabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Nagwanshi|Ojha|Raj|Sonjhari|Jhareka|Thatia|Thotya|Wade Maria|Vade Maria|Daroi		st_list_current-072	9
-Chhattisgarh	17	Halba, Halbi	Halba|Halbi		st_list_current-072	9
-Chhattisgarh	18	Kamar	Kamar		st_list_current-072	9
-Chhattisgarh	19	Karku	Karku		st_list_current-072	9
-Chhattisgarh	20	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	9
-Chhattisgarh	21	Khairwar, Kondar	Khairwar|Kondar		st_list_current-072	9
-Chhattisgarh	22	Kharia	Kharia		st_list_current-072	9
-Chhattisgarh	23	Kond, Kondh, Khond, Kandh	Kond|Kondh|Khond|Kandh		st_list_current-072	9
-Chhattisgarh	24	Kol	Kol		st_list_current-072	9
-Chhattisgarh	25	Kolam	Kolam		st_list_current-072	9
-Chhattisgarh	26	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	9
-Chhattisgarh	27	Korwa, Hill Korwa, Kodaku	Korwa|Hill Korwa|Kodaku		st_list_current-072	9
-Chhattisgarh	28	Majhi	Majhi		st_list_current-072	10
-Chhattisgarh	29	Majhwar	Majhwar		st_list_current-072	10
-Chhattisgarh	30	Mawasi	Mawasi		st_list_current-072	10
-Chhattisgarh	31	Munda	Munda		st_list_current-072	10
-Chhattisgarh	32	Nagesia, Nagasia, Kisan	Nagesia|Nagasia|Kisan		st_list_current-072	10
-Chhattisgarh	33	Oraon, Dhanka, Dhangad	Oraon|Dhanka|Dhangad		st_list_current-072	10
-Chhattisgarh	34	Pao	Pao		st_list_current-072	10
-Chhattisgarh	35	Pardhan, Pathari, Saroti 36 Pardhi, Bahelia, Bahellia, Chita Pardhi, Langoli ;Pardhi, Phans Pardhi, Shikari, Takankar, Takia [In (i) Bastar, Dantewara, Kanker, Raigarh, Jashpurnagar, Surguja and Koria district, (ii) Katghora, Pali, Kartala and Korba tahsils of Korba district, (iii) Bilaspur, Pendra, Kota and Takhatpur tahsils of Bilaspur district, (iv) Durg, Patan, Gunderdehi, Dhamdha, Balod, Gurur and Dondilohara tahsils of Durg district, (v) Chowki, Manpur and Mohala Revenue Inspector Circles of Rajnandgon district, (vi) Mahasamund, Saraipali and Basna tahsils of Mahasamund district, (vii) Bindra-Navagarh Rajim and Deobhog tahsils of Raipur district, and (viii) Dhamtari, Kurud and Sihava tahsils of Dhamtari district]	Pardhan|Pathari|Saroti 36 Pardhi|Bahelia|Bahellia|Chita Pardhi|Langoli ;Pardhi|Phans Pardhi|Shikari|Takankar|Takia [In (i) Bastar|Dantewara|Kanker|Raigarh|Jashpurnagar|Surguja|Koria district|(ii) Katghora|Pali|Kartala|Korba tahsils of Korba district|(iii) Bilaspur|Pendra|Kota|Takhatpur tahsils of Bilaspur district|(iv) Durg|Patan|Gunderdehi|Dhamdha|Balod|Gurur|Dondilohara tahsils of Durg district|(v) Chowki|Manpur|Mohala Revenue Inspector Circles of Rajnandgon district|(vi) Mahasamund|Saraipali|Basna tahsils of Mahasamund district|(vii) Bindra-Navagarh Rajim|Deobhog tahsils of Raipur district|(viii) Dhamtari|Kurud|Sihava tahsils of Dhamtari district]		st_list_current-072	10
-Chhattisgarh	37	Parja	Parja		st_list_current-072	10
-Chhattisgarh	38	Sahariya, Saharia, Seharia, Sehria, Sosia, Sor	Sahariya|Saharia|Seharia|Sehria|Sosia|Sor		st_list_current-072	11
-Chhattisgarh	39	Saonta, Saunta	Saonta|Saunta		st_list_current-072	11
-Chhattisgarh	40	Saur	Saur		st_list_current-072	11
-Chhattisgarh	41	Sawar, Sawara, Saunra, Saonra	Sawar|Sawara|Saunra|Saonra		st_list_current-072	11
-Chhattisgarh	42	Sonr	Sonr		st_list_current-072	11
-Chhattisgarh	43	Binjhia	Binjhia		st_list_current-072	11
-Goa	1	Dhodia	Dhodia		st_list_current-072	11
-Goa	2	Dubla (Halpati)	Dubla (Halpati)		st_list_current-072	11
-Goa	3	Naikda (Talavia)	Naikda (Talavia)		st_list_current-072	11
-Goa	4	Siddi (Nayaka)	Siddi (Nayaka)		st_list_current-072	11
-Goa	5	Varli	Varli		st_list_current-072	11
-Goa	6	Kunbi	Kunbi		st_list_current-072	11
-Goa	7	Gawda	Gawda		st_list_current-072	11
-Goa	8	Velip	Velip		st_list_current-072	11
-Gujarat	1	Barda	Barda		st_list_current-072	11
-Gujarat	2	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	11
-Gujarat	3	Bharwad (in the Nesses of the forests Alech, Barada and Gir)	Bharwad (in the Nesses of the forests Alech|Barada|Gir)		st_list_current-072	11
-Gujarat	4	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	12
-Gujarat	5	Charan (in the Nesses of the forests of Alech, Barada and Gir)	Charan (in the Nesses of the forests of Alech|Barada|Gir)		st_list_current-072	12
-Gujarat	6	Chaudhri (in Surat and Valsad districts)	Chaudhri	in Surat and Valsad districts	st_list_current-072	12
-Gujarat	7	Chodhara	Chodhara		st_list_current-072	12
-Gujarat	8	Dhanka,Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	12
-Gujarat	9	Dhodia, Dhodi	Dhodia|Dhodi		st_list_current-072	12
-Gujarat	10	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	12
-Gujarat	11	Gamit, Gamta, Gavit, Mavchi, Padvi	Gamit|Gamta|Gavit|Mavchi|Padvi		st_list_current-072	12
-Gujarat	12	Gond, Rajgond	Gond|Rajgond		st_list_current-072	12
-Gujarat	13	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	12
-Gujarat	14	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	12
-Gujarat	15	Omitted	Omitted		st_list_current-072	12
-Gujarat	16	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	12
-Gujarat	17	Kunbi (in the Dangs district)	Kunbi	in the Dangs district	st_list_current-072	12
-Gujarat	18	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	12
-Gujarat	19	Padhar	Padhar		st_list_current-072	12
-Gujarat	20	Omitted	Omitted		st_list_current-072	12
-Gujarat	21	Pardhi, Advichincher, Phanse Pardhi (excluding Amreli, Bhavnagar, Jamnagar, Junagadh, Kutch, Rajkot and Surendranagar districts)	Pardhi|Advichincher|Phanse Pardhi	excluding Amreli, Bhavnagar, Jamnagar, Junagadh, Kutch, Rajkot and Surendranagar districts	st_list_current-072	12
-Gujarat	22	Patelia	Patelia		st_list_current-072	12
-Gujarat	23	Pomla	Pomla		st_list_current-072	12
-Gujarat	24	Rabari (in the Nesses of the forests of Alech, Barada and Gir)	Rabari (in the Nesses of the forests of Alech|Barada|Gir)		st_list_current-072	13
-Gujarat	25	Rathawa	Rathawa		st_list_current-072	13
-Gujarat	26	Siddi, Siddi-Badshan (in Amreli, Bhavnagar, Jamnagar, Junagadh, Rajkot and Surendranagar districts)	Siddi|Siddi-Badshan	in Amreli, Bhavnagar, Jamnagar, Junagadh, Rajkot and Surendranagar districts	st_list_current-072	13
-Gujarat	27	Omitted	Omitted		st_list_current-072	13
-Gujarat	28	Varli	Varli		st_list_current-072	13
-Gujarat	29	Vitola, Kotwalia, Barodia	Vitola|Kotwalia|Barodia		st_list_current-072	13
-Gujarat	30	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	13
-Gujarat	31	Tadvi Bhil, Bawra,Vasave	Tadvi Bhil|Bawra|Vasave		st_list_current-072	13
-Gujarat	32	Padvi	Padvi		st_list_current-072	13
-Himachal Pradesh	1	Bhot, Bodh	Bhot|Bodh		st_list_current-072	13
-Himachal Pradesh	2	Gaddi	Gaddi		st_list_current-072	13
-Himachal Pradesh	3	Gujjar	Gujjar		st_list_current-072	13
-Himachal Pradesh	4	Jad, Lamba, Khampa	Jad|Lamba|Khampa		st_list_current-072	13
-Himachal Pradesh	5	Kanaura, Kinnara	Kanaura|Kinnara		st_list_current-072	13
-Himachal Pradesh	6	Lahaula	Lahaula		st_list_current-072	13
-Himachal Pradesh	7	Pangwala	Pangwala		st_list_current-072	13
-Himachal Pradesh	8	Swangla	Swangla		st_list_current-072	13
-Himachal Pradesh	9	Beta, Beda	Beta|Beda		st_list_current-072	13
-Himachal Pradesh	10	Domba, Gara, Zoba	Domba|Gara|Zoba		st_list_current-072	13
-Himachal Pradesh	11	Hattee of Trans Giri area of Sirmour district	Hattee of Trans Giri area of Sirmour district		st_list_current-072	13
-Jammu & Kashmir	1	Bakarwal	Bakarwal		st_list_current-072	14
-Jammu & Kashmir	2	Balti	Balti		st_list_current-072	14
-Jammu & Kashmir	3	Beda	Beda		st_list_current-072	14
-Jammu & Kashmir	4	Bot, Boto	Bot|Boto		st_list_current-072	14
-Jammu & Kashmir	5	Brokpa, Drokpa, Dard, Shin	Brokpa|Drokpa|Dard|Shin		st_list_current-072	14
-Jammu & Kashmir	6	Changpa	Changpa		st_list_current-072	14
-Jammu & Kashmir	7	Gadda Brahmin	Gadda Brahmin		st_list_current-072	14
-Jammu & Kashmir	8	Gaddi	Gaddi		st_list_current-072	14
-Jammu & Kashmir	9	Garra	Garra		st_list_current-072	14
-Jammu & Kashmir	10	Gujjar	Gujjar		st_list_current-072	14
-Jammu & Kashmir	11	Koli `	Koli `		st_list_current-072	14
-Jammu & Kashmir	12	Mon	Mon		st_list_current-072	14
-Jammu & Kashmir	13	Paddari Tribe	Paddari Tribe		st_list_current-072	14
-Jammu & Kashmir	14	Pahari Ethnic Group	Pahari Ethnic Group		st_list_current-072	14
-Jammu & Kashmir	15	Purigpa	Purigpa		st_list_current-072	14
-Jammu & Kashmir	16	Sippi	Sippi		st_list_current-072	14
-Jharkhand	1	Asur, Agaria	Asur|Agaria		st_list_current-072	14
-Jharkhand	2	Baiga	Baiga		st_list_current-072	14
-Jharkhand	3	Banjara	Banjara		st_list_current-072	14
-Jharkhand	4	Bathudi	Bathudi		st_list_current-072	14
-Jharkhand	5	Bedia	Bedia		st_list_current-072	14
-Jharkhand	6	Binjhia	Binjhia		st_list_current-072	14
-Jharkhand	7	Birhor	Birhor		st_list_current-072	14
-Jharkhand	8	Birjia	Birjia		st_list_current-072	15
-Jharkhand	9	Chero	Chero		st_list_current-072	15
-Jharkhand	10	Chik Baraik	Chik Baraik		st_list_current-072	15
-Jharkhand	11	Gond	Gond		st_list_current-072	15
-Jharkhand	12	Gorait	Gorait		st_list_current-072	15
-Jharkhand	13	Ho	Ho		st_list_current-072	15
-Jharkhand	14	Karmali	Karmali		st_list_current-072	15
-Jharkhand	15	Kharia, Dhelki Kharia, Dudh Kharia, Hill Kharia	Kharia|Dhelki Kharia|Dudh Kharia|Hill Kharia		st_list_current-072	15
-Jharkhand	16	Kharwar ,Bhogta, Deshwari, Ganjhu, Dautalbandi (Dwalbandi), Patbandi, Raut, Maajhia, Khairi (Kheri)	Kharwar|Bhogta|Deshwari|Ganjhu|Dautalbandi (Dwalbandi)|Patbandi|Raut|Maajhia|Khairi (Kheri)		st_list_current-072	15
-Jharkhand	17	Khond	Khond		st_list_current-072	15
-Jharkhand	18	Kisan, Nagesia	Kisan|Nagesia		st_list_current-072	15
-Jharkhand	19	Kora, Mudi-Kora	Kora|Mudi-Kora		st_list_current-072	15
-Jharkhand	20	Korwa	Korwa		st_list_current-072	15
-Jharkhand	21	Lohra	Lohra		st_list_current-072	15
-Jharkhand	22	Mahli	Mahli		st_list_current-072	15
-Jharkhand	23	Mal Paharia, Kumarbhag Paharia	Mal Paharia|Kumarbhag Paharia		st_list_current-072	15
-Jharkhand	24	Munda, Patar, Tamaria (Tamadia)	Munda|Patar|Tamaria (Tamadia)		st_list_current-072	15
-Jharkhand	25	Oraon, Dhangar (Oraon)	Oraon|Dhangar (Oraon)		st_list_current-072	15
-Jharkhand	26	Parhaiya	Parhaiya		st_list_current-072	15
-Jharkhand	27	Santal	Santal		st_list_current-072	15
-Jharkhand	28	Sauria Paharia	Sauria Paharia		st_list_current-072	15
-Jharkhand	29	Savar	Savar		st_list_current-072	15
-Jharkhand	30	Bhumij	Bhumij		st_list_current-072	15
-Jharkhand	31	Kawar	Kawar		st_list_current-072	15
-Jharkhand	32	Kol	Kol		st_list_current-072	15
-Jharkhand	33	Puran	Puran		st_list_current-072	15
-Karnataka	1	Adiyan	Adiyan		st_list_current-072	16
-Karnataka	2	Barda	Barda		st_list_current-072	16
-Karnataka	3	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	16
-Karnataka	4	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	16
-Karnataka	5	Chenchu, Chenchwar	Chenchu|Chenchwar		st_list_current-072	16
-Karnataka	6	Chodhara	Chodhara		st_list_current-072	16
-Karnataka	7	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	16
-Karnataka	8	Gamit, Gamta, Gavit, Mavchi, Padvi, Valvi	Gamit|Gamta|Gavit|Mavchi|Padvi|Valvi		st_list_current-072	16
-Karnataka	9	Gond, Naikpod, Rajgond	Gond|Naikpod|Rajgond		st_list_current-072	16
-Karnataka	10	Gowdalu	Gowdalu		st_list_current-072	16
-Karnataka	11	Hakkipikki	Hakkipikki		st_list_current-072	16
-Karnataka	12	Hasalaru	Hasalaru		st_list_current-072	16
-Karnataka	13	Irular	Irular		st_list_current-072	16
-Karnataka	14	Iruliga	Iruliga		st_list_current-072	16
-Karnataka	15	Jenu Kuruba	Jenu Kuruba		st_list_current-072	16
-Karnataka	16	Kadu Kuruba, Betta-Kuruba	Kadu Kuruba|Betta-Kuruba		st_list_current-072	16
-Karnataka	17	Kammara (in South Kanara district and Kollegal taluk of Mysore district)	Kammara	in South Kanara district and Kollegal taluk of Mysore district	st_list_current-072	17
-Karnataka	18	Kaniyan, Kanyan (in Kollegal taluk of Mysore district)	Kaniyan|Kanyan	in Kollegal taluk of Mysore district	st_list_current-072	17
-Karnataka	19	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	17
-Karnataka	20	Kattunayakan	Kattunayakan		st_list_current-072	17
-Karnataka	21	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	17
-Karnataka	22	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	17
-Karnataka	23	Konda Kapus	Konda Kapus		st_list_current-072	17
-Karnataka	24	Koraga	Koraga		st_list_current-072	17
-Karnataka	25	Kota	Kota		st_list_current-072	17
-Karnataka	26	Koya, Bhine Koya, Rajkoya	Koya|Bhine Koya|Rajkoya		st_list_current-072	17
-Karnataka	27	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	17
-Karnataka	28	Kuruba (in Coorg district)	Kuruba	in Coorg district	st_list_current-072	17
-Karnataka	29	Kurumans	Kurumans		st_list_current-072	17
-Karnataka	30	Maha Malasar	Maha Malasar		st_list_current-072	17
-Karnataka	31	Malaikudi	Malaikudi		st_list_current-072	17
-Karnataka	32	Malasar	Malasar		st_list_current-072	17
-Karnataka	33	Malayekandi	Malayekandi		st_list_current-072	17
-Karnataka	34	Maleru	Maleru		st_list_current-072	17
-Karnataka	35	Maratha (in Coorg district)	Maratha	in Coorg district	st_list_current-072	17
-Karnataka	36	Marati (in south Kanara district)	Marati	in south Kanara district	st_list_current-072	17
-Karnataka	37	Meda, Medara, Medari, Gauriga, Burud	Meda|Medara|Medari|Gauriga|Burud		st_list_current-072	17
-Karnataka	38	Naikda, Nayaka (including Parivara and Talawara), Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka, Naik, Nayak, Beda, Bedar, and Valmiki	Naikda|Nayaka|Parivara|Talawara|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka|Naik|Nayak|Beda|Bedar|Valmiki		st_list_current-072	17
-Karnataka	39	Palliyan	Palliyan		st_list_current-072	18
-Karnataka	40	Paniyan	Paniyan		st_list_current-072	18
-Karnataka	41	Pardhi, Advichincher, Phanse Pardhi, Haranshikari	Pardhi|Advichincher|Phanse Pardhi|Haranshikari		st_list_current-072	18
-Karnataka	42	Patelia	Patelia		st_list_current-072	18
-Karnataka	43	Rathawa	Rathawa		st_list_current-072	18
-Karnataka	44	Sholaga	Sholaga		st_list_current-072	18
-Karnataka	45	Soligaru	Soligaru		st_list_current-072	18
-Karnataka	46	Toda	Toda		st_list_current-072	18
-Karnataka	47	Varli	Varli		st_list_current-072	18
-Karnataka	48	Vitolia, Kotwalia, Barodia	Vitolia|Kotwalia|Barodia		st_list_current-072	18
-Karnataka	49	Yerava	Yerava		st_list_current-072	18
-Karnataka	50	Siddi (in Belagavi, Dharwad and Uttar Kannada districts)	Siddi	in Belagavi, Dharwad and Uttar Kannada districts	st_list_current-072	18
-Kerala	1	Adiyan	Adiyan		st_list_current-072	18
-Kerala	2	Arandan, Aranadan	Arandan|Aranadan		st_list_current-072	18
-Kerala	3	Eravallan	Eravallan		st_list_current-072	18
-Kerala	4	Hill Pulaya, Mala Pulayan, Kurumba Pulayan, Karavazhi Pulayan, Pamba Pulayan	Hill Pulaya|Mala Pulayan|Kurumba Pulayan|Karavazhi Pulayan|Pamba Pulayan		st_list_current-072	18
-Kerala	5	Irular, Irulan	Irular|Irulan		st_list_current-072	18
-Kerala	6	Kadar, Wayanad Kadar	Kadar|Wayanad Kadar		st_list_current-072	18
-Kerala	7	Omitted	Omitted		st_list_current-072	18
-Kerala	8	Kanikaran, Kanikkar	Kanikaran|Kanikkar		st_list_current-072	19
-Kerala	9	Kattunayakan	Kattunayakan		st_list_current-072	19
-Kerala	10	Kochuvelan	Kochuvelan		st_list_current-072	19
-Kerala	11	Omitted	Omitted		st_list_current-072	19
-Kerala	12	Omitted	Omitted		st_list_current-072	19
-Kerala	13	Koraga	Koraga		st_list_current-072	19
-Kerala	14	Omitted	Omitted		st_list_current-072	19
-Kerala	15	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	19
-Kerala	16	Kurichchan, Kurichiyan	Kurichchan|Kurichiyan		st_list_current-072	19
-Kerala	17	Kurumans, Mullu Kuruman, Mulla Kuruman, Mala Kuruman	Kurumans|Mullu Kuruman|Mulla Kuruman|Mala Kuruman		st_list_current-072	19
-Kerala	18	Kurumbas, Kurumbar, Kurumban	Kurumbas|Kurumbar|Kurumban		st_list_current-072	19
-Kerala	19	Maha Malasar	Maha Malasar		st_list_current-072	19
-Kerala	20	Malai Arayan, Mala Arayan	Malai Arayan|Mala Arayan		st_list_current-072	19
-Kerala	21	Malai Pandaram	Malai Pandaram		st_list_current-072	19
-Kerala	22	Malai Vedan, Malavedan	Malai Vedan|Malavedan		st_list_current-072	19
-Kerala	23	Malakkuravan	Malakkuravan		st_list_current-072	19
-Kerala	24	Malasar	Malasar		st_list_current-072	19
-Kerala	25	Malayan, Nattu Malayan, Konga Malayan (excluding the areas comprising the Kasargode, Connanore, Wayanad and Kozhikode districts)	Malayan|Nattu Malayan|Konga Malayan	excluding the areas comprising the Kasargode, Connanore, Wayanad and Kozhikode districts	st_list_current-072	19
-Kerala	26	Malayarayar	Malayarayar		st_list_current-072	19
-Kerala	27	Mannan (to be spelt in Malayalam script in parenthesis)	Mannan (to be spelt in Malayalam script in parenthesis)		st_list_current-072	19
-Kerala	28	Marati (of the Hosdurg and Kasargod Taluks of Kasargod District)	Marati	of the Hosdurg and Kasargod Taluks of Kasargod District	st_list_current-072	19
-Kerala	29	Muthuvan, Mudugar, Muduvan	Muthuvan|Mudugar|Muduvan		st_list_current-072	19
-Kerala	30	Palleyan, Palliyan, Palliyar, Paliyan	Palleyan|Palliyan|Palliyar|Paliyan		st_list_current-072	19
-Kerala	31	Omitted	Omitted		st_list_current-072	19
-Kerala	32	Omitted	Omitted		st_list_current-072	20
-Kerala	33	Paniyan	Paniyan		st_list_current-072	20
-Kerala	34	Ulladan, Ullatan	Ulladan|Ullatan		st_list_current-072	20
-Kerala	35	Uraly	Uraly		st_list_current-072	20
-Kerala	36	Mala Vettuvan (in Kasargode and Kannur districts)	Mala Vettuvan	in Kasargode and Kannur districts	st_list_current-072	20
-Kerala	37	Ten Kurumban, Jenu Kurumban	Ten Kurumban|Jenu Kurumban		st_list_current-072	20
-Kerala	38	Thachanadan, Thachanadan Moopan	Thachanadan|Thachanadan Moopan		st_list_current-072	20
-Kerala	39	Cholanaickan	Cholanaickan		st_list_current-072	20
-Kerala	40	Mavilan	Mavilan		st_list_current-072	20
-Kerala	41	Karimpalan	Karimpalan		st_list_current-072	20
-Kerala	42	Vetta Kuruman	Vetta Kuruman		st_list_current-072	20
-Kerala	43	Mala Panickar	Mala Panickar		st_list_current-072	20
-Ladakh	1	Bakarwal	Bakarwal		st_list_current-072	20
-Ladakh	2	Balti	Balti		st_list_current-072	20
-Ladakh	3	Beda	Beda		st_list_current-072	20
-Ladakh	4	Bot, Boto	Bot|Boto		st_list_current-072	20
-Ladakh	5	Brokpa, Drokpa, Dard, Shin	Brokpa|Drokpa|Dard|Shin		st_list_current-072	20
-Ladakh	6	Changpa	Changpa		st_list_current-072	20
-Ladakh	7	Gaddi `	Gaddi `		st_list_current-072	20
-Ladakh	8	Garra	Garra		st_list_current-072	20
-Ladakh	9	Gujjar	Gujjar		st_list_current-072	20
-Ladakh	10	Mon	Mon		st_list_current-072	20
-Ladakh	11	Purigpa	Purigpa		st_list_current-072	20
-Ladakh	12	Sippi	Sippi		st_list_current-072	20
-Madhya Pradesh	1	Agariya	Agariya		st_list_current-072	21
-Madhya Pradesh	2	Andh	Andh		st_list_current-072	21
-Madhya Pradesh	3	Baiga	Baiga		st_list_current-072	21
-Madhya Pradesh	4	Bhaina	Bhaina		st_list_current-072	21
-Madhya Pradesh	5	Bharia Bhumia, Bhuinhar Bhumia, Bhumiya, Bharia, Paliha, Pando	Bharia Bhumia|Bhuinhar Bhumia|Bhumiya|Bharia|Paliha|Pando		st_list_current-072	21
-Madhya Pradesh	6	Bhattra	Bhattra		st_list_current-072	21
-Madhya Pradesh	7	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	21
-Madhya Pradesh	8	Bhil Mina	Bhil Mina		st_list_current-072	21
-Madhya Pradesh	9	Bhunjia	Bhunjia		st_list_current-072	21
-Madhya Pradesh	10	Biar, Biyar	Biar|Biyar		st_list_current-072	21
-Madhya Pradesh	11	Binjhwar	Binjhwar		st_list_current-072	21
-Madhya Pradesh	12	Birhul, Birhor	Birhul|Birhor		st_list_current-072	21
-Madhya Pradesh	13	Damor, Damaria	Damor|Damaria		st_list_current-072	21
-Madhya Pradesh	14	Dhanwar	Dhanwar		st_list_current-072	21
-Madhya Pradesh	15	Gadaba, Gadba	Gadaba|Gadba		st_list_current-072	21
-Madhya Pradesh	16	Gond, Arakh, Arrakh, Agaria, Asur, Badi Maria, Bada María, Bhatola, Bhimma, Bhuta, Koilabhuta, Koliabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Nagwanshi, Ojha, Raj	Gond|Arakh|Arrakh|Agaria|Asur|Badi Maria|Bada María|Bhatola|Bhimma|Bhuta|Koilabhuta|Koliabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Nagwanshi|Ojha|Raj		st_list_current-072	21
-Madhya Pradesh	17	Halba, Halbi	Halba|Halbi		st_list_current-072	22
-Madhya Pradesh	18	Kamar	Kamar		st_list_current-072	22
-Madhya Pradesh	19	Karku	Karku		st_list_current-072	22
-Madhya Pradesh	20	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	22
-Madhya Pradesh	21	Omitted	Omitted		st_list_current-072	22
-Madhya Pradesh	22	Khairwar, Kondar	Khairwar|Kondar		st_list_current-072	22
-Madhya Pradesh	23	Kharia	Kharia		st_list_current-072	22
-Madhya Pradesh	24	Kondh, Khond, Kandh	Kondh|Khond|Kandh		st_list_current-072	22
-Madhya Pradesh	25	Kol	Kol		st_list_current-072	22
-Madhya Pradesh	26	Kolam	Kolam		st_list_current-072	22
-Madhya Pradesh	27	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	22
-Madhya Pradesh	28	Korwa, Kodaku	Korwa|Kodaku		st_list_current-072	22
-Madhya Pradesh	29	Majhi	Majhi		st_list_current-072	22
-Madhya Pradesh	30	Majhwar	Majhwar		st_list_current-072	22
-Madhya Pradesh	31	Mawasi	Mawasi		st_list_current-072	22
-Madhya Pradesh	32	Omitted	Omitted		st_list_current-072	22
-Madhya Pradesh	33	Munda	Munda		st_list_current-072	22
-Madhya Pradesh	34	Nagesia, Nagasia	Nagesia|Nagasia		st_list_current-072	22
-Madhya Pradesh	35	Oraon, Dhanka, Dhangad	Oraon|Dhanka|Dhangad		st_list_current-072	22
-Madhya Pradesh	36	Panika [in (i) Chhatarpur, Panna, Rewa, Satna, Shahdol, Umaria, Sidhi and Tikamgarh districts, and (ii) Sevda and Datia Tehsils of Datia district]	Panika [in (i) Chhatarpur|Panna|Rewa|Satna|Shahdol|Umaria|Sidhi|Tikamgarh districts|(ii) Sevda|Datia Tehsils of Datia district]		st_list_current-072	22
-Madhya Pradesh	37	Pao	Pao		st_list_current-072	22
-Madhya Pradesh	38	Pardhan, Pathari, Saroti	Pardhan|Pathari|Saroti		st_list_current-072	22
-Madhya Pradesh	39	Omitted	Omitted		st_list_current-072	22
-Madhya Pradesh	40	Pardhi, Bahelia, Bahellia, Chita Pardhi, Langoli Pardhi, Phans Pardhi, Shikari, Takankar, Takia [In (i) Chhindwara, Mandla, Dindori and Seoni districts, (ii) Baihar tehsil of Balaghat district, (iii) Betul, Bhainsdehi and Shahpur tahsils of Betul district, (iv) Patan tahsil and Sihora and Majholi blocks of Jabalpur district, (v) Katni (Murwara) and Vijaya Raghogarh tahsils and Bahoriband and Dhemerkheda blocks of Katni district, (vi) Hoshangabad, Babai, Sohagpur, Pipariya and Bankhedi tahsils and Kesla block of Hoshangabad district, (vii) Narsinghpur district, and (viii)Harsud tahsil of Khandwa district]	Pardhi|Bahelia|Bahellia|Chita Pardhi|Langoli Pardhi|Phans Pardhi|Shikari|Takankar|Takia [In (i) Chhindwara|Mandla|Dindori|Seoni districts|(ii) Baihar tehsil of Balaghat district|(iii) Betul|Bhainsdehi|Shahpur tahsils of Betul district|(iv) Patan tahsil|Sihora|Majholi blocks of Jabalpur district|(v) Katni (Murwara)|Vijaya Raghogarh tahsils|Bahoriband|Dhemerkheda blocks of Katni district|(vi) Hoshangabad|Babai|Sohagpur|Pipariya|Bankhedi tahsils|Kesla block of Hoshangabad district|(vii) Narsinghpur district|(viii)Harsud tahsil of Khandwa district]		st_list_current-072	23
-Madhya Pradesh	41	Parja	Parja		st_list_current-072	23
-Madhya Pradesh	42	Sahariya, Saharia, Seharia, Sehria, Sosia, Sor	Sahariya|Saharia|Seharia|Sehria|Sosia|Sor		st_list_current-072	23
-Madhya Pradesh	43	Saonta, Saunta	Saonta|Saunta		st_list_current-072	23
-Madhya Pradesh	44	Saur	Saur		st_list_current-072	23
-Madhya Pradesh	45	Sawar, Sawara	Sawar|Sawara		st_list_current-072	23
-Madhya Pradesh	46	Sonr	Sonr		st_list_current-072	23
-Maharashtra	1	Andh	Andh		st_list_current-072	23
-Maharashtra	2	Baiga	Baiga		st_list_current-072	23
-Maharashtra	3	Barda	Barda		st_list_current-072	23
-Maharashtra	4	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	24
-Maharashtra	5	Bhaina	Bhaina		st_list_current-072	24
-Maharashtra	6	Bharia Bhumia, Bhuinhar Bhumia, Pando	Bharia Bhumia|Bhuinhar Bhumia|Pando		st_list_current-072	24
-Maharashtra	7	Bhattra	Bhattra		st_list_current-072	24
-Maharashtra	8	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	24
-Maharashtra	9	Bhunjia	Bhunjia		st_list_current-072	24
-Maharashtra	10	Binjhwar	Binjhwar		st_list_current-072	24
-Maharashtra	11	Birhul, Birhor	Birhul|Birhor		st_list_current-072	24
-Maharashtra	12	Omitted	Omitted		st_list_current-072	24
-Maharashtra	13	Dhanka, Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	24
-Maharashtra	14	Dhanwar	Dhanwar		st_list_current-072	24
-Maharashtra	15	Dhodia	Dhodia		st_list_current-072	24
-Maharashtra	16	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	24
-Maharashtra	17	Gamit, Gamta, Gavit, Mavchi, Padvi	Gamit|Gamta|Gavit|Mavchi|Padvi		st_list_current-072	24
-Maharashtra	18	Gond, Rajgond, Arakh, Arrakh, Agaria, Asur, Badi Maria, Bada Maria, Bhatola, Bhimma, Bhuta, Koilabhuta, Koilabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Naikpod, Nagwanshi, Ojha	Gond|Rajgond|Arakh|Arrakh|Agaria|Asur|Badi Maria|Bada Maria|Bhatola|Bhimma|Bhuta|Koilabhuta|Koilabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Naikpod|Nagwanshi|Ojha		st_list_current-072	24
-Maharashtra	19	Halba, Halbi	Halba|Halbi		st_list_current-072	25
-Maharashtra	20	Kamar	Kamar		st_list_current-072	25
-Maharashtra	21	Kathodi, Katkari, Dhor Kathodi, Dhor Kathkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Kathkari|Son Kathodi|Son Katkari		st_list_current-072	25
-Maharashtra	22	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	25
-Maharashtra	23	Khairwar	Khairwar		st_list_current-072	25
-Maharashtra	24	Kharia	Kharia		st_list_current-072	25
-Maharashtra	25	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	25
-Maharashtra	26	Kol	Kol		st_list_current-072	25
-Maharashtra	27	Kolam, Mannervarlu	Kolam|Mannervarlu		st_list_current-072	25
-Maharashtra	28	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	25
-Maharashtra	29	Koli Mahadev, Dongar Koli	Koli Mahadev|Dongar Koli		st_list_current-072	25
-Maharashtra	30	Koli Malhar	Koli Malhar		st_list_current-072	25
-Maharashtra	31	Kondh, Khond, Kandh	Kondh|Khond|Kandh		st_list_current-072	25
-Maharashtra	32	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	25
-Maharashtra	33	Koya, Bhine Koya, Rajkoya	Koya|Bhine Koya|Rajkoya		st_list_current-072	25
-Maharashtra	34	Nagesia, Nagasia	Nagesia|Nagasia		st_list_current-072	25
-Maharashtra	35	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	25
-Maharashtra	36	Oraon, Dhangad	Oraon|Dhangad		st_list_current-072	25
-Maharashtra	37	Pardhan, Pathari, Saroti	Pardhan|Pathari|Saroti		st_list_current-072	25
-Maharashtra	38	Pardhi, Advichincher, Phans Pardhi, Phanse Pardhi, Langoli Pardhi, Bahelia, Bahellia, Chita Pardhi, Shikari, Takankar, Takia	Pardhi|Advichincher|Phans Pardhi|Phanse Pardhi|Langoli Pardhi|Bahelia|Bahellia|Chita Pardhi|Shikari|Takankar|Takia		st_list_current-072	25
-Maharashtra	39	Parja	Parja		st_list_current-072	26
-Maharashtra	40	Patelia	Patelia		st_list_current-072	26
-Maharashtra	41	Pomla	Pomla		st_list_current-072	26
-Maharashtra	42	Rathawa	Rathawa		st_list_current-072	26
-Maharashtra	43	Sawar, Sawara	Sawar|Sawara		st_list_current-072	26
-Maharashtra	44	Thakur, Thakar, Ka Thakur, Ka Thakar, Ma Thakur, Ma Thakar	Thakur|Thakar|Ka Thakur|Ka Thakar|Ma Thakur|Ma Thakar		st_list_current-072	26
-Maharashtra	45	Omitted	Omitted		st_list_current-072	26
-Maharashtra	46	Varli	Varli		st_list_current-072	26
-Maharashtra	47	Vitolia, Kotwalia, Barodia	Vitolia|Kotwalia|Barodia		st_list_current-072	26
-Manipur	1	Aimol	Aimol		st_list_current-072	26
-Manipur	2	Anal	Anal		st_list_current-072	26
-Manipur	3	Angami	Angami		st_list_current-072	26
-Manipur	4	Chiru	Chiru		st_list_current-072	26
-Manipur	5	Chothe	Chothe		st_list_current-072	26
-Manipur	6	Gangte	Gangte		st_list_current-072	26
-Manipur	7	Hmar	Hmar		st_list_current-072	26
-Manipur	8	Kabui, Inpui, Rongmei	Kabui|Inpui|Rongmei		st_list_current-072	26
-Manipur	9	Kacha Naga, Liangmai, Zeme	Kacha Naga|Liangmai|Zeme		st_list_current-072	26
-Manipur	10	Koirao, Thangal	Koirao|Thangal		st_list_current-072	26
-Manipur	11	Koireng	Koireng		st_list_current-072	26
-Manipur	12	Kom	Kom		st_list_current-072	26
-Manipur	13	Lamgang	Lamgang		st_list_current-072	26
-Manipur	14	Mao	Mao		st_list_current-072	26
-Manipur	15	Maram	Maram		st_list_current-072	26
-Manipur	16	Maring	Maring		st_list_current-072	26
-Manipur	17	Any Mizo (Lushai) Tribes	Any Mizo (Lushai) Tribes		st_list_current-072	27
-Manipur	18	Monsang	Monsang		st_list_current-072	27
-Manipur	19	Moyon	Moyon		st_list_current-072	27
-Manipur	20	Paite	Paite		st_list_current-072	27
-Manipur	21	Purum	Purum		st_list_current-072	27
-Manipur	22	Ralte	Ralte		st_list_current-072	27
-Manipur	23	Sema	Sema		st_list_current-072	27
-Manipur	24	Simte	Simte		st_list_current-072	27
-Manipur	25	Suhte	Suhte		st_list_current-072	27
-Manipur	26	Tangkhul	Tangkhul		st_list_current-072	27
-Manipur	27	Thadou	Thadou		st_list_current-072	27
-Manipur	28	Vaiphei	Vaiphei		st_list_current-072	27
-Manipur	29	Zou	Zou		st_list_current-072	27
-Manipur	30	Poumai Naga	Poumai Naga		st_list_current-072	27
-Manipur	31	Tarao	Tarao		st_list_current-072	27
-Manipur	32	Kharam	Kharam		st_list_current-072	27
-Manipur	33	Any Kuki tribes	Any Kuki tribes		st_list_current-072	27
-Manipur	34	Mate	Mate		st_list_current-072	27
-Meghalaya	1	Chakma	Chakma		st_list_current-072	27
-Meghalaya	2	Dimasa, Kachari	Dimasa|Kachari		st_list_current-072	27
-Meghalaya	3	Garo	Garo		st_list_current-072	27
-Meghalaya	4	Hajong	Hajong		st_list_current-072	27
-Meghalaya	5	Hmar	Hmar		st_list_current-072	27
-Meghalaya	6	Khasi, Jaintia, Synteng, Pnar, War, Bhoi, Lyngngam	Khasi|Jaintia|Synteng|Pnar|War|Bhoi|Lyngngam		st_list_current-072	27
-Meghalaya	7	Any Kuki tribes, including:- 7. भी ि ैं-: i. Biate, Biete i. भबयाते,भबयेते ii. Changsan ii. चांगसान iii. Chongloi iii. चांगलोई iv. Doungel iv. दौगेल v. Gamalhou v. गमल्िौ vi. Gangte vi. गांगते गइु ते vii. Guite vii. viii. Hanneng viii. िन्ैनांग ix. Haokip, Haupit ix. िौंभकप ,िभैपत िौलाई x. Haolai x. xi. Hengna xi. िगें ना xii. Hongsungh xii. िौनसधु ह्राग्खोवाल,रांग्खोल xiii. Hrangkhwal, Rangkhol xiii. xiv. Jongbe xiv. जांग्बे xv. Khawchung xv. ख्वौचांग xvi. Khawathlang, Khothalong xvi. ख्वोत्लांग ,खोतालांग xvii. Khelma xvii. खेल्मा xviii. Kholhou xviii. खाल्िु xix. Kipgen xix. भकपगेन xx. Kuki xx. कूकी लेंथाांग xxi. Lengthang xxi. xxii. Lhangum xxii. ल्िाांगम xxiii. Lhoujem xxiii. ल्िाजम ल्िोबुन xxiv. Lhouvun xxiv. xxv. Lupheng xxv. लुफेंग xxvi. Mangjel xxvi. माांजेल xxvii. Misao xxvii. भमसाऊ	Any Kuki tribes|including:- 7. भी ि ैं-: i. Biate|Biete i. भबयाते|भबयेते ii. Changsan ii. चांगसान iii. Chongloi iii. चांगलोई iv. Doungel iv. दौगेल v. Gamalhou v. गमल्िौ vi. Gangte vi. गांगते गइु ते vii. Guite vii. viii. Hanneng viii. िन्ैनांग ix. Haokip|Haupit ix. िौंभकप|िभैपत िौलाई x. Haolai x. xi. Hengna xi. िगें ना xii. Hongsungh xii. िौनसधु ह्राग्खोवाल|रांग्खोल xiii. Hrangkhwal|Rangkhol xiii. xiv. Jongbe xiv. जांग्बे xv. Khawchung xv. ख्वौचांग xvi. Khawathlang|Khothalong xvi. ख्वोत्लांग|खोतालांग xvii. Khelma xvii. खेल्मा xviii. Kholhou xviii. खाल्िु xix. Kipgen xix. भकपगेन xx. Kuki xx. कूकी लेंथाांग xxi. Lengthang xxi. xxii. Lhangum xxii. ल्िाांगम xxiii. Lhoujem xxiii. ल्िाजम ल्िोबुन xxiv. Lhouvun xxiv. xxv. Lupheng xxv. लुफेंग xxvi. Mangjel xxvi. माांजेल xxvii. Misao xxvii. भमसाऊ		st_list_current-072	28
-Meghalaya	8	Lakher	Lakher		st_list_current-072	29
-Meghalaya	9	Man (Tai Speaking)	Man (Tai Speaking)		st_list_current-072	29
-Meghalaya	10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	29
-Meghalaya	11	Mikir	Mikir		st_list_current-072	29
-Meghalaya	12	Any Naga tribes	Any Naga tribes		st_list_current-072	29
-Meghalaya	13	Pawi	Pawi		st_list_current-072	29
-Meghalaya	14	Synteng	Synteng		st_list_current-072	29
-Meghalaya	15	Boro Kacharis	Boro Kacharis		st_list_current-072	29
-Meghalaya	16	Koch	Koch		st_list_current-072	29
-Meghalaya	17	Raba, Rava	Raba|Rava		st_list_current-072	29
-Mizoram	1	Chakma	Chakma		st_list_current-072	29
-Mizoram	2	Dimasa (Kachari)	Dimasa (Kachari)		st_list_current-072	29
-Mizoram	3	Garo	Garo		st_list_current-072	29
-Mizoram	4	Hajong	Hajong		st_list_current-072	29
-Mizoram	5	Hmar	Hmar		st_list_current-072	29
-Mizoram	6	Khasi and Jaintia (including Khasi, Synteng or Pnar, War, Bhoi or Lyngngam)	Khasi|Jaintia|Khasi|Synteng or Pnar|War|Bhoi or Lyngngam		st_list_current-072	30
-Mizoram	7	Any Kuki tribes, including: - i. Biate or Biete ii. Changsan iii. Chongloi iv. Doungel v. Gamalhou vi. Gangte vii. Guite viii. Hanneng ix. Haokip or Haupit x. Haolai xi. Hengna xii. Hongsungh xiii. Hrangkhwal or Rangkhol xiv. Jongbe xv. Khawchung xvi. Khawathlang or Khothalong xvii. Khelma xviii. Kholhou xix. Kipgen xx. Kuki xxi. Lengthang xxii. Lhangum xxiii. Lhoujem xxiv. Lhouvun	Any Kuki tribes|including: - i. Biate or Biete ii. Changsan iii. Chongloi iv. Doungel v. Gamalhou vi. Gangte vii. Guite viii. Hanneng ix. Haokip or Haupit x. Haolai xi. Hengna xii. Hongsungh xiii. Hrangkhwal or Rangkhol xiv. Jongbe xv. Khawchung xvi. Khawathlang or Khothalong xvii. Khelma xviii. Kholhou xix. Kipgen xx. Kuki xxi. Lengthang xxii. Lhangum xxiii. Lhoujem xxiv. Lhouvun		st_list_current-072	30
-Mizoram	8	Lakher	Lakher		st_list_current-072	31
-Mizoram	9	Man (Tai-Speaking)	Man (Tai-Speaking)		st_list_current-072	31
-Mizoram	10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	31
-Mizoram	11	Mikir	Mikir		st_list_current-072	31
-Mizoram	12	Any Naga tribes	Any Naga tribes		st_list_current-072	31
-Mizoram	13	Pawi	Pawi		st_list_current-072	31
-Mizoram	14	Synteng	Synteng		st_list_current-072	31
-Mizoram	15	Paite	Paite		st_list_current-072	31
-Nagaland	1	Naga	Naga		st_list_current-072	31
-Nagaland	2	Kuki	Kuki		st_list_current-072	31
-Nagaland	3	Kachari	Kachari		st_list_current-072	31
-Nagaland	4	Mikir	Mikir		st_list_current-072	31
-Nagaland	5	Garo	Garo		st_list_current-072	31
-Odisha	1	Bagata, Bhakta	Bagata|Bhakta		st_list_current-072	32
-Odisha	2	Baiga	Baiga		st_list_current-072	32
-Odisha	3	Banjara, Banjari	Banjara|Banjari		st_list_current-072	32
-Odisha	4	Bathudi, Bathuri	Bathudi|Bathuri		st_list_current-072	32
-Odisha	5	Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora, Bhatara	Bhottada|Dhotada|Bhotra|Bhatra|Bhattara|Bhotora|Bhatara		st_list_current-072	32
-Odisha	6	Bhuiya, Bhuyan, Pauri Bhuyan, Paudi Bhuyan	Bhuiya|Bhuyan|Pauri Bhuyan|Paudi Bhuyan		st_list_current-072	32
-Odisha	7	Bhumia	Bhumia		st_list_current-072	32
-Odisha	8	Bhumij, Teli Bhumij, Haladipokhria Bhumij, Haladi Pokharia Bhumija, Desi Bhumij, Desia Bhumij, Tamaria Bhumij, Tamodia Bhumij, Tamudia Bhumij, Tamundia Bhumij, Tamulia Bhumij, Tamadia Bhumij, Tamadia, Tamaria, Tamudia	Bhumij|Teli Bhumij|Haladipokhria Bhumij|Haladi Pokharia Bhumija|Desi Bhumij|Desia Bhumij|Tamaria Bhumij|Tamodia Bhumij|Tamudia Bhumij|Tamundia Bhumij|Tamulia Bhumij|Tamadia Bhumij|Tamadia|Tamaria|Tamudia		st_list_current-072	32
-Odisha	9	Bhunjia, Chuktia Bhunjia	Bhunjia|Chuktia Bhunjia		st_list_current-072	32
-Odisha	10	Binjhal, Binjhwar	Binjhal|Binjhwar		st_list_current-072	32
-Odisha	11	Binjhia, Binjhoa	Binjhia|Binjhoa		st_list_current-072	32
-Odisha	12	Birhor	Birhor		st_list_current-072	32
-Odisha	13	Bondo Poraja, Bonda Paroja, Banda Paroja, Banda Paraja, Bonda Paraja, Bondo, Bonda, Banda	Bondo Poraja|Bonda Paroja|Banda Paroja|Banda Paraja|Bonda Paraja|Bondo|Bonda|Banda		st_list_current-072	32
-Odisha	14	Chenchu	Chenchu		st_list_current-072	32
-Odisha	15	Dal	Dal		st_list_current-072	32
-Odisha	16	Desua Bhumij	Desua Bhumij		st_list_current-072	32
-Odisha	17	Dharua, Dhuruba, Dhurva, Durua, Dhurua, Dhurava	Dharua|Dhuruba|Dhurva|Durua|Dhurua|Dhurava		st_list_current-072	32
-Odisha	18	Didayi, Didai Paroja, Didai	Didayi|Didai Paroja|Didai		st_list_current-072	32
-Odisha	19	Gadaba, Bodo Gadaba, Gutob Gadaba, Kapu Gadaba, Ollara Gadaba, Parenga Gadaba, Sano Gadaba	Gadaba|Bodo Gadaba|Gutob Gadaba|Kapu Gadaba|Ollara Gadaba|Parenga Gadaba|Sano Gadaba		st_list_current-072	33
-Odisha	20	Gandia	Gandia		st_list_current-072	33
-Odisha	21	Ghara	Ghara		st_list_current-072	33
-Odisha	22	Gond, Gondo, Rajgond, Maria Gond, Dhur Gond	Gond|Gondo|Rajgond|Maria Gond|Dhur Gond		st_list_current-072	33
-Odisha	23	Ho	Ho		st_list_current-072	33
-Odisha	24	Holva	Holva		st_list_current-072	33
-Odisha	25	Jatapu	Jatapu		st_list_current-072	33
-Odisha	26	Juang	Juang		st_list_current-072	33
-Odisha	27	Kandha Gauda	Kandha Gauda		st_list_current-072	33
-Odisha	28	Kawar, Kanwar, Kaur, Kunwar, Kaonr, Kuanr, Konwar, Kuanar, Kaanr, Koanr, Kuanwar	Kawar|Kanwar|Kaur|Kunwar|Kaonr|Kuanr|Konwar|Kuanar|Kaanr|Koanr|Kuanwar		st_list_current-072	33
-Odisha	29	Kharia, Kharian, Berga Kharia, Dhelki Kharia, Dudh Kharia, Erenga Kharia, Munda Kharia,Oraon Kharia, Khadia, Pahari Kharia	Kharia|Kharian|Berga Kharia|Dhelki Kharia|Dudh Kharia|Erenga Kharia|Munda Kharia|Oraon Kharia|Khadia|Pahari Kharia		st_list_current-072	33
-Odisha	30	Kharwar	Kharwar		st_list_current-072	33
-Odisha	31	Khond, Kond, Kandha, Kandha Kumbhar, Nanguli Kandha, Sitha Kandha, Kondh, Kui, Kui (Kandha), Buda Kondh, Bura Kandha, Desia Kandha, Dungaria Kondh, Kutia Kandha, Kandha Gauda, Muli Kondh, Malua Kondh, Pengo Kandha, Raja Kondh, Raj Khond	Khond|Kond|Kandha|Kandha Kumbhar|Nanguli Kandha|Sitha Kandha|Kondh|Kui|Kui (Kandha)|Buda Kondh|Bura Kandha|Desia Kandha|Dungaria Kondh|Kutia Kandha|Kandha Gauda|Muli Kondh|Malua Kondh|Pengo Kandha|Raja Kondh|Raj Khond		st_list_current-072	33
-Odisha	32	Kisan, Nagesar, Nagesia	Kisan|Nagesar|Nagesia		st_list_current-072	33
-Odisha	33	Kol	Kol		st_list_current-072	33
-Odisha	34	Kolah Loharas, Kol Loharas	Kolah Loharas|Kol Loharas		st_list_current-072	34
-Odisha	35	Kolha	Kolha		st_list_current-072	34
-Odisha	36	Koli, Malhar	Koli|Malhar		st_list_current-072	34
-Odisha	37	Kondadora	Kondadora		st_list_current-072	34
-Odisha	38	Kora, Khaira, Khayara	Kora|Khaira|Khayara		st_list_current-072	34
-Odisha	39	Korua	Korua		st_list_current-072	34
-Odisha	40	Kotia	Kotia		st_list_current-072	34
-Odisha	41	Koya, Gumba Koya, Koitur Koya, Kamar Koya, Musara Koya	Koya|Gumba Koya|Koitur Koya|Kamar Koya|Musara Koya		st_list_current-072	34
-Odisha	42	Kulis	Kulis		st_list_current-072	34
-Odisha	43	Lodha, Nodh, Nodha, Lodh	Lodha|Nodh|Nodha|Lodh		st_list_current-072	34
-Odisha	44	Madia	Madia		st_list_current-072	34
-Odisha	45	Mahali	Mahali		st_list_current-072	34
-Odisha	46	Mankidi	Mankidi		st_list_current-072	34
-Odisha	47	Mankirdia, Mankria, Mankidi, Mankidia	Mankirdia|Mankria|Mankidi|Mankidia		st_list_current-072	34
-Odisha	48	Matya, Matia	Matya|Matia		st_list_current-072	34
-Odisha	49	Mirdhas, Kuda, Koda	Mirdhas|Kuda|Koda		st_list_current-072	34
-Odisha	50	Munda, Munda Lohara, Munda Mahalis, Nagabanshi Munda, Oriya Munda	Munda|Munda Lohara|Munda Mahalis|Nagabanshi Munda|Oriya Munda		st_list_current-072	34
-Odisha	51	Mundari	Mundari		st_list_current-072	34
-Odisha	52	Omanatya, Omanatyo, Amanatya	Omanatya|Omanatyo|Amanatya		st_list_current-072	34
-Odisha	53	Oraon, Dhangar, Uran, Uram, Oram, Uraon, Dhangara, Oraon Mudi	Oraon|Dhangar|Uran|Uram|Oram|Uraon|Dhangara|Oraon Mudi		st_list_current-072	34
-Odisha	54	Parenga	Parenga		st_list_current-072	34
-Odisha	55	Paroja, Parja, Bodo Paroja, Barong Jhodia Paroja, Chhelia Paroja, Jhodia Paroja, Konda Paroja, Paraja, Ponga Paroja, Sodia Paroja, Sano Paroja, Solia Paroja, Bareng Jhodia Paroja	Paroja|Parja|Bodo Paroja|Barong Jhodia Paroja|Chhelia Paroja|Jhodia Paroja|Konda Paroja|Paraja|Ponga Paroja|Sodia Paroja|Sano Paroja|Solia Paroja|Bareng Jhodia Paroja		st_list_current-072	34
-Odisha	56	Pentia	Pentia		st_list_current-072	35
-Odisha	57	Rajuar, Rajual, Rajuad	Rajuar|Rajual|Rajuad		st_list_current-072	35
-Odisha	58	Santal	Santal		st_list_current-072	35
-Odisha	59	Saora, Savar, Saura, Sahara, Arsi Saora, Based Saora, Bhima Saora, Bhimma Saora, Chumura Saora, Jara Savar, Jadu Saora, Jati Saora, Juari Saora, Kampu Saora, Kampa Soura, Kapo Saora, Kindal Saora, Kumbi Kancher Saora, Kalapithia Saora, Kirat Saora, Lanjia Saora, Lamba Lanjia Saora, Luara Saora, Luar Saora, Laria Savar, Malia Saora, Malla Saora, Uriya Saora, Raika Saora, Sudda Saora, Sarda Saora, Tankala Saora, Patro Saora, Vesu Saora, Saara	Saora|Savar|Saura|Sahara|Arsi Saora|Based Saora|Bhima Saora|Bhimma Saora|Chumura Saora|Jara Savar|Jadu Saora|Jati Saora|Juari Saora|Kampu Saora|Kampa Soura|Kapo Saora|Kindal Saora|Kumbi Kancher Saora|Kalapithia Saora|Kirat Saora|Lanjia Saora|Lamba Lanjia Saora|Luara Saora|Luar Saora|Laria Savar|Malia Saora|Malla Saora|Uriya Saora|Raika Saora|Sudda Saora|Sarda Saora|Tankala Saora|Patro Saora|Vesu Saora|Saara		st_list_current-072	35
-Odisha	60	Shabar, Lodha	Shabar|Lodha		st_list_current-072	35
-Odisha	61	Sounti	Sounti		st_list_current-072	35
-Odisha	62	Tharua, Tharua Bindhani	Tharua|Tharua Bindhani		st_list_current-072	35
-Odisha	63	Muka Dora, Mooka Dora, Nuka Dora, Nooka Dora (in undivided Koraput district which includes Koraput, Nowrangapur, Rayagada and Malkangiri districts)	Muka Dora|Mooka Dora|Nuka Dora|Nooka Dora	in undivided Koraput district which includes Koraput, Nowrangapur, Rayagada and Malkangiri districts	st_list_current-072	35
-Odisha	64	Konda Reddy, Konda Reddi	Konda Reddy|Konda Reddi		st_list_current-072	35
-Rajasthan	1	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	36
-Rajasthan	2	Bhil Mina	Bhil Mina		st_list_current-072	36
-Rajasthan	3	Damor, Damaria	Damor|Damaria		st_list_current-072	36
-Rajasthan	4	Dhanka, Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	36
-Rajasthan	5	Garasia (excluding Rajput Garasia)	Garasia	excluding Rajput Garasia	st_list_current-072	36
-Rajasthan	6	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	36
-Rajasthan	7	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	36
-Rajasthan	8	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	36
-Rajasthan	9	Mina	Mina		st_list_current-072	36
-Rajasthan	10	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	36
-Rajasthan	11	Patelia	Patelia		st_list_current-072	36
-Rajasthan	12	Seharia, Sehria, Sahariya	Seharia|Sehria|Sahariya		st_list_current-072	36
-SIKKIM	1	Bhutia (including Chumbipa, Dopthapa, Dukpa, Kagatey, Sherpa, Tibetan, Tromopa, Yolmo)	Bhutia|Chumbipa|Dopthapa|Dukpa|Kagatey|Sherpa|Tibetan|Tromopa|Yolmo		st_list_current-072	36
-SIKKIM	2	Lepcha	Lepcha		st_list_current-072	36
-SIKKIM	3	Limboo	Limboo		st_list_current-072	36
-SIKKIM	4	Tamang	Tamang		st_list_current-072	36
-Tamil Nadu	1	Adiyan	Adiyan		st_list_current-072	37
-Tamil Nadu	2	Aranadan	Aranadan		st_list_current-072	37
-Tamil Nadu	3	Eravallan	Eravallan		st_list_current-072	37
-Tamil Nadu	4	Irular	Irular		st_list_current-072	37
-Tamil Nadu	5	Kadar	Kadar		st_list_current-072	37
-Tamil Nadu	6	Kammara (excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district)	Kammara	excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district	st_list_current-072	37
-Tamil Nadu	7	Kanikaran, Kanikkar (in Kanyakumari district and Shenkottah and Ambasamudram taluks of Tirunelveli district)	Kanikaran|Kanikkar	in Kanyakumari district and Shenkottah and Ambasamudram taluks of Tirunelveli district	st_list_current-072	37
-Tamil Nadu	8	Kaniyan, Kanyan	Kaniyan|Kanyan		st_list_current-072	37
-Tamil Nadu	9	Kattunayakan	Kattunayakan		st_list_current-072	37
-Tamil Nadu	10	Kochu Velan	Kochu Velan		st_list_current-072	37
-Tamil Nadu	11	Konda Kapus	Konda Kapus		st_list_current-072	37
-Tamil Nadu	12	Kondareddis	Kondareddis		st_list_current-072	37
-Tamil Nadu	13	Koraga	Koraga		st_list_current-072	37
-Tamil Nadu	14	Kota (excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district)	Kota	excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district	st_list_current-072	37
-Tamil Nadu	15	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	37
-Tamil Nadu	16	Kurichchan	Kurichchan		st_list_current-072	37
-Tamil Nadu	17	Kurumbas (in the Nilgiris district)	Kurumbas	in the Nilgiris district	st_list_current-072	37
-Tamil Nadu	18	Kurumans	Kurumans		st_list_current-072	37
-Tamil Nadu	19	Maha Malasar	Maha Malasar		st_list_current-072	37
-Tamil Nadu	20	Malai Arayan	Malai Arayan		st_list_current-072	37
-Tamil Nadu	21	Malai Pandaram	Malai Pandaram		st_list_current-072	37
-Tamil Nadu	22	Malai Vedan	Malai Vedan		st_list_current-072	37
-Tamil Nadu	23	Malakkuravan	Malakkuravan		st_list_current-072	38
-Tamil Nadu	24	Malasar	Malasar		st_list_current-072	38
-Tamil Nadu	25	Malayali (in Dharmapuri, North Arcot, Pudukottai, Salem, South Arcot and Tiruchirapalli districts)	Malayali	in Dharmapuri, North Arcot, Pudukottai, Salem, South Arcot and Tiruchirapalli districts	st_list_current-072	38
-Tamil Nadu	26	Malayekandi	Malayekandi		st_list_current-072	38
-Tamil Nadu	27	Mannan	Mannan		st_list_current-072	38
-Tamil Nadu	28	Mudugar, Muduvan	Mudugar|Muduvan		st_list_current-072	38
-Tamil Nadu	29	Muthuvan	Muthuvan		st_list_current-072	38
-Tamil Nadu	30	Palleyan	Palleyan		st_list_current-072	38
-Tamil Nadu	31	Palliyan	Palliyan		st_list_current-072	38
-Tamil Nadu	32	Palliyar	Palliyar		st_list_current-072	38
-Tamil Nadu	33	Paniyan	Paniyan		st_list_current-072	38
-Tamil Nadu	34	Sholaga	Sholaga		st_list_current-072	38
-Tamil Nadu	35	Toda (excluding Kanyakumari district and Shenkottah Taluk of Tirunelveli district)	Toda	excluding Kanyakumari district and Shenkottah Taluk of Tirunelveli district	st_list_current-072	38
-Tamil Nadu	36	Uraly	Uraly		st_list_current-072	38
-Tamil Nadu	37	Narikoravan, Kurivikkaran	Narikoravan|Kurivikkaran		st_list_current-072	38
-Telangana	1	Andh, Sadhu Andh	Andh|Sadhu Andh		st_list_current-072	38
-Telangana	2	Bagata	Bagata		st_list_current-072	38
-Telangana	3	Bhil	Bhil		st_list_current-072	38
-Telangana	4	Chenchu	Chenchu		st_list_current-072	38
-Telangana	5	Gadabas, Bodo Gadaba, Gutob Gadaba, Kallayi Gadaba, Parangi Gadaba, Kathera Gadaba, Kapu Gadaba	Gadabas|Bodo Gadaba|Gutob Gadaba|Kallayi Gadaba|Parangi Gadaba|Kathera Gadaba|Kapu Gadaba		st_list_current-072	38
-Telangana	6	Gond, Naikpod, Rajgond, Koitur	Gond|Naikpod|Rajgond|Koitur		st_list_current-072	39
-Telangana	7	Goudu (in the Agency tracts)	Goudu (in the Agency tracts)		st_list_current-072	39
-Telangana	8	Hill Reddis	Hill Reddis		st_list_current-072	39
-Telangana	9	Jatapus	Jatapus		st_list_current-072	39
-Telangana	10	Kammara	Kammara		st_list_current-072	39
-Telangana	11	Kattunayakan	Kattunayakan		st_list_current-072	39
-Telangana	12	Kolam, Kolawar	Kolam|Kolawar		st_list_current-072	39
-Telangana	13	Konda Dhoras, Kubi	Konda Dhoras|Kubi		st_list_current-072	39
-Telangana	14	Konda Kapus	Konda Kapus		st_list_current-072	39
-Telangana	15	Kondareddis	Kondareddis		st_list_current-072	39
-Telangana	16	Kondhs, Kodi, Kodhu, Desaya Kondhs, Dongria Kondhs, Kuttiya Kondhs, Tikiria Kondhs, Yenity Kondhs, Kuvinga	Kondhs|Kodi|Kodhu|Desaya Kondhs|Dongria Kondhs|Kuttiya Kondhs|Tikiria Kondhs|Yenity Kondhs|Kuvinga		st_list_current-072	39
-Telangana	17	Kotia, Bentho Oriya, Bartika, Dulia, Holya, Sanrona, Sidhopaiko	Kotia|Bentho Oriya|Bartika|Dulia|Holya|Sanrona|Sidhopaiko		st_list_current-072	39
-Telangana	18	Koya, Doli Koya, Gutta Koya, Kammara Koya, Musara Koya, Oddi Koya, Pattidi Koya, Rajah, Rasha Koya, Lingadhari Koya (ordinary), Kottu Koya, Bhine Koya, Rajkoya	Koya|Doli Koya|Gutta Koya|Kammara Koya|Musara Koya|Oddi Koya|Pattidi Koya|Rajah|Rasha Koya|Lingadhari Koya (ordinary)|Kottu Koya|Bhine Koya|Rajkoya		st_list_current-072	39
-Telangana	19	Kulia	Kulia		st_list_current-072	39
-Telangana	20	Manna Dhora	Manna Dhora		st_list_current-072	39
-Telangana	21	Mukha Dhora, Nooka Dhora	Mukha Dhora|Nooka Dhora		st_list_current-072	39
-Telangana	22	Nayaks (in the Agency tracts)	Nayaks (in the Agency tracts)		st_list_current-072	39
-Telangana	23	Pardhan	Pardhan		st_list_current-072	39
-Telangana	24	Porja, Parangiperja	Porja|Parangiperja		st_list_current-072	39
-Telangana	25	Reddi Dhoras	Reddi Dhoras		st_list_current-072	39
-Telangana	26	Rona, Rena	Rona|Rena		st_list_current-072	39
-Telangana	27	Savaras, Kapu Savaras, Maliya Savaras, Khutto Savaras	Savaras|Kapu Savaras|Maliya Savaras|Khutto Savaras		st_list_current-072	40
-Telangana	28	Sugalis, Lambadis, Banjara	Sugalis|Lambadis|Banjara		st_list_current-072	40
-Telangana	29	Thoti (in Adilabad, Hyderabad, Karimnagar, Khammam, Mahbubnagar, Medak, Nalgonda, Nizamabad and Warangal districts)	Thoti	in Adilabad, Hyderabad, Karimnagar, Khammam, Mahbubnagar, Medak, Nalgonda, Nizamabad and Warangal districts	st_list_current-072	40
-Telangana	30	Yenadis, Chella Yenadi, Kappala Yenadi, Manchi Yenadi, Reddi Yenadi	Yenadis|Chella Yenadi|Kappala Yenadi|Manchi Yenadi|Reddi Yenadi		st_list_current-072	40
-Telangana	31	Yerukulas, Koracha, Dabba Yerukula, Kunchapuri Yerukula, Uppu Yerukula	Yerukulas|Koracha|Dabba Yerukula|Kunchapuri Yerukula|Uppu Yerukula		st_list_current-072	40
-Telangana	32	Nakkala, Kurvikaran	Nakkala|Kurvikaran		st_list_current-072	40
-Tripura	1	Bhil	Bhil		st_list_current-072	40
-Tripura	2	Bhutia	Bhutia		st_list_current-072	40
-Tripura	3	Chaimal	Chaimal		st_list_current-072	40
-Tripura	4	Chakma	Chakma		st_list_current-072	40
-Tripura	5	Garoo	Garoo		st_list_current-072	40
-Tripura	6	Halam, Bengshel, Dub, Kaipeng, Kalai, Karbong, Lengui, Mussum, Rupini, Sukuchep, Thangchep	Halam|Bengshel|Dub|Kaipeng|Kalai|Karbong|Lengui|Mussum|Rupini|Sukuchep|Thangchep		st_list_current-072	40
-Tripura	7	Jamatia	Jamatia		st_list_current-072	40
-Tripura	8	Khasia	Khasia		st_list_current-072	40
-Tripura	9	Kuki, including the following sub- tribes:- (i) Balte (ii) Belalhut	Kuki|including the following sub- tribes:- (i) Balte (ii) Belalhut		st_list_current-072	40
-Tripura	10	Lepcha	Lepcha		st_list_current-072	41
-Tripura	11	Lushai	Lushai		st_list_current-072	41
-Tripura	12	Mag	Mag		st_list_current-072	41
-Tripura	13	Munda, Kaur	Munda|Kaur		st_list_current-072	41
-Tripura	14	Noatia, Murashing	Noatia|Murashing		st_list_current-072	41
-Tripura	15	Orang	Orang		st_list_current-072	41
-Tripura	16	Riang	Riang		st_list_current-072	41
-Tripura	17	Santal	Santal		st_list_current-072	41
-Tripura	18	Tripura, Tripuri, Tippera	Tripura|Tripuri|Tippera		st_list_current-072	41
-Tripura	19	Uchai	Uchai		st_list_current-072	41
-Tripura	1	Bhotia	Bhotia		st_list_current-072	42
-Tripura	2	Buksa	Buksa		st_list_current-072	42
-Tripura	3	Jannsari	Jannsari		st_list_current-072	42
-Tripura	4	Raji	Raji		st_list_current-072	42
-Tripura	5	Tharu	Tharu		st_list_current-072	42
-Uttar Pradesh	1	Bhotia	Bhotia		st_list_current-072	42
-Uttar Pradesh	2	Buksa	Buksa		st_list_current-072	42
-Uttar Pradesh	3	Jaunsari	Jaunsari		st_list_current-072	42
-Uttar Pradesh	4	Raji	Raji		st_list_current-072	42
-Uttar Pradesh	5	Tharu	Tharu		st_list_current-072	42
-Uttar Pradesh	6	Gond, Dhuria, Nayak, Ojha, Pathari, Raj Gond (in the districts of Mehrajganj, Sidharth Nagar, Basti, Gorakhpur, Deoria, Mau, Azamgarh, Jonpur, Balia, Gazipur, Varanasi, Mirzapur,Sonbhadra, Sant Kabir Nagar, Kushinagar, Chandauli and Bhadohi)	Gond|Dhuria|Nayak|Ojha|Pathari|Raj Gond	in the districts of Mehrajganj, Sidharth Nagar, Basti, Gorakhpur, Deoria, Mau, Azamgarh, Jonpur, Balia, Gazipur, Varanasi, Mirzapur,Sonbhadra, Sant Kabir Nagar, Kushinagar, Chandauli and Bhadohi	st_list_current-072	42
-Uttar Pradesh	7	Kharwar, Khairwar (in the districts of Deoria, Balia, Ghazipur, Varanasi and Sonbhadra)	Kharwar|Khairwar	in the districts of Deoria, Balia, Ghazipur, Varanasi and Sonbhadra	st_list_current-072	42
-Uttar Pradesh	8	Saharya (in the district of Lalitpur)	Saharya	in the district of Lalitpur	st_list_current-072	42
-Uttar Pradesh	9	Parahiya (in the district of Sonbhadra)	Parahiya	in the district of Sonbhadra	st_list_current-072	42
-Uttar Pradesh	10	Baiga (in the district of Sonbhadra)	Baiga	in the district of Sonbhadra	st_list_current-072	42
-Uttar Pradesh	11	Pankha, Panika (in the districts of Sonbhadra and Mirzapur)	Pankha|Panika	in the districts of Sonbhadra and Mirzapur	st_list_current-072	43
-Uttar Pradesh	12	Agariya (in the district of Sonbhadra)	Agariya	in the district of Sonbhadra	st_list_current-072	43
-Uttar Pradesh	13	Patari (in the district of Sonbhadra)	Patari	in the district of Sonbhadra	st_list_current-072	43
-Uttar Pradesh	14	Chero (in the districts of Sonbhadra and Varanasi)	Chero	in the districts of Sonbhadra and Varanasi	st_list_current-072	43
-Uttar Pradesh	15	Bhuiya, Bhuinya (in the district of Sonbhadra)	Bhuiya|Bhuinya	in the district of Sonbhadra	st_list_current-072	43
-West Bengal	1	Asur	Asur		st_list_current-072	43
-West Bengal	2	Baiga	Baiga		st_list_current-072	43
-West Bengal	3	Bedia, Bediya	Bedia|Bediya		st_list_current-072	43
-West Bengal	4	Bhumij	Bhumij		st_list_current-072	43
-West Bengal	5	Bhutia, Sherpa, Toto, Dukpa, Kagatay, Tibetan, Yolmo	Bhutia|Sherpa|Toto|Dukpa|Kagatay|Tibetan|Yolmo		st_list_current-072	43
-West Bengal	6	Birhor	Birhor		st_list_current-072	43
-West Bengal	7	Birjia	Birjia		st_list_current-072	43
-West Bengal	8	Chakma	Chakma		st_list_current-072	43
-West Bengal	9	Chero	Chero		st_list_current-072	43
-West Bengal	10	Chik Baraik	Chik Baraik		st_list_current-072	43
-West Bengal	11	Garo	Garo		st_list_current-072	43
-West Bengal	12	Gond	Gond		st_list_current-072	43
-West Bengal	13	Gorait	Gorait		st_list_current-072	43
-West Bengal	14	Hajang	Hajang		st_list_current-072	43
-West Bengal	15	Ho	Ho		st_list_current-072	43
-West Bengal	16	Karmali	Karmali		st_list_current-072	43
-West Bengal	17	Kharwar	Kharwar		st_list_current-072	43
-West Bengal	18	Khond	Khond		st_list_current-072	44
-West Bengal	19	Kisan	Kisan		st_list_current-072	44
-West Bengal	20	Kora	Kora		st_list_current-072	44
-West Bengal	21	Korwa	Korwa		st_list_current-072	44
-West Bengal	22	Lepcha	Lepcha		st_list_current-072	44
-West Bengal	23	Lodha, Kheria, Kharia	Lodha|Kheria|Kharia		st_list_current-072	44
-West Bengal	24	Lohara, Lohra	Lohara|Lohra		st_list_current-072	44
-West Bengal	25	Magh	Magh		st_list_current-072	44
-West Bengal	26	Mahali	Mahali		st_list_current-072	44
-West Bengal	27	Mahli	Mahli		st_list_current-072	44
-West Bengal	28	Mal Pahariya	Mal Pahariya		st_list_current-072	44
-West Bengal	29	Mech	Mech		st_list_current-072	44
-West Bengal	30	Mru	Mru		st_list_current-072	44
-West Bengal	31	Munda	Munda		st_list_current-072	44
-West Bengal	32	Nagesia	Nagesia		st_list_current-072	44
-West Bengal	33	Oraon	Oraon		st_list_current-072	44
-West Bengal	34	Parhaiya	Parhaiya		st_list_current-072	44
-West Bengal	35	Rabha	Rabha		st_list_current-072	44
-West Bengal	36	Santal	Santal		st_list_current-072	44
-West Bengal	37	Sauria Paharia	Sauria Paharia		st_list_current-072	44
-West Bengal	38	Savar	Savar		st_list_current-072	44
-West Bengal	39	Limbu (Subba)	Limbu (Subba)		st_list_current-072	44
-West Bengal	40	Tamang	Tamang		st_list_current-072	44
-Andaman and Nicobar Islands	1	Andamanese, Chariar, Chari, Kora, Tabo, Bo, Yere, Kede, Bea, Balawa, Bojigiyab, Juwai, Kol	Andamanese|Chariar|Chari|Kora|Tabo|Bo|Yere|Kede|Bea|Balawa|Bojigiyab|Juwai|Kol		st_list_current-072	45
-Andaman and Nicobar Islands	2	Jarawas	Jarawas		st_list_current-072	45
-Andaman and Nicobar Islands	3	Nicobarese	Nicobarese		st_list_current-072	45
-Andaman and Nicobar Islands	4	Onges	Onges		st_list_current-072	45
-Andaman and Nicobar Islands	5	Sentinelese	Sentinelese		st_list_current-072	45
-Andaman and Nicobar Islands	6	Shom Pens. Dadra and Nagar Haveli and Daman and Diu	Shom Pens. Dadra|Nagar Haveli|Daman|Diu		st_list_current-072	45
-Andaman and Nicobar Islands	1	Dhodia	Dhodia		st_list_current-072	45
-Andaman and Nicobar Islands	2	Dubla including Halpati	Dubla including Halpati		st_list_current-072	45
-Andaman and Nicobar Islands	3	Kathodi	Kathodi		st_list_current-072	45
-Andaman and Nicobar Islands	4	Kokna	Kokna		st_list_current-072	45
-Andaman and Nicobar Islands	5	Koli Dhor including Kolgha	Koli Dhor including Kolgha		st_list_current-072	45
-Andaman and Nicobar Islands	6	Naikda or Nayaka	Naikda or Nayaka		st_list_current-072	45
-Andaman and Nicobar Islands	7	Varli	Varli		st_list_current-072	45
-Andaman and Nicobar Islands	1	Dhodia	Dhodia		st_list_current-072	45
-Andaman and Nicobar Islands	2	Dubla (Halpati)	Dubla (Halpati)		st_list_current-072	45
-Andaman and Nicobar Islands	3	Naikda (Talavia)	Naikda (Talavia)		st_list_current-072	45
-Andaman and Nicobar Islands	4	Siddi (Nayaka)	Siddi (Nayaka)		st_list_current-072	45
-Andaman and Nicobar Islands	5	Varli	Varli		st_list_current-072	45
-Lakshadweep	0	Throughout the Union territory: - Inhabitants of the Laccadive, Minicoy and Aminidivi Islands who, and both of whose parents, were born in those islands. Provided that the children who are born to inhabitants of Lakshadweep in any other place in the mainland of India shall be deemed to be inhabitants born in the islands if such children settle permanently in the islands. Explanation: The term “settle permanently” shall have the same meaning as defined under clause 3(1)(d) of the Lakshadweep Panchayats Regulation, 1994	Throughout the Union territory: - Inhabitants of the Laccadive|Minicoy|Aminidivi Islands who|both of whose parents|were born in those islands. Provided that the children who are born to inhabitants of Lakshadweep in any other place in the mainland of India shall be deemed to be inhabitants born in the islands if such children settle permanently in the islands. Explanation: The term “settle permanently” shall have the same meaning as defined under clause 3(1)(d) of the Lakshadweep Panchayats Regulation|1994		st_list_current-072	46
-Puducherry	0	Irular (including Villi and Vettaikaran) Note: In case of any discrepancies in the list, the concerned original Notification	Irular|Villi|Vettaikaran Note: In case of any discrepancies in the list|the concerned original Notification		st_list_current-072	46
+state	state_as_printed	section	entry_no	name_as_printed	synonyms	area_restriction	source_id	page
+Andhra Pradesh	अनुसूिी Andhra Pradesh		1	Andh, Sadhu Andh	Andh|Sadhu Andh		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		2	Bagata	Bagata		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		3	Bhil	Bhil		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		4	Chenchu	Chenchu		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		5	Gadabas, Bodo Gadaba, Gutob Gadaba, Kallayi Gadaba, Parangi Gadaba, Kathera Gadaba, Kapu Gadaba	Gadabas|Bodo Gadaba|Gutob Gadaba|Kallayi Gadaba|Parangi Gadaba|Kathera Gadaba|Kapu Gadaba		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		6	Gond, Naikpod, Rajgond, Koitur	Gond|Naikpod|Rajgond|Koitur		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		7	Goudu (in the Agency tracts)	Goudu (in the Agency tracts)		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		8	Hill Reddis	Hill Reddis		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		9	Jatapus	Jatapus		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		10	Kammara	Kammara		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		11	Kattunayakan	Kattunayakan		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		12	Kolam, Kolawar	Kolam|Kolawar		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		13	Konda Dhoras, Kubi	Konda Dhoras|Kubi		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		14	Konda Kapus	Konda Kapus		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		15	Kondareddis	Kondareddis		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		16	Kondhs, Kodi, Kodhu, Desaya Kondhs, Dongria Kondhs, Kuttiya Kondhs, Tikiria Kondhs, Yenity Kondhs, Kuvinga	Kondhs|Kodi|Kodhu|Desaya Kondhs|Dongria Kondhs|Kuttiya Kondhs|Tikiria Kondhs|Yenity Kondhs|Kuvinga		st_list_current-072	1
+Andhra Pradesh	अनुसूिी Andhra Pradesh		17	Kotia, Bentho Oriya, Bartika, Dulia, Holva, Sanrona, Sidhopaiko	Kotia|Bentho Oriya|Bartika|Dulia|Holva|Sanrona|Sidhopaiko		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		18	Koya, Doli Koya, Gutta Koya, Kammara Koya, Musara Koya, Oddi Koya, Pattidi Koya, Rajah, Rasha Koya, Lingadhari Koya (ordinary), Kottu Koya, Bhine Koya, Rajkoya	Koya|Doli Koya|Gutta Koya|Kammara Koya|Musara Koya|Oddi Koya|Pattidi Koya|Rajah|Rasha Koya|Lingadhari Koya (ordinary)|Kottu Koya|Bhine Koya|Rajkoya		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		19	Kulia	Kulia		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		20	Malis	Malis		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		21	Manna Dhora	Manna Dhora		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		22	Mukha Dhora, Nooka Dhora	Mukha Dhora|Nooka Dhora		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		23	Nayaks (in the Agency tracts)	Nayaks (in the Agency tracts)		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		24	Pardhan	Pardhan		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		25	Porja, Bondo Porja, Khond Porja, Parangiperja	Porja|Bondo Porja|Khond Porja|Parangiperja		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		26	Reddi Dhoras	Reddi Dhoras		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		27	Rona, Rena	Rona|Rena		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		28	Savaras, Kapu Savaras, Maliya Savaras, Konda Savaras, Khutto Savaras	Savaras|Kapu Savaras|Maliya Savaras|Konda Savaras|Khutto Savaras		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		29	Sugalis, Lambadis, Banjara	Sugalis|Lambadis|Banjara		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		30	Valmiki (Scheduled Areas of Vishakhapatnam, Srikakulam, Vijayanagram, East Godavari and West Godavari districts)	Valmiki	Scheduled Areas of Vishakhapatnam, Srikakulam, Vijayanagram, East Godavari and West Godavari districts	st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		31	Yenadis, Chella Yenadi, KappalaYenadi, Manchi Yenadi, Reddi Yenadi	Yenadis|Chella Yenadi|KappalaYenadi|Manchi Yenadi|Reddi Yenadi		st_list_current-072	2
+Andhra Pradesh	अनुसूिी Andhra Pradesh		32	Yerukulas, Koracha, Dabba Yerukula, Kunchapuri Yerukula, Uppu Yerukula	Yerukulas|Koracha|Dabba Yerukula|Kunchapuri Yerukula|Uppu Yerukula		st_list_current-072	3
+Andhra Pradesh	अनुसूिी Andhra Pradesh		33	Nakkala, Kurvikaran	Nakkala|Kurvikaran		st_list_current-072	3
+Andhra Pradesh	अनुसूिी Andhra Pradesh		34	Dhulia, Paiko, Putiya (in the districts of Vishakhapatnam and Vijayanagaram)	Dhulia|Paiko|Putiya	in the districts of Vishakhapatnam and Vijayanagaram	st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	1	Omitted	Omitted		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	2	Aka	Aka		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	3	Apatani	Apatani		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	4	Nyishi	Nyishi		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	5	Galo	Galo		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	6	Tai Khamti	Tai Khamti		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	7	Khowa	Khowa		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	8	Mishmi-Kaman (Miju Mishmi), Idu (Mishmi), Taraon (Digaru Mishmi)	Mishmi-Kaman (Miju Mishmi)|Idu (Mishmi)|Taraon (Digaru Mishmi)		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	9	Monpa, Memba, Sartang, Sajolang (Miji)	Monpa|Memba|Sartang|Sajolang (Miji)		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	10	Nocte, Tangsa, Tutsa, Wancho	Nocte|Tangsa|Tutsa|Wancho		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	11	Sherdukpen	Sherdukpen		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	12	Singpho	Singpho		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	13	Hrusso	Hrusso		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	14	Tagin	Tagin		st_list_current-072	3
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	15	Khamba	Khamba		st_list_current-072	4
+Arunachal Pradesh	Arunachal Pradesh	All tribes in the State including:	16	Adi	Adi		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	0	Karbi Anglong and North Cachar Hills	Karbi Anglong|North Cachar Hills		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	1	Chakma	Chakma		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	2	Dimasa, Kachari	Dimasa|Kachari		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	3	Garo	Garo		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	4	Hajong	Hajong		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	5	Hmar	Hmar		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	6	Khasi, Jaintia, Synteng, Pnar,War, Bhoi, Lyngngam	Khasi|Jaintia|Synteng|Pnar|War|Bhoi|Lyngngam		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	7	Any Kuki tribes, including: - (i) Biate, Biete (ii) Changsan (iii) Chongloi (iv) Doungel (v) Gamalhou (vi) Gangte (vii) Guite (viii) Hanneng (ix) Haokip, Haupit (x) Haolai (xi) Hengna	Any Kuki tribes|including: - (i) Biate|Biete (ii) Changsan (iii) Chongloi (iv) Doungel (v) Gamalhou (vi) Gangte (vii) Guite (viii) Hanneng (ix) Haokip|Haupit (x) Haolai (xi) Hengna		st_list_current-072	4
+Assam	Assam	I. In the autonomous Districts of	8	Lakher 8	Lakher 8		st_list_current-072	5
+Assam	Assam	I. In the autonomous Districts of	9	Man (Tai- speaking)	Man (Tai- speaking)		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	11	Karbi	Karbi		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	12	Any Naga tribes	Any Naga tribes		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	13	Pawi	Pawi		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	14	Syntheng	Syntheng		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	15	Lalung II. In the State of Assam including the Bodoland Territorial Areas District and excluding the autonomous districts of Karbi Anglong and North Cachar Hills:	Lalung II. In the State of Assam including the Bodoland Territorial Areas District|excluding the autonomous districts of Karbi Anglong|North Cachar Hills:		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	1	Barmans in Cachar	Barmans in Cachar		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	2	Boro, Boro kachari	Boro|Boro kachari		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	3	Deori	Deori		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	4	Hojai	Hojai		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	5	Kachari, Sonwal	Kachari|Sonwal		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	6	Lalung	Lalung		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	7	Mech	Mech		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	8	Miri	Miri		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	9	Rabha	Rabha		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	10	Dimasa	Dimasa		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	11	Hajong	Hajong		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	12	Singhpho	Singhpho		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	13	Khampti	Khampti		st_list_current-072	6
+Assam	Assam	I. In the autonomous Districts of	14	Garo	Garo		st_list_current-072	6
+Bihar	Bihar		1	Asur, Agaria	Asur|Agaria		st_list_current-072	7
+Bihar	Bihar		2	Baiga	Baiga		st_list_current-072	7
+Bihar	Bihar		3	Banjara	Banjara		st_list_current-072	7
+Bihar	Bihar		4	Bathudi	Bathudi		st_list_current-072	7
+Bihar	Bihar		5	Bedia	Bedia		st_list_current-072	7
+Bihar	Bihar		6	Omitted	Omitted		st_list_current-072	7
+Bihar	Bihar		7	Binjhia	Binjhia		st_list_current-072	7
+Bihar	Bihar		8	Birhor	Birhor		st_list_current-072	7
+Bihar	Bihar		9	Birjia	Birjia		st_list_current-072	7
+Bihar	Bihar		10	Chero	Chero		st_list_current-072	7
+Bihar	Bihar		11	Chik Baraik	Chik Baraik		st_list_current-072	7
+Bihar	Bihar		12	Gond	Gond		st_list_current-072	7
+Bihar	Bihar		13	Gorait	Gorait		st_list_current-072	7
+Bihar	Bihar		14	Ho	Ho		st_list_current-072	7
+Bihar	Bihar		15	Karmali	Karmali		st_list_current-072	7
+Bihar	Bihar		16	Kharia, Dhelki Kharia, Dudh Kharia, Hill Kharia	Kharia|Dhelki Kharia|Dudh Kharia|Hill Kharia		st_list_current-072	7
+Bihar	Bihar		17	Kharwar	Kharwar		st_list_current-072	7
+Bihar	Bihar		18	Khond	Khond		st_list_current-072	7
+Bihar	Bihar		19	Kisan, Nagesia	Kisan|Nagesia		st_list_current-072	7
+Bihar	Bihar		20	Kora, Mudi-Kora	Kora|Mudi-Kora		st_list_current-072	7
+Bihar	Bihar		21	Korwa	Korwa		st_list_current-072	7
+Bihar	Bihar		22	Lohara, Lohra	Lohara|Lohra		st_list_current-072	7
+Bihar	Bihar		23	Mahli	Mahli		st_list_current-072	7
+Bihar	Bihar		24	Mal Paharia, Kumarbhag Paharia	Mal Paharia|Kumarbhag Paharia		st_list_current-072	7
+Bihar	Bihar		25	Munda, Patar	Munda|Patar		st_list_current-072	8
+Bihar	Bihar		26	Oraon, Dhangar (Oraon)	Oraon|Dhangar (Oraon)		st_list_current-072	8
+Bihar	Bihar		27	Parhaiya	Parhaiya		st_list_current-072	8
+Bihar	Bihar		28	Santal	Santal		st_list_current-072	8
+Bihar	Bihar		29	Sauria Paharia	Sauria Paharia		st_list_current-072	8
+Bihar	Bihar		30	Savar	Savar		st_list_current-072	8
+Bihar	Bihar		31	Kawar	Kawar		st_list_current-072	8
+Bihar	Bihar		32	Kol	Kol		st_list_current-072	8
+Bihar	Bihar		33	Tharu	Tharu		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		1	Agariya	Agariya		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		2	Andh	Andh		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		3	Baiga	Baiga		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		4	Bhaina	Bhaina		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		5	Bharia Bhumia, Bhuinhar Bhumia, Bhumiya, Bharia, Bhuinya, Bhuiyan, Bhuyan, Paliha, Pando	Bharia Bhumia|Bhuinhar Bhumia|Bhumiya|Bharia|Bhuinya|Bhuiyan|Bhuyan|Paliha|Pando		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		6	Bhattra	Bhattra		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		7	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		8	Bhil Mina	Bhil Mina		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		9	Bhunjia	Bhunjia		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		10	Biar, Biyar	Biar|Biyar		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		11	Binjhwar	Binjhwar		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		12	Birhul, Birhor	Birhul|Birhor		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		13	Damor, Damaria	Damor|Damaria		st_list_current-072	8
+Chhattisgarh	Chhattisgarh		14	Dhanwar, Dhanuhar, Dhanuwar	Dhanwar|Dhanuhar|Dhanuwar		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		15	Gadaba, Gadba	Gadaba|Gadba		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		16	Gond, Arakh, Arrakh, Agaria, Asur, Abhuj Maria, Badi Maria, Bada Maria, Bhatola, Bhimma, Bhuta, Koilabhuta, Koliabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Nagwanshi, Ojha, Raj, Sonjhari, Jhareka, Thatia, Thotya, Wade Maria, Vade Maria, Daroi	Gond|Arakh|Arrakh|Agaria|Asur|Abhuj Maria|Badi Maria|Bada Maria|Bhatola|Bhimma|Bhuta|Koilabhuta|Koliabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Nagwanshi|Ojha|Raj|Sonjhari|Jhareka|Thatia|Thotya|Wade Maria|Vade Maria|Daroi		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		17	Halba, Halbi	Halba|Halbi		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		18	Kamar	Kamar		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		19	Karku	Karku		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		20	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		21	Khairwar, Kondar	Khairwar|Kondar		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		22	Kharia	Kharia		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		23	Kond, Kondh, Khond, Kandh	Kond|Kondh|Khond|Kandh		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		24	Kol	Kol		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		25	Kolam	Kolam		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		26	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		27	Korwa, Hill Korwa, Kodaku	Korwa|Hill Korwa|Kodaku		st_list_current-072	9
+Chhattisgarh	Chhattisgarh		28	Majhi	Majhi		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		29	Majhwar	Majhwar		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		30	Mawasi	Mawasi		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		31	Munda	Munda		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		32	Nagesia, Nagasia, Kisan	Nagesia|Nagasia|Kisan		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		33	Oraon, Dhanka, Dhangad	Oraon|Dhanka|Dhangad		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		34	Pao	Pao		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		35	Pardhan, Pathari, Saroti 36 Pardhi, Bahelia, Bahellia, Chita Pardhi, Langoli ;Pardhi, Phans Pardhi, Shikari, Takankar, Takia [In (i) Bastar, Dantewara, Kanker, Raigarh, Jashpurnagar, Surguja and Koria district, (ii) Katghora, Pali, Kartala and Korba tahsils of Korba district, (iii) Bilaspur, Pendra, Kota and Takhatpur tahsils of Bilaspur district, (iv) Durg, Patan, Gunderdehi, Dhamdha, Balod, Gurur and Dondilohara tahsils of Durg district, (v) Chowki, Manpur and Mohala Revenue Inspector Circles of Rajnandgon district, (vi) Mahasamund, Saraipali and Basna tahsils of Mahasamund district, (vii) Bindra-Navagarh Rajim and Deobhog tahsils of Raipur district, and (viii) Dhamtari, Kurud and Sihava tahsils of Dhamtari district]	Pardhan|Pathari|Saroti 36 Pardhi|Bahelia|Bahellia|Chita Pardhi|Langoli ;Pardhi|Phans Pardhi|Shikari|Takankar|Takia [In (i) Bastar|Dantewara|Kanker|Raigarh|Jashpurnagar|Surguja|Koria district|(ii) Katghora|Pali|Kartala|Korba tahsils of Korba district|(iii) Bilaspur|Pendra|Kota|Takhatpur tahsils of Bilaspur district|(iv) Durg|Patan|Gunderdehi|Dhamdha|Balod|Gurur|Dondilohara tahsils of Durg district|(v) Chowki|Manpur|Mohala Revenue Inspector Circles of Rajnandgon district|(vi) Mahasamund|Saraipali|Basna tahsils of Mahasamund district|(vii) Bindra-Navagarh Rajim|Deobhog tahsils of Raipur district|(viii) Dhamtari|Kurud|Sihava tahsils of Dhamtari district]		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		37	Parja	Parja		st_list_current-072	10
+Chhattisgarh	Chhattisgarh		38	Sahariya, Saharia, Seharia, Sehria, Sosia, Sor	Sahariya|Saharia|Seharia|Sehria|Sosia|Sor		st_list_current-072	11
+Chhattisgarh	Chhattisgarh		39	Saonta, Saunta	Saonta|Saunta		st_list_current-072	11
+Chhattisgarh	Chhattisgarh		40	Saur	Saur		st_list_current-072	11
+Chhattisgarh	Chhattisgarh		41	Sawar, Sawara, Saunra, Saonra	Sawar|Sawara|Saunra|Saonra		st_list_current-072	11
+Chhattisgarh	Chhattisgarh		42	Sonr	Sonr		st_list_current-072	11
+Chhattisgarh	Chhattisgarh		43	Binjhia	Binjhia		st_list_current-072	11
+Goa	Goa		1	Dhodia	Dhodia		st_list_current-072	11
+Goa	Goa		2	Dubla (Halpati)	Dubla (Halpati)		st_list_current-072	11
+Goa	Goa		3	Naikda (Talavia)	Naikda (Talavia)		st_list_current-072	11
+Goa	Goa		4	Siddi (Nayaka)	Siddi (Nayaka)		st_list_current-072	11
+Goa	Goa		5	Varli	Varli		st_list_current-072	11
+Goa	Goa		6	Kunbi	Kunbi		st_list_current-072	11
+Goa	Goa		7	Gawda	Gawda		st_list_current-072	11
+Goa	Goa		8	Velip	Velip		st_list_current-072	11
+Gujarat	Gujarat		1	Barda	Barda		st_list_current-072	11
+Gujarat	Gujarat		2	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	11
+Gujarat	Gujarat		3	Bharwad (in the Nesses of the forests Alech, Barada and Gir)	Bharwad (in the Nesses of the forests Alech|Barada|Gir)		st_list_current-072	11
+Gujarat	Gujarat		4	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	12
+Gujarat	Gujarat		5	Charan (in the Nesses of the forests of Alech, Barada and Gir)	Charan (in the Nesses of the forests of Alech|Barada|Gir)		st_list_current-072	12
+Gujarat	Gujarat		6	Chaudhri (in Surat and Valsad districts)	Chaudhri	in Surat and Valsad districts	st_list_current-072	12
+Gujarat	Gujarat		7	Chodhara	Chodhara		st_list_current-072	12
+Gujarat	Gujarat		8	Dhanka,Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	12
+Gujarat	Gujarat		9	Dhodia, Dhodi	Dhodia|Dhodi		st_list_current-072	12
+Gujarat	Gujarat		10	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	12
+Gujarat	Gujarat		11	Gamit, Gamta, Gavit, Mavchi, Padvi	Gamit|Gamta|Gavit|Mavchi|Padvi		st_list_current-072	12
+Gujarat	Gujarat		12	Gond, Rajgond	Gond|Rajgond		st_list_current-072	12
+Gujarat	Gujarat		13	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	12
+Gujarat	Gujarat		14	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	12
+Gujarat	Gujarat		15	Omitted	Omitted		st_list_current-072	12
+Gujarat	Gujarat		16	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	12
+Gujarat	Gujarat		17	Kunbi (in the Dangs district)	Kunbi	in the Dangs district	st_list_current-072	12
+Gujarat	Gujarat		18	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	12
+Gujarat	Gujarat		19	Padhar	Padhar		st_list_current-072	12
+Gujarat	Gujarat		20	Omitted	Omitted		st_list_current-072	12
+Gujarat	Gujarat		21	Pardhi, Advichincher, Phanse Pardhi (excluding Amreli, Bhavnagar, Jamnagar, Junagadh, Kutch, Rajkot and Surendranagar districts)	Pardhi|Advichincher|Phanse Pardhi	excluding Amreli, Bhavnagar, Jamnagar, Junagadh, Kutch, Rajkot and Surendranagar districts	st_list_current-072	12
+Gujarat	Gujarat		22	Patelia	Patelia		st_list_current-072	12
+Gujarat	Gujarat		23	Pomla	Pomla		st_list_current-072	12
+Gujarat	Gujarat		24	Rabari (in the Nesses of the forests of Alech, Barada and Gir)	Rabari (in the Nesses of the forests of Alech|Barada|Gir)		st_list_current-072	13
+Gujarat	Gujarat		25	Rathawa	Rathawa		st_list_current-072	13
+Gujarat	Gujarat		26	Siddi, Siddi-Badshan (in Amreli, Bhavnagar, Jamnagar, Junagadh, Rajkot and Surendranagar districts)	Siddi|Siddi-Badshan	in Amreli, Bhavnagar, Jamnagar, Junagadh, Rajkot and Surendranagar districts	st_list_current-072	13
+Gujarat	Gujarat		27	Omitted	Omitted		st_list_current-072	13
+Gujarat	Gujarat		28	Varli	Varli		st_list_current-072	13
+Gujarat	Gujarat		29	Vitola, Kotwalia, Barodia	Vitola|Kotwalia|Barodia		st_list_current-072	13
+Gujarat	Gujarat		30	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	13
+Gujarat	Gujarat		31	Tadvi Bhil, Bawra,Vasave	Tadvi Bhil|Bawra|Vasave		st_list_current-072	13
+Gujarat	Gujarat		32	Padvi	Padvi		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		1	Bhot, Bodh	Bhot|Bodh		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		2	Gaddi	Gaddi		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		3	Gujjar	Gujjar		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		4	Jad, Lamba, Khampa	Jad|Lamba|Khampa		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		5	Kanaura, Kinnara	Kanaura|Kinnara		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		6	Lahaula	Lahaula		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		7	Pangwala	Pangwala		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		8	Swangla	Swangla		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		9	Beta, Beda	Beta|Beda		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		10	Domba, Gara, Zoba	Domba|Gara|Zoba		st_list_current-072	13
+Himachal Pradesh	Himachal Pradesh		11	Hattee of Trans Giri area of Sirmour district	Hattee of Trans Giri area of Sirmour district		st_list_current-072	13
+Jammu and Kashmir	Jammu & Kashmir		1	Bakarwal	Bakarwal		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		2	Balti	Balti		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		3	Beda	Beda		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		4	Bot, Boto	Bot|Boto		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		5	Brokpa, Drokpa, Dard, Shin	Brokpa|Drokpa|Dard|Shin		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		6	Changpa	Changpa		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		7	Gadda Brahmin	Gadda Brahmin		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		8	Gaddi	Gaddi		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		9	Garra	Garra		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		10	Gujjar	Gujjar		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		11	Koli `	Koli `		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		12	Mon	Mon		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		13	Paddari Tribe	Paddari Tribe		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		14	Pahari Ethnic Group	Pahari Ethnic Group		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		15	Purigpa	Purigpa		st_list_current-072	14
+Jammu and Kashmir	Jammu & Kashmir		16	Sippi	Sippi		st_list_current-072	14
+Jharkhand	Jharkhand		1	Asur, Agaria	Asur|Agaria		st_list_current-072	14
+Jharkhand	Jharkhand		2	Baiga	Baiga		st_list_current-072	14
+Jharkhand	Jharkhand		3	Banjara	Banjara		st_list_current-072	14
+Jharkhand	Jharkhand		4	Bathudi	Bathudi		st_list_current-072	14
+Jharkhand	Jharkhand		5	Bedia	Bedia		st_list_current-072	14
+Jharkhand	Jharkhand		6	Binjhia	Binjhia		st_list_current-072	14
+Jharkhand	Jharkhand		7	Birhor	Birhor		st_list_current-072	14
+Jharkhand	Jharkhand		8	Birjia	Birjia		st_list_current-072	15
+Jharkhand	Jharkhand		9	Chero	Chero		st_list_current-072	15
+Jharkhand	Jharkhand		10	Chik Baraik	Chik Baraik		st_list_current-072	15
+Jharkhand	Jharkhand		11	Gond	Gond		st_list_current-072	15
+Jharkhand	Jharkhand		12	Gorait	Gorait		st_list_current-072	15
+Jharkhand	Jharkhand		13	Ho	Ho		st_list_current-072	15
+Jharkhand	Jharkhand		14	Karmali	Karmali		st_list_current-072	15
+Jharkhand	Jharkhand		15	Kharia, Dhelki Kharia, Dudh Kharia, Hill Kharia	Kharia|Dhelki Kharia|Dudh Kharia|Hill Kharia		st_list_current-072	15
+Jharkhand	Jharkhand		16	Kharwar ,Bhogta, Deshwari, Ganjhu, Dautalbandi (Dwalbandi), Patbandi, Raut, Maajhia, Khairi (Kheri)	Kharwar|Bhogta|Deshwari|Ganjhu|Dautalbandi (Dwalbandi)|Patbandi|Raut|Maajhia|Khairi (Kheri)		st_list_current-072	15
+Jharkhand	Jharkhand		17	Khond	Khond		st_list_current-072	15
+Jharkhand	Jharkhand		18	Kisan, Nagesia	Kisan|Nagesia		st_list_current-072	15
+Jharkhand	Jharkhand		19	Kora, Mudi-Kora	Kora|Mudi-Kora		st_list_current-072	15
+Jharkhand	Jharkhand		20	Korwa	Korwa		st_list_current-072	15
+Jharkhand	Jharkhand		21	Lohra	Lohra		st_list_current-072	15
+Jharkhand	Jharkhand		22	Mahli	Mahli		st_list_current-072	15
+Jharkhand	Jharkhand		23	Mal Paharia, Kumarbhag Paharia	Mal Paharia|Kumarbhag Paharia		st_list_current-072	15
+Jharkhand	Jharkhand		24	Munda, Patar, Tamaria (Tamadia)	Munda|Patar|Tamaria (Tamadia)		st_list_current-072	15
+Jharkhand	Jharkhand		25	Oraon, Dhangar (Oraon)	Oraon|Dhangar (Oraon)		st_list_current-072	15
+Jharkhand	Jharkhand		26	Parhaiya	Parhaiya		st_list_current-072	15
+Jharkhand	Jharkhand		27	Santal	Santal		st_list_current-072	15
+Jharkhand	Jharkhand		28	Sauria Paharia	Sauria Paharia		st_list_current-072	15
+Jharkhand	Jharkhand		29	Savar	Savar		st_list_current-072	15
+Jharkhand	Jharkhand		30	Bhumij	Bhumij		st_list_current-072	15
+Jharkhand	Jharkhand		31	Kawar	Kawar		st_list_current-072	15
+Jharkhand	Jharkhand		32	Kol	Kol		st_list_current-072	15
+Jharkhand	Jharkhand		33	Puran	Puran		st_list_current-072	15
+Karnataka	Karnataka		1	Adiyan	Adiyan		st_list_current-072	16
+Karnataka	Karnataka		2	Barda	Barda		st_list_current-072	16
+Karnataka	Karnataka		3	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	16
+Karnataka	Karnataka		4	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	16
+Karnataka	Karnataka		5	Chenchu, Chenchwar	Chenchu|Chenchwar		st_list_current-072	16
+Karnataka	Karnataka		6	Chodhara	Chodhara		st_list_current-072	16
+Karnataka	Karnataka		7	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	16
+Karnataka	Karnataka		8	Gamit, Gamta, Gavit, Mavchi, Padvi, Valvi	Gamit|Gamta|Gavit|Mavchi|Padvi|Valvi		st_list_current-072	16
+Karnataka	Karnataka		9	Gond, Naikpod, Rajgond	Gond|Naikpod|Rajgond		st_list_current-072	16
+Karnataka	Karnataka		10	Gowdalu	Gowdalu		st_list_current-072	16
+Karnataka	Karnataka		11	Hakkipikki	Hakkipikki		st_list_current-072	16
+Karnataka	Karnataka		12	Hasalaru	Hasalaru		st_list_current-072	16
+Karnataka	Karnataka		13	Irular	Irular		st_list_current-072	16
+Karnataka	Karnataka		14	Iruliga	Iruliga		st_list_current-072	16
+Karnataka	Karnataka		15	Jenu Kuruba	Jenu Kuruba		st_list_current-072	16
+Karnataka	Karnataka		16	Kadu Kuruba, Betta-Kuruba	Kadu Kuruba|Betta-Kuruba		st_list_current-072	16
+Karnataka	Karnataka		17	Kammara (in South Kanara district and Kollegal taluk of Mysore district)	Kammara	in South Kanara district and Kollegal taluk of Mysore district	st_list_current-072	17
+Karnataka	Karnataka		18	Kaniyan, Kanyan (in Kollegal taluk of Mysore district)	Kaniyan|Kanyan	in Kollegal taluk of Mysore district	st_list_current-072	17
+Karnataka	Karnataka		19	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	17
+Karnataka	Karnataka		20	Kattunayakan	Kattunayakan		st_list_current-072	17
+Karnataka	Karnataka		21	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	17
+Karnataka	Karnataka		22	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	17
+Karnataka	Karnataka		23	Konda Kapus	Konda Kapus		st_list_current-072	17
+Karnataka	Karnataka		24	Koraga	Koraga		st_list_current-072	17
+Karnataka	Karnataka		25	Kota	Kota		st_list_current-072	17
+Karnataka	Karnataka		26	Koya, Bhine Koya, Rajkoya	Koya|Bhine Koya|Rajkoya		st_list_current-072	17
+Karnataka	Karnataka		27	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	17
+Karnataka	Karnataka		28	Kuruba (in Coorg district)	Kuruba	in Coorg district	st_list_current-072	17
+Karnataka	Karnataka		29	Kurumans	Kurumans		st_list_current-072	17
+Karnataka	Karnataka		30	Maha Malasar	Maha Malasar		st_list_current-072	17
+Karnataka	Karnataka		31	Malaikudi	Malaikudi		st_list_current-072	17
+Karnataka	Karnataka		32	Malasar	Malasar		st_list_current-072	17
+Karnataka	Karnataka		33	Malayekandi	Malayekandi		st_list_current-072	17
+Karnataka	Karnataka		34	Maleru	Maleru		st_list_current-072	17
+Karnataka	Karnataka		35	Maratha (in Coorg district)	Maratha	in Coorg district	st_list_current-072	17
+Karnataka	Karnataka		36	Marati (in south Kanara district)	Marati	in south Kanara district	st_list_current-072	17
+Karnataka	Karnataka		37	Meda, Medara, Medari, Gauriga, Burud	Meda|Medara|Medari|Gauriga|Burud		st_list_current-072	17
+Karnataka	Karnataka		38	Naikda, Nayaka (including Parivara and Talawara), Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka, Naik, Nayak, Beda, Bedar, and Valmiki	Naikda|Nayaka|Parivara|Talawara|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka|Naik|Nayak|Beda|Bedar|Valmiki		st_list_current-072	17
+Karnataka	Karnataka		39	Palliyan	Palliyan		st_list_current-072	18
+Karnataka	Karnataka		40	Paniyan	Paniyan		st_list_current-072	18
+Karnataka	Karnataka		41	Pardhi, Advichincher, Phanse Pardhi, Haranshikari	Pardhi|Advichincher|Phanse Pardhi|Haranshikari		st_list_current-072	18
+Karnataka	Karnataka		42	Patelia	Patelia		st_list_current-072	18
+Karnataka	Karnataka		43	Rathawa	Rathawa		st_list_current-072	18
+Karnataka	Karnataka		44	Sholaga	Sholaga		st_list_current-072	18
+Karnataka	Karnataka		45	Soligaru	Soligaru		st_list_current-072	18
+Karnataka	Karnataka		46	Toda	Toda		st_list_current-072	18
+Karnataka	Karnataka		47	Varli	Varli		st_list_current-072	18
+Karnataka	Karnataka		48	Vitolia, Kotwalia, Barodia	Vitolia|Kotwalia|Barodia		st_list_current-072	18
+Karnataka	Karnataka		49	Yerava	Yerava		st_list_current-072	18
+Karnataka	Karnataka		50	Siddi (in Belagavi, Dharwad and Uttar Kannada districts)	Siddi	in Belagavi, Dharwad and Uttar Kannada districts	st_list_current-072	18
+Kerala	Kerala		1	Adiyan	Adiyan		st_list_current-072	18
+Kerala	Kerala		2	Arandan, Aranadan	Arandan|Aranadan		st_list_current-072	18
+Kerala	Kerala		3	Eravallan	Eravallan		st_list_current-072	18
+Kerala	Kerala		4	Hill Pulaya, Mala Pulayan, Kurumba Pulayan, Karavazhi Pulayan, Pamba Pulayan	Hill Pulaya|Mala Pulayan|Kurumba Pulayan|Karavazhi Pulayan|Pamba Pulayan		st_list_current-072	18
+Kerala	Kerala		5	Irular, Irulan	Irular|Irulan		st_list_current-072	18
+Kerala	Kerala		6	Kadar, Wayanad Kadar	Kadar|Wayanad Kadar		st_list_current-072	18
+Kerala	Kerala		7	Omitted	Omitted		st_list_current-072	18
+Kerala	Kerala		8	Kanikaran, Kanikkar	Kanikaran|Kanikkar		st_list_current-072	19
+Kerala	Kerala		9	Kattunayakan	Kattunayakan		st_list_current-072	19
+Kerala	Kerala		10	Kochuvelan	Kochuvelan		st_list_current-072	19
+Kerala	Kerala		11	Omitted	Omitted		st_list_current-072	19
+Kerala	Kerala		12	Omitted	Omitted		st_list_current-072	19
+Kerala	Kerala		13	Koraga	Koraga		st_list_current-072	19
+Kerala	Kerala		14	Omitted	Omitted		st_list_current-072	19
+Kerala	Kerala		15	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	19
+Kerala	Kerala		16	Kurichchan, Kurichiyan	Kurichchan|Kurichiyan		st_list_current-072	19
+Kerala	Kerala		17	Kurumans, Mullu Kuruman, Mulla Kuruman, Mala Kuruman	Kurumans|Mullu Kuruman|Mulla Kuruman|Mala Kuruman		st_list_current-072	19
+Kerala	Kerala		18	Kurumbas, Kurumbar, Kurumban	Kurumbas|Kurumbar|Kurumban		st_list_current-072	19
+Kerala	Kerala		19	Maha Malasar	Maha Malasar		st_list_current-072	19
+Kerala	Kerala		20	Malai Arayan, Mala Arayan	Malai Arayan|Mala Arayan		st_list_current-072	19
+Kerala	Kerala		21	Malai Pandaram	Malai Pandaram		st_list_current-072	19
+Kerala	Kerala		22	Malai Vedan, Malavedan	Malai Vedan|Malavedan		st_list_current-072	19
+Kerala	Kerala		23	Malakkuravan	Malakkuravan		st_list_current-072	19
+Kerala	Kerala		24	Malasar	Malasar		st_list_current-072	19
+Kerala	Kerala		25	Malayan, Nattu Malayan, Konga Malayan (excluding the areas comprising the Kasargode, Connanore, Wayanad and Kozhikode districts)	Malayan|Nattu Malayan|Konga Malayan	excluding the areas comprising the Kasargode, Connanore, Wayanad and Kozhikode districts	st_list_current-072	19
+Kerala	Kerala		26	Malayarayar	Malayarayar		st_list_current-072	19
+Kerala	Kerala		27	Mannan (to be spelt in Malayalam script in parenthesis)	Mannan (to be spelt in Malayalam script in parenthesis)		st_list_current-072	19
+Kerala	Kerala		28	Marati (of the Hosdurg and Kasargod Taluks of Kasargod District)	Marati	of the Hosdurg and Kasargod Taluks of Kasargod District	st_list_current-072	19
+Kerala	Kerala		29	Muthuvan, Mudugar, Muduvan	Muthuvan|Mudugar|Muduvan		st_list_current-072	19
+Kerala	Kerala		30	Palleyan, Palliyan, Palliyar, Paliyan	Palleyan|Palliyan|Palliyar|Paliyan		st_list_current-072	19
+Kerala	Kerala		31	Omitted	Omitted		st_list_current-072	19
+Kerala	Kerala		32	Omitted	Omitted		st_list_current-072	20
+Kerala	Kerala		33	Paniyan	Paniyan		st_list_current-072	20
+Kerala	Kerala		34	Ulladan, Ullatan	Ulladan|Ullatan		st_list_current-072	20
+Kerala	Kerala		35	Uraly	Uraly		st_list_current-072	20
+Kerala	Kerala		36	Mala Vettuvan (in Kasargode and Kannur districts)	Mala Vettuvan	in Kasargode and Kannur districts	st_list_current-072	20
+Kerala	Kerala		37	Ten Kurumban, Jenu Kurumban	Ten Kurumban|Jenu Kurumban		st_list_current-072	20
+Kerala	Kerala		38	Thachanadan, Thachanadan Moopan	Thachanadan|Thachanadan Moopan		st_list_current-072	20
+Kerala	Kerala		39	Cholanaickan	Cholanaickan		st_list_current-072	20
+Kerala	Kerala		40	Mavilan	Mavilan		st_list_current-072	20
+Kerala	Kerala		41	Karimpalan	Karimpalan		st_list_current-072	20
+Kerala	Kerala		42	Vetta Kuruman	Vetta Kuruman		st_list_current-072	20
+Kerala	Kerala		43	Mala Panickar	Mala Panickar		st_list_current-072	20
+Ladakh	Ladakh		1	Bakarwal	Bakarwal		st_list_current-072	20
+Ladakh	Ladakh		2	Balti	Balti		st_list_current-072	20
+Ladakh	Ladakh		3	Beda	Beda		st_list_current-072	20
+Ladakh	Ladakh		4	Bot, Boto	Bot|Boto		st_list_current-072	20
+Ladakh	Ladakh		5	Brokpa, Drokpa, Dard, Shin	Brokpa|Drokpa|Dard|Shin		st_list_current-072	20
+Ladakh	Ladakh		6	Changpa	Changpa		st_list_current-072	20
+Ladakh	Ladakh		7	Gaddi `	Gaddi `		st_list_current-072	20
+Ladakh	Ladakh		8	Garra	Garra		st_list_current-072	20
+Ladakh	Ladakh		9	Gujjar	Gujjar		st_list_current-072	20
+Ladakh	Ladakh		10	Mon	Mon		st_list_current-072	20
+Ladakh	Ladakh		11	Purigpa	Purigpa		st_list_current-072	20
+Ladakh	Ladakh		12	Sippi	Sippi		st_list_current-072	20
+Madhya Pradesh	Madhya Pradesh		1	Agariya	Agariya		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		2	Andh	Andh		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		3	Baiga	Baiga		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		4	Bhaina	Bhaina		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		5	Bharia Bhumia, Bhuinhar Bhumia, Bhumiya, Bharia, Paliha, Pando	Bharia Bhumia|Bhuinhar Bhumia|Bhumiya|Bharia|Paliha|Pando		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		6	Bhattra	Bhattra		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		7	Bhil, Bhilala, Barela, Patelia	Bhil|Bhilala|Barela|Patelia		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		8	Bhil Mina	Bhil Mina		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		9	Bhunjia	Bhunjia		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		10	Biar, Biyar	Biar|Biyar		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		11	Binjhwar	Binjhwar		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		12	Birhul, Birhor	Birhul|Birhor		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		13	Damor, Damaria	Damor|Damaria		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		14	Dhanwar	Dhanwar		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		15	Gadaba, Gadba	Gadaba|Gadba		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		16	Gond, Arakh, Arrakh, Agaria, Asur, Badi Maria, Bada María, Bhatola, Bhimma, Bhuta, Koilabhuta, Koliabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Nagwanshi, Ojha, Raj	Gond|Arakh|Arrakh|Agaria|Asur|Badi Maria|Bada María|Bhatola|Bhimma|Bhuta|Koilabhuta|Koliabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Nagwanshi|Ojha|Raj		st_list_current-072	21
+Madhya Pradesh	Madhya Pradesh		17	Halba, Halbi	Halba|Halbi		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		18	Kamar	Kamar		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		19	Karku	Karku		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		20	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		21	Omitted	Omitted		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		22	Khairwar, Kondar	Khairwar|Kondar		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		23	Kharia	Kharia		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		24	Kondh, Khond, Kandh	Kondh|Khond|Kandh		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		25	Kol	Kol		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		26	Kolam	Kolam		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		27	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		28	Korwa, Kodaku	Korwa|Kodaku		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		29	Majhi	Majhi		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		30	Majhwar	Majhwar		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		31	Mawasi	Mawasi		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		32	Omitted	Omitted		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		33	Munda	Munda		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		34	Nagesia, Nagasia	Nagesia|Nagasia		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		35	Oraon, Dhanka, Dhangad	Oraon|Dhanka|Dhangad		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		36	Panika [in (i) Chhatarpur, Panna, Rewa, Satna, Shahdol, Umaria, Sidhi and Tikamgarh districts, and (ii) Sevda and Datia Tehsils of Datia district]	Panika [in (i) Chhatarpur|Panna|Rewa|Satna|Shahdol|Umaria|Sidhi|Tikamgarh districts|(ii) Sevda|Datia Tehsils of Datia district]		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		37	Pao	Pao		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		38	Pardhan, Pathari, Saroti	Pardhan|Pathari|Saroti		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		39	Omitted	Omitted		st_list_current-072	22
+Madhya Pradesh	Madhya Pradesh		40	Pardhi, Bahelia, Bahellia, Chita Pardhi, Langoli Pardhi, Phans Pardhi, Shikari, Takankar, Takia [In (i) Chhindwara, Mandla, Dindori and Seoni districts, (ii) Baihar tehsil of Balaghat district, (iii) Betul, Bhainsdehi and Shahpur tahsils of Betul district, (iv) Patan tahsil and Sihora and Majholi blocks of Jabalpur district, (v) Katni (Murwara) and Vijaya Raghogarh tahsils and Bahoriband and Dhemerkheda blocks of Katni district, (vi) Hoshangabad, Babai, Sohagpur, Pipariya and Bankhedi tahsils and Kesla block of Hoshangabad district, (vii) Narsinghpur district, and (viii)Harsud tahsil of Khandwa district]	Pardhi|Bahelia|Bahellia|Chita Pardhi|Langoli Pardhi|Phans Pardhi|Shikari|Takankar|Takia [In (i) Chhindwara|Mandla|Dindori|Seoni districts|(ii) Baihar tehsil of Balaghat district|(iii) Betul|Bhainsdehi|Shahpur tahsils of Betul district|(iv) Patan tahsil|Sihora|Majholi blocks of Jabalpur district|(v) Katni (Murwara)|Vijaya Raghogarh tahsils|Bahoriband|Dhemerkheda blocks of Katni district|(vi) Hoshangabad|Babai|Sohagpur|Pipariya|Bankhedi tahsils|Kesla block of Hoshangabad district|(vii) Narsinghpur district|(viii)Harsud tahsil of Khandwa district]		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		41	Parja	Parja		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		42	Sahariya, Saharia, Seharia, Sehria, Sosia, Sor	Sahariya|Saharia|Seharia|Sehria|Sosia|Sor		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		43	Saonta, Saunta	Saonta|Saunta		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		44	Saur	Saur		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		45	Sawar, Sawara	Sawar|Sawara		st_list_current-072	23
+Madhya Pradesh	Madhya Pradesh		46	Sonr	Sonr		st_list_current-072	23
+Maharashtra	Maharashtra		1	Andh	Andh		st_list_current-072	23
+Maharashtra	Maharashtra		2	Baiga	Baiga		st_list_current-072	23
+Maharashtra	Maharashtra		3	Barda	Barda		st_list_current-072	23
+Maharashtra	Maharashtra		4	Bavacha, Bamcha	Bavacha|Bamcha		st_list_current-072	24
+Maharashtra	Maharashtra		5	Bhaina	Bhaina		st_list_current-072	24
+Maharashtra	Maharashtra		6	Bharia Bhumia, Bhuinhar Bhumia, Pando	Bharia Bhumia|Bhuinhar Bhumia|Pando		st_list_current-072	24
+Maharashtra	Maharashtra		7	Bhattra	Bhattra		st_list_current-072	24
+Maharashtra	Maharashtra		8	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	24
+Maharashtra	Maharashtra		9	Bhunjia	Bhunjia		st_list_current-072	24
+Maharashtra	Maharashtra		10	Binjhwar	Binjhwar		st_list_current-072	24
+Maharashtra	Maharashtra		11	Birhul, Birhor	Birhul|Birhor		st_list_current-072	24
+Maharashtra	Maharashtra		12	Omitted	Omitted		st_list_current-072	24
+Maharashtra	Maharashtra		13	Dhanka, Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	24
+Maharashtra	Maharashtra		14	Dhanwar	Dhanwar		st_list_current-072	24
+Maharashtra	Maharashtra		15	Dhodia	Dhodia		st_list_current-072	24
+Maharashtra	Maharashtra		16	Dubla, Talavia, Halpati	Dubla|Talavia|Halpati		st_list_current-072	24
+Maharashtra	Maharashtra		17	Gamit, Gamta, Gavit, Mavchi, Padvi	Gamit|Gamta|Gavit|Mavchi|Padvi		st_list_current-072	24
+Maharashtra	Maharashtra		18	Gond, Rajgond, Arakh, Arrakh, Agaria, Asur, Badi Maria, Bada Maria, Bhatola, Bhimma, Bhuta, Koilabhuta, Koilabhuti, Bhar, Bisonhorn Maria, Chota Maria, Dandami Maria, Dhuru, Dhurwa, Dhoba, Dhulia, Dorla, Gaiki, Gatta, Gatti, Gaita, Gond Gowari, Hill Maria, Kandra, Kalanga, Khatola, Koitar, Koya, Khirwar, Khirwara, Kucha Maria, Kuchaki Maria, Madia, Maria, Mana, Mannewar, Moghya, Mogia, Monghya, Mudia, Muria, Nagarchi, Naikpod, Nagwanshi, Ojha	Gond|Rajgond|Arakh|Arrakh|Agaria|Asur|Badi Maria|Bada Maria|Bhatola|Bhimma|Bhuta|Koilabhuta|Koilabhuti|Bhar|Bisonhorn Maria|Chota Maria|Dandami Maria|Dhuru|Dhurwa|Dhoba|Dhulia|Dorla|Gaiki|Gatta|Gatti|Gaita|Gond Gowari|Hill Maria|Kandra|Kalanga|Khatola|Koitar|Koya|Khirwar|Khirwara|Kucha Maria|Kuchaki Maria|Madia|Maria|Mana|Mannewar|Moghya|Mogia|Monghya|Mudia|Muria|Nagarchi|Naikpod|Nagwanshi|Ojha		st_list_current-072	24
+Maharashtra	Maharashtra		19	Halba, Halbi	Halba|Halbi		st_list_current-072	25
+Maharashtra	Maharashtra		20	Kamar	Kamar		st_list_current-072	25
+Maharashtra	Maharashtra		21	Kathodi, Katkari, Dhor Kathodi, Dhor Kathkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Kathkari|Son Kathodi|Son Katkari		st_list_current-072	25
+Maharashtra	Maharashtra		22	Kawar, Kanwar, Kaur, Cherwa, Rathia, Tanwar, Chattri	Kawar|Kanwar|Kaur|Cherwa|Rathia|Tanwar|Chattri		st_list_current-072	25
+Maharashtra	Maharashtra		23	Khairwar	Khairwar		st_list_current-072	25
+Maharashtra	Maharashtra		24	Kharia	Kharia		st_list_current-072	25
+Maharashtra	Maharashtra		25	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	25
+Maharashtra	Maharashtra		26	Kol	Kol		st_list_current-072	25
+Maharashtra	Maharashtra		27	Kolam, Mannervarlu	Kolam|Mannervarlu		st_list_current-072	25
+Maharashtra	Maharashtra		28	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	25
+Maharashtra	Maharashtra		29	Koli Mahadev, Dongar Koli	Koli Mahadev|Dongar Koli		st_list_current-072	25
+Maharashtra	Maharashtra		30	Koli Malhar	Koli Malhar		st_list_current-072	25
+Maharashtra	Maharashtra		31	Kondh, Khond, Kandh	Kondh|Khond|Kandh		st_list_current-072	25
+Maharashtra	Maharashtra		32	Korku, Bopchi, Mouasi, Nihal, Nahul, Bondhi, Bondeya	Korku|Bopchi|Mouasi|Nihal|Nahul|Bondhi|Bondeya		st_list_current-072	25
+Maharashtra	Maharashtra		33	Koya, Bhine Koya, Rajkoya	Koya|Bhine Koya|Rajkoya		st_list_current-072	25
+Maharashtra	Maharashtra		34	Nagesia, Nagasia	Nagesia|Nagasia		st_list_current-072	25
+Maharashtra	Maharashtra		35	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	25
+Maharashtra	Maharashtra		36	Oraon, Dhangad	Oraon|Dhangad		st_list_current-072	25
+Maharashtra	Maharashtra		37	Pardhan, Pathari, Saroti	Pardhan|Pathari|Saroti		st_list_current-072	25
+Maharashtra	Maharashtra		38	Pardhi, Advichincher, Phans Pardhi, Phanse Pardhi, Langoli Pardhi, Bahelia, Bahellia, Chita Pardhi, Shikari, Takankar, Takia	Pardhi|Advichincher|Phans Pardhi|Phanse Pardhi|Langoli Pardhi|Bahelia|Bahellia|Chita Pardhi|Shikari|Takankar|Takia		st_list_current-072	25
+Maharashtra	Maharashtra		39	Parja	Parja		st_list_current-072	26
+Maharashtra	Maharashtra		40	Patelia	Patelia		st_list_current-072	26
+Maharashtra	Maharashtra		41	Pomla	Pomla		st_list_current-072	26
+Maharashtra	Maharashtra		42	Rathawa	Rathawa		st_list_current-072	26
+Maharashtra	Maharashtra		43	Sawar, Sawara	Sawar|Sawara		st_list_current-072	26
+Maharashtra	Maharashtra		44	Thakur, Thakar, Ka Thakur, Ka Thakar, Ma Thakur, Ma Thakar	Thakur|Thakar|Ka Thakur|Ka Thakar|Ma Thakur|Ma Thakar		st_list_current-072	26
+Maharashtra	Maharashtra		45	Omitted	Omitted		st_list_current-072	26
+Maharashtra	Maharashtra		46	Varli	Varli		st_list_current-072	26
+Maharashtra	Maharashtra		47	Vitolia, Kotwalia, Barodia	Vitolia|Kotwalia|Barodia		st_list_current-072	26
+Manipur	Manipur		1	Aimol	Aimol		st_list_current-072	26
+Manipur	Manipur		2	Anal	Anal		st_list_current-072	26
+Manipur	Manipur		3	Angami	Angami		st_list_current-072	26
+Manipur	Manipur		4	Chiru	Chiru		st_list_current-072	26
+Manipur	Manipur		5	Chothe	Chothe		st_list_current-072	26
+Manipur	Manipur		6	Gangte	Gangte		st_list_current-072	26
+Manipur	Manipur		7	Hmar	Hmar		st_list_current-072	26
+Manipur	Manipur		8	Kabui, Inpui, Rongmei	Kabui|Inpui|Rongmei		st_list_current-072	26
+Manipur	Manipur		9	Kacha Naga, Liangmai, Zeme	Kacha Naga|Liangmai|Zeme		st_list_current-072	26
+Manipur	Manipur		10	Koirao, Thangal	Koirao|Thangal		st_list_current-072	26
+Manipur	Manipur		11	Koireng	Koireng		st_list_current-072	26
+Manipur	Manipur		12	Kom	Kom		st_list_current-072	26
+Manipur	Manipur		13	Lamgang	Lamgang		st_list_current-072	26
+Manipur	Manipur		14	Mao	Mao		st_list_current-072	26
+Manipur	Manipur		15	Maram	Maram		st_list_current-072	26
+Manipur	Manipur		16	Maring	Maring		st_list_current-072	26
+Manipur	Manipur		17	Any Mizo (Lushai) Tribes	Any Mizo (Lushai) Tribes		st_list_current-072	27
+Manipur	Manipur		18	Monsang	Monsang		st_list_current-072	27
+Manipur	Manipur		19	Moyon	Moyon		st_list_current-072	27
+Manipur	Manipur		20	Paite	Paite		st_list_current-072	27
+Manipur	Manipur		21	Purum	Purum		st_list_current-072	27
+Manipur	Manipur		22	Ralte	Ralte		st_list_current-072	27
+Manipur	Manipur		23	Sema	Sema		st_list_current-072	27
+Manipur	Manipur		24	Simte	Simte		st_list_current-072	27
+Manipur	Manipur		25	Suhte	Suhte		st_list_current-072	27
+Manipur	Manipur		26	Tangkhul	Tangkhul		st_list_current-072	27
+Manipur	Manipur		27	Thadou	Thadou		st_list_current-072	27
+Manipur	Manipur		28	Vaiphei	Vaiphei		st_list_current-072	27
+Manipur	Manipur		29	Zou	Zou		st_list_current-072	27
+Manipur	Manipur		30	Poumai Naga	Poumai Naga		st_list_current-072	27
+Manipur	Manipur		31	Tarao	Tarao		st_list_current-072	27
+Manipur	Manipur		32	Kharam	Kharam		st_list_current-072	27
+Manipur	Manipur		33	Any Kuki tribes	Any Kuki tribes		st_list_current-072	27
+Manipur	Manipur		34	Mate	Mate		st_list_current-072	27
+Meghalaya	Meghalaya		1	Chakma	Chakma		st_list_current-072	27
+Meghalaya	Meghalaya		2	Dimasa, Kachari	Dimasa|Kachari		st_list_current-072	27
+Meghalaya	Meghalaya		3	Garo	Garo		st_list_current-072	27
+Meghalaya	Meghalaya		4	Hajong	Hajong		st_list_current-072	27
+Meghalaya	Meghalaya		5	Hmar	Hmar		st_list_current-072	27
+Meghalaya	Meghalaya		6	Khasi, Jaintia, Synteng, Pnar, War, Bhoi, Lyngngam	Khasi|Jaintia|Synteng|Pnar|War|Bhoi|Lyngngam		st_list_current-072	27
+Meghalaya	Meghalaya		7	Any Kuki tribes, including:- 7. भी ि ैं-: i. Biate, Biete i. भबयाते,भबयेते ii. Changsan ii. चांगसान iii. Chongloi iii. चांगलोई iv. Doungel iv. दौगेल v. Gamalhou v. गमल्िौ vi. Gangte vi. गांगते गइु ते vii. Guite vii. viii. Hanneng viii. िन्ैनांग ix. Haokip, Haupit ix. िौंभकप ,िभैपत िौलाई x. Haolai x. xi. Hengna xi. िगें ना xii. Hongsungh xii. िौनसधु ह्राग्खोवाल,रांग्खोल xiii. Hrangkhwal, Rangkhol xiii. xiv. Jongbe xiv. जांग्बे xv. Khawchung xv. ख्वौचांग xvi. Khawathlang, Khothalong xvi. ख्वोत्लांग ,खोतालांग xvii. Khelma xvii. खेल्मा xviii. Kholhou xviii. खाल्िु xix. Kipgen xix. भकपगेन xx. Kuki xx. कूकी लेंथाांग xxi. Lengthang xxi. xxii. Lhangum xxii. ल्िाांगम xxiii. Lhoujem xxiii. ल्िाजम ल्िोबुन xxiv. Lhouvun xxiv. xxv. Lupheng xxv. लुफेंग xxvi. Mangjel xxvi. माांजेल xxvii. Misao xxvii. भमसाऊ	Any Kuki tribes|including:- 7. भी ि ैं-: i. Biate|Biete i. भबयाते|भबयेते ii. Changsan ii. चांगसान iii. Chongloi iii. चांगलोई iv. Doungel iv. दौगेल v. Gamalhou v. गमल्िौ vi. Gangte vi. गांगते गइु ते vii. Guite vii. viii. Hanneng viii. िन्ैनांग ix. Haokip|Haupit ix. िौंभकप|िभैपत िौलाई x. Haolai x. xi. Hengna xi. िगें ना xii. Hongsungh xii. िौनसधु ह्राग्खोवाल|रांग्खोल xiii. Hrangkhwal|Rangkhol xiii. xiv. Jongbe xiv. जांग्बे xv. Khawchung xv. ख्वौचांग xvi. Khawathlang|Khothalong xvi. ख्वोत्लांग|खोतालांग xvii. Khelma xvii. खेल्मा xviii. Kholhou xviii. खाल्िु xix. Kipgen xix. भकपगेन xx. Kuki xx. कूकी लेंथाांग xxi. Lengthang xxi. xxii. Lhangum xxii. ल्िाांगम xxiii. Lhoujem xxiii. ल्िाजम ल्िोबुन xxiv. Lhouvun xxiv. xxv. Lupheng xxv. लुफेंग xxvi. Mangjel xxvi. माांजेल xxvii. Misao xxvii. भमसाऊ		st_list_current-072	28
+Meghalaya	Meghalaya		8	Lakher	Lakher		st_list_current-072	29
+Meghalaya	Meghalaya		9	Man (Tai Speaking)	Man (Tai Speaking)		st_list_current-072	29
+Meghalaya	Meghalaya		10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	29
+Meghalaya	Meghalaya		11	Mikir	Mikir		st_list_current-072	29
+Meghalaya	Meghalaya		12	Any Naga tribes	Any Naga tribes		st_list_current-072	29
+Meghalaya	Meghalaya		13	Pawi	Pawi		st_list_current-072	29
+Meghalaya	Meghalaya		14	Synteng	Synteng		st_list_current-072	29
+Meghalaya	Meghalaya		15	Boro Kacharis	Boro Kacharis		st_list_current-072	29
+Meghalaya	Meghalaya		16	Koch	Koch		st_list_current-072	29
+Meghalaya	Meghalaya		17	Raba, Rava	Raba|Rava		st_list_current-072	29
+Mizoram	Mizoram		1	Chakma	Chakma		st_list_current-072	29
+Mizoram	Mizoram		2	Dimasa (Kachari)	Dimasa (Kachari)		st_list_current-072	29
+Mizoram	Mizoram		3	Garo	Garo		st_list_current-072	29
+Mizoram	Mizoram		4	Hajong	Hajong		st_list_current-072	29
+Mizoram	Mizoram		5	Hmar	Hmar		st_list_current-072	29
+Mizoram	Mizoram		6	Khasi and Jaintia (including Khasi, Synteng or Pnar, War, Bhoi or Lyngngam)	Khasi|Jaintia|Khasi|Synteng or Pnar|War|Bhoi or Lyngngam		st_list_current-072	30
+Mizoram	Mizoram		7	Any Kuki tribes, including: - i. Biate or Biete ii. Changsan iii. Chongloi iv. Doungel v. Gamalhou vi. Gangte vii. Guite viii. Hanneng ix. Haokip or Haupit x. Haolai xi. Hengna xii. Hongsungh xiii. Hrangkhwal or Rangkhol xiv. Jongbe xv. Khawchung xvi. Khawathlang or Khothalong xvii. Khelma xviii. Kholhou xix. Kipgen xx. Kuki xxi. Lengthang xxii. Lhangum xxiii. Lhoujem xxiv. Lhouvun	Any Kuki tribes|including: - i. Biate or Biete ii. Changsan iii. Chongloi iv. Doungel v. Gamalhou vi. Gangte vii. Guite viii. Hanneng ix. Haokip or Haupit x. Haolai xi. Hengna xii. Hongsungh xiii. Hrangkhwal or Rangkhol xiv. Jongbe xv. Khawchung xvi. Khawathlang or Khothalong xvii. Khelma xviii. Kholhou xix. Kipgen xx. Kuki xxi. Lengthang xxii. Lhangum xxiii. Lhoujem xxiv. Lhouvun		st_list_current-072	30
+Mizoram	Mizoram		8	Lakher	Lakher		st_list_current-072	31
+Mizoram	Mizoram		9	Man (Tai-Speaking)	Man (Tai-Speaking)		st_list_current-072	31
+Mizoram	Mizoram		10	Any Mizo (Lushai) tribes	Any Mizo (Lushai) tribes		st_list_current-072	31
+Mizoram	Mizoram		11	Mikir	Mikir		st_list_current-072	31
+Mizoram	Mizoram		12	Any Naga tribes	Any Naga tribes		st_list_current-072	31
+Mizoram	Mizoram		13	Pawi	Pawi		st_list_current-072	31
+Mizoram	Mizoram		14	Synteng	Synteng		st_list_current-072	31
+Mizoram	Mizoram		15	Paite	Paite		st_list_current-072	31
+Nagaland	Nagaland		1	Naga	Naga		st_list_current-072	31
+Nagaland	Nagaland		2	Kuki	Kuki		st_list_current-072	31
+Nagaland	Nagaland		3	Kachari	Kachari		st_list_current-072	31
+Nagaland	Nagaland		4	Mikir	Mikir		st_list_current-072	31
+Nagaland	Nagaland		5	Garo	Garo		st_list_current-072	31
+Odisha	Odisha		1	Bagata, Bhakta	Bagata|Bhakta		st_list_current-072	32
+Odisha	Odisha		2	Baiga	Baiga		st_list_current-072	32
+Odisha	Odisha		3	Banjara, Banjari	Banjara|Banjari		st_list_current-072	32
+Odisha	Odisha		4	Bathudi, Bathuri	Bathudi|Bathuri		st_list_current-072	32
+Odisha	Odisha		5	Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora, Bhatara	Bhottada|Dhotada|Bhotra|Bhatra|Bhattara|Bhotora|Bhatara		st_list_current-072	32
+Odisha	Odisha		6	Bhuiya, Bhuyan, Pauri Bhuyan, Paudi Bhuyan	Bhuiya|Bhuyan|Pauri Bhuyan|Paudi Bhuyan		st_list_current-072	32
+Odisha	Odisha		7	Bhumia	Bhumia		st_list_current-072	32
+Odisha	Odisha		8	Bhumij, Teli Bhumij, Haladipokhria Bhumij, Haladi Pokharia Bhumija, Desi Bhumij, Desia Bhumij, Tamaria Bhumij, Tamodia Bhumij, Tamudia Bhumij, Tamundia Bhumij, Tamulia Bhumij, Tamadia Bhumij, Tamadia, Tamaria, Tamudia	Bhumij|Teli Bhumij|Haladipokhria Bhumij|Haladi Pokharia Bhumija|Desi Bhumij|Desia Bhumij|Tamaria Bhumij|Tamodia Bhumij|Tamudia Bhumij|Tamundia Bhumij|Tamulia Bhumij|Tamadia Bhumij|Tamadia|Tamaria|Tamudia		st_list_current-072	32
+Odisha	Odisha		9	Bhunjia, Chuktia Bhunjia	Bhunjia|Chuktia Bhunjia		st_list_current-072	32
+Odisha	Odisha		10	Binjhal, Binjhwar	Binjhal|Binjhwar		st_list_current-072	32
+Odisha	Odisha		11	Binjhia, Binjhoa	Binjhia|Binjhoa		st_list_current-072	32
+Odisha	Odisha		12	Birhor	Birhor		st_list_current-072	32
+Odisha	Odisha		13	Bondo Poraja, Bonda Paroja, Banda Paroja, Banda Paraja, Bonda Paraja, Bondo, Bonda, Banda	Bondo Poraja|Bonda Paroja|Banda Paroja|Banda Paraja|Bonda Paraja|Bondo|Bonda|Banda		st_list_current-072	32
+Odisha	Odisha		14	Chenchu	Chenchu		st_list_current-072	32
+Odisha	Odisha		15	Dal	Dal		st_list_current-072	32
+Odisha	Odisha		16	Desua Bhumij	Desua Bhumij		st_list_current-072	32
+Odisha	Odisha		17	Dharua, Dhuruba, Dhurva, Durua, Dhurua, Dhurava	Dharua|Dhuruba|Dhurva|Durua|Dhurua|Dhurava		st_list_current-072	32
+Odisha	Odisha		18	Didayi, Didai Paroja, Didai	Didayi|Didai Paroja|Didai		st_list_current-072	32
+Odisha	Odisha		19	Gadaba, Bodo Gadaba, Gutob Gadaba, Kapu Gadaba, Ollara Gadaba, Parenga Gadaba, Sano Gadaba	Gadaba|Bodo Gadaba|Gutob Gadaba|Kapu Gadaba|Ollara Gadaba|Parenga Gadaba|Sano Gadaba		st_list_current-072	33
+Odisha	Odisha		20	Gandia	Gandia		st_list_current-072	33
+Odisha	Odisha		21	Ghara	Ghara		st_list_current-072	33
+Odisha	Odisha		22	Gond, Gondo, Rajgond, Maria Gond, Dhur Gond	Gond|Gondo|Rajgond|Maria Gond|Dhur Gond		st_list_current-072	33
+Odisha	Odisha		23	Ho	Ho		st_list_current-072	33
+Odisha	Odisha		24	Holva	Holva		st_list_current-072	33
+Odisha	Odisha		25	Jatapu	Jatapu		st_list_current-072	33
+Odisha	Odisha		26	Juang	Juang		st_list_current-072	33
+Odisha	Odisha		27	Kandha Gauda	Kandha Gauda		st_list_current-072	33
+Odisha	Odisha		28	Kawar, Kanwar, Kaur, Kunwar, Kaonr, Kuanr, Konwar, Kuanar, Kaanr, Koanr, Kuanwar	Kawar|Kanwar|Kaur|Kunwar|Kaonr|Kuanr|Konwar|Kuanar|Kaanr|Koanr|Kuanwar		st_list_current-072	33
+Odisha	Odisha		29	Kharia, Kharian, Berga Kharia, Dhelki Kharia, Dudh Kharia, Erenga Kharia, Munda Kharia,Oraon Kharia, Khadia, Pahari Kharia	Kharia|Kharian|Berga Kharia|Dhelki Kharia|Dudh Kharia|Erenga Kharia|Munda Kharia|Oraon Kharia|Khadia|Pahari Kharia		st_list_current-072	33
+Odisha	Odisha		30	Kharwar	Kharwar		st_list_current-072	33
+Odisha	Odisha		31	Khond, Kond, Kandha, Kandha Kumbhar, Nanguli Kandha, Sitha Kandha, Kondh, Kui, Kui (Kandha), Buda Kondh, Bura Kandha, Desia Kandha, Dungaria Kondh, Kutia Kandha, Kandha Gauda, Muli Kondh, Malua Kondh, Pengo Kandha, Raja Kondh, Raj Khond	Khond|Kond|Kandha|Kandha Kumbhar|Nanguli Kandha|Sitha Kandha|Kondh|Kui|Kui (Kandha)|Buda Kondh|Bura Kandha|Desia Kandha|Dungaria Kondh|Kutia Kandha|Kandha Gauda|Muli Kondh|Malua Kondh|Pengo Kandha|Raja Kondh|Raj Khond		st_list_current-072	33
+Odisha	Odisha		32	Kisan, Nagesar, Nagesia	Kisan|Nagesar|Nagesia		st_list_current-072	33
+Odisha	Odisha		33	Kol	Kol		st_list_current-072	33
+Odisha	Odisha		34	Kolah Loharas, Kol Loharas	Kolah Loharas|Kol Loharas		st_list_current-072	34
+Odisha	Odisha		35	Kolha	Kolha		st_list_current-072	34
+Odisha	Odisha		36	Koli, Malhar	Koli|Malhar		st_list_current-072	34
+Odisha	Odisha		37	Kondadora	Kondadora		st_list_current-072	34
+Odisha	Odisha		38	Kora, Khaira, Khayara	Kora|Khaira|Khayara		st_list_current-072	34
+Odisha	Odisha		39	Korua	Korua		st_list_current-072	34
+Odisha	Odisha		40	Kotia	Kotia		st_list_current-072	34
+Odisha	Odisha		41	Koya, Gumba Koya, Koitur Koya, Kamar Koya, Musara Koya	Koya|Gumba Koya|Koitur Koya|Kamar Koya|Musara Koya		st_list_current-072	34
+Odisha	Odisha		42	Kulis	Kulis		st_list_current-072	34
+Odisha	Odisha		43	Lodha, Nodh, Nodha, Lodh	Lodha|Nodh|Nodha|Lodh		st_list_current-072	34
+Odisha	Odisha		44	Madia	Madia		st_list_current-072	34
+Odisha	Odisha		45	Mahali	Mahali		st_list_current-072	34
+Odisha	Odisha		46	Mankidi	Mankidi		st_list_current-072	34
+Odisha	Odisha		47	Mankirdia, Mankria, Mankidi, Mankidia	Mankirdia|Mankria|Mankidi|Mankidia		st_list_current-072	34
+Odisha	Odisha		48	Matya, Matia	Matya|Matia		st_list_current-072	34
+Odisha	Odisha		49	Mirdhas, Kuda, Koda	Mirdhas|Kuda|Koda		st_list_current-072	34
+Odisha	Odisha		50	Munda, Munda Lohara, Munda Mahalis, Nagabanshi Munda, Oriya Munda	Munda|Munda Lohara|Munda Mahalis|Nagabanshi Munda|Oriya Munda		st_list_current-072	34
+Odisha	Odisha		51	Mundari	Mundari		st_list_current-072	34
+Odisha	Odisha		52	Omanatya, Omanatyo, Amanatya	Omanatya|Omanatyo|Amanatya		st_list_current-072	34
+Odisha	Odisha		53	Oraon, Dhangar, Uran, Uram, Oram, Uraon, Dhangara, Oraon Mudi	Oraon|Dhangar|Uran|Uram|Oram|Uraon|Dhangara|Oraon Mudi		st_list_current-072	34
+Odisha	Odisha		54	Parenga	Parenga		st_list_current-072	34
+Odisha	Odisha		55	Paroja, Parja, Bodo Paroja, Barong Jhodia Paroja, Chhelia Paroja, Jhodia Paroja, Konda Paroja, Paraja, Ponga Paroja, Sodia Paroja, Sano Paroja, Solia Paroja, Bareng Jhodia Paroja	Paroja|Parja|Bodo Paroja|Barong Jhodia Paroja|Chhelia Paroja|Jhodia Paroja|Konda Paroja|Paraja|Ponga Paroja|Sodia Paroja|Sano Paroja|Solia Paroja|Bareng Jhodia Paroja		st_list_current-072	34
+Odisha	Odisha		56	Pentia	Pentia		st_list_current-072	35
+Odisha	Odisha		57	Rajuar, Rajual, Rajuad	Rajuar|Rajual|Rajuad		st_list_current-072	35
+Odisha	Odisha		58	Santal	Santal		st_list_current-072	35
+Odisha	Odisha		59	Saora, Savar, Saura, Sahara, Arsi Saora, Based Saora, Bhima Saora, Bhimma Saora, Chumura Saora, Jara Savar, Jadu Saora, Jati Saora, Juari Saora, Kampu Saora, Kampa Soura, Kapo Saora, Kindal Saora, Kumbi Kancher Saora, Kalapithia Saora, Kirat Saora, Lanjia Saora, Lamba Lanjia Saora, Luara Saora, Luar Saora, Laria Savar, Malia Saora, Malla Saora, Uriya Saora, Raika Saora, Sudda Saora, Sarda Saora, Tankala Saora, Patro Saora, Vesu Saora, Saara	Saora|Savar|Saura|Sahara|Arsi Saora|Based Saora|Bhima Saora|Bhimma Saora|Chumura Saora|Jara Savar|Jadu Saora|Jati Saora|Juari Saora|Kampu Saora|Kampa Soura|Kapo Saora|Kindal Saora|Kumbi Kancher Saora|Kalapithia Saora|Kirat Saora|Lanjia Saora|Lamba Lanjia Saora|Luara Saora|Luar Saora|Laria Savar|Malia Saora|Malla Saora|Uriya Saora|Raika Saora|Sudda Saora|Sarda Saora|Tankala Saora|Patro Saora|Vesu Saora|Saara		st_list_current-072	35
+Odisha	Odisha		60	Shabar, Lodha	Shabar|Lodha		st_list_current-072	35
+Odisha	Odisha		61	Sounti	Sounti		st_list_current-072	35
+Odisha	Odisha		62	Tharua, Tharua Bindhani	Tharua|Tharua Bindhani		st_list_current-072	35
+Odisha	Odisha		63	Muka Dora, Mooka Dora, Nuka Dora, Nooka Dora (in undivided Koraput district which includes Koraput, Nowrangapur, Rayagada and Malkangiri districts)	Muka Dora|Mooka Dora|Nuka Dora|Nooka Dora	in undivided Koraput district which includes Koraput, Nowrangapur, Rayagada and Malkangiri districts	st_list_current-072	35
+Odisha	Odisha		64	Konda Reddy, Konda Reddi	Konda Reddy|Konda Reddi		st_list_current-072	35
+Rajasthan	Rajasthan		1	Bhil, Bhil Garasia, Dholi Bhil, Dungri Bhil, Dungri Garasia, Mewasi Bhil, Rawal Bhil, Tadvi Bhil, Bhagalia, Bhilala, Pawra, Vasava, Vasave	Bhil|Bhil Garasia|Dholi Bhil|Dungri Bhil|Dungri Garasia|Mewasi Bhil|Rawal Bhil|Tadvi Bhil|Bhagalia|Bhilala|Pawra|Vasava|Vasave		st_list_current-072	36
+Rajasthan	Rajasthan		2	Bhil Mina	Bhil Mina		st_list_current-072	36
+Rajasthan	Rajasthan		3	Damor, Damaria	Damor|Damaria		st_list_current-072	36
+Rajasthan	Rajasthan		4	Dhanka, Tadvi, Tetaria, Valvi	Dhanka|Tadvi|Tetaria|Valvi		st_list_current-072	36
+Rajasthan	Rajasthan		5	Garasia (excluding Rajput Garasia)	Garasia	excluding Rajput Garasia	st_list_current-072	36
+Rajasthan	Rajasthan		6	Kathodi, Katkari, Dhor Kathodi, Dhor Katkari, Son Kathodi, Son Katkari	Kathodi|Katkari|Dhor Kathodi|Dhor Katkari|Son Kathodi|Son Katkari		st_list_current-072	36
+Rajasthan	Rajasthan		7	Kokna, Kokni, Kukna	Kokna|Kokni|Kukna		st_list_current-072	36
+Rajasthan	Rajasthan		8	Koli Dhor, Tokre Koli, Kolcha, Kolgha	Koli Dhor|Tokre Koli|Kolcha|Kolgha		st_list_current-072	36
+Rajasthan	Rajasthan		9	Mina	Mina		st_list_current-072	36
+Rajasthan	Rajasthan		10	Naikda, Nayaka, Cholivala Nayaka, Kapadia Nayaka, Mota Nayaka, Nana Nayaka	Naikda|Nayaka|Cholivala Nayaka|Kapadia Nayaka|Mota Nayaka|Nana Nayaka		st_list_current-072	36
+Rajasthan	Rajasthan		11	Patelia	Patelia		st_list_current-072	36
+Rajasthan	Rajasthan		12	Seharia, Sehria, Sahariya	Seharia|Sehria|Sahariya		st_list_current-072	36
+Sikkim	SIKKIM		1	Bhutia (including Chumbipa, Dopthapa, Dukpa, Kagatey, Sherpa, Tibetan, Tromopa, Yolmo)	Bhutia|Chumbipa|Dopthapa|Dukpa|Kagatey|Sherpa|Tibetan|Tromopa|Yolmo		st_list_current-072	36
+Sikkim	SIKKIM		2	Lepcha	Lepcha		st_list_current-072	36
+Sikkim	SIKKIM		3	Limboo	Limboo		st_list_current-072	36
+Sikkim	SIKKIM		4	Tamang	Tamang		st_list_current-072	36
+Tamil Nadu	Tamil Nadu		1	Adiyan	Adiyan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		2	Aranadan	Aranadan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		3	Eravallan	Eravallan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		4	Irular	Irular		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		5	Kadar	Kadar		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		6	Kammara (excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district)	Kammara	excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district	st_list_current-072	37
+Tamil Nadu	Tamil Nadu		7	Kanikaran, Kanikkar (in Kanyakumari district and Shenkottah and Ambasamudram taluks of Tirunelveli district)	Kanikaran|Kanikkar	in Kanyakumari district and Shenkottah and Ambasamudram taluks of Tirunelveli district	st_list_current-072	37
+Tamil Nadu	Tamil Nadu		8	Kaniyan, Kanyan	Kaniyan|Kanyan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		9	Kattunayakan	Kattunayakan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		10	Kochu Velan	Kochu Velan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		11	Konda Kapus	Konda Kapus		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		12	Kondareddis	Kondareddis		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		13	Koraga	Koraga		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		14	Kota (excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district)	Kota	excluding Kanyakumari district and Shenkottah taluk of Tirunelveli district	st_list_current-072	37
+Tamil Nadu	Tamil Nadu		15	Kudiya, Melakudi	Kudiya|Melakudi		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		16	Kurichchan	Kurichchan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		17	Kurumbas (in the Nilgiris district)	Kurumbas	in the Nilgiris district	st_list_current-072	37
+Tamil Nadu	Tamil Nadu		18	Kurumans	Kurumans		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		19	Maha Malasar	Maha Malasar		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		20	Malai Arayan	Malai Arayan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		21	Malai Pandaram	Malai Pandaram		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		22	Malai Vedan	Malai Vedan		st_list_current-072	37
+Tamil Nadu	Tamil Nadu		23	Malakkuravan	Malakkuravan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		24	Malasar	Malasar		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		25	Malayali (in Dharmapuri, North Arcot, Pudukottai, Salem, South Arcot and Tiruchirapalli districts)	Malayali	in Dharmapuri, North Arcot, Pudukottai, Salem, South Arcot and Tiruchirapalli districts	st_list_current-072	38
+Tamil Nadu	Tamil Nadu		26	Malayekandi	Malayekandi		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		27	Mannan	Mannan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		28	Mudugar, Muduvan	Mudugar|Muduvan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		29	Muthuvan	Muthuvan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		30	Palleyan	Palleyan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		31	Palliyan	Palliyan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		32	Palliyar	Palliyar		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		33	Paniyan	Paniyan		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		34	Sholaga	Sholaga		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		35	Toda (excluding Kanyakumari district and Shenkottah Taluk of Tirunelveli district)	Toda	excluding Kanyakumari district and Shenkottah Taluk of Tirunelveli district	st_list_current-072	38
+Tamil Nadu	Tamil Nadu		36	Uraly	Uraly		st_list_current-072	38
+Tamil Nadu	Tamil Nadu		37	Narikoravan, Kurivikkaran	Narikoravan|Kurivikkaran		st_list_current-072	38
+Telangana	Telangana		1	Andh, Sadhu Andh	Andh|Sadhu Andh		st_list_current-072	38
+Telangana	Telangana		2	Bagata	Bagata		st_list_current-072	38
+Telangana	Telangana		3	Bhil	Bhil		st_list_current-072	38
+Telangana	Telangana		4	Chenchu	Chenchu		st_list_current-072	38
+Telangana	Telangana		5	Gadabas, Bodo Gadaba, Gutob Gadaba, Kallayi Gadaba, Parangi Gadaba, Kathera Gadaba, Kapu Gadaba	Gadabas|Bodo Gadaba|Gutob Gadaba|Kallayi Gadaba|Parangi Gadaba|Kathera Gadaba|Kapu Gadaba		st_list_current-072	38
+Telangana	Telangana		6	Gond, Naikpod, Rajgond, Koitur	Gond|Naikpod|Rajgond|Koitur		st_list_current-072	39
+Telangana	Telangana		7	Goudu (in the Agency tracts)	Goudu (in the Agency tracts)		st_list_current-072	39
+Telangana	Telangana		8	Hill Reddis	Hill Reddis		st_list_current-072	39
+Telangana	Telangana		9	Jatapus	Jatapus		st_list_current-072	39
+Telangana	Telangana		10	Kammara	Kammara		st_list_current-072	39
+Telangana	Telangana		11	Kattunayakan	Kattunayakan		st_list_current-072	39
+Telangana	Telangana		12	Kolam, Kolawar	Kolam|Kolawar		st_list_current-072	39
+Telangana	Telangana		13	Konda Dhoras, Kubi	Konda Dhoras|Kubi		st_list_current-072	39
+Telangana	Telangana		14	Konda Kapus	Konda Kapus		st_list_current-072	39
+Telangana	Telangana		15	Kondareddis	Kondareddis		st_list_current-072	39
+Telangana	Telangana		16	Kondhs, Kodi, Kodhu, Desaya Kondhs, Dongria Kondhs, Kuttiya Kondhs, Tikiria Kondhs, Yenity Kondhs, Kuvinga	Kondhs|Kodi|Kodhu|Desaya Kondhs|Dongria Kondhs|Kuttiya Kondhs|Tikiria Kondhs|Yenity Kondhs|Kuvinga		st_list_current-072	39
+Telangana	Telangana		17	Kotia, Bentho Oriya, Bartika, Dulia, Holya, Sanrona, Sidhopaiko	Kotia|Bentho Oriya|Bartika|Dulia|Holya|Sanrona|Sidhopaiko		st_list_current-072	39
+Telangana	Telangana		18	Koya, Doli Koya, Gutta Koya, Kammara Koya, Musara Koya, Oddi Koya, Pattidi Koya, Rajah, Rasha Koya, Lingadhari Koya (ordinary), Kottu Koya, Bhine Koya, Rajkoya	Koya|Doli Koya|Gutta Koya|Kammara Koya|Musara Koya|Oddi Koya|Pattidi Koya|Rajah|Rasha Koya|Lingadhari Koya (ordinary)|Kottu Koya|Bhine Koya|Rajkoya		st_list_current-072	39
+Telangana	Telangana		19	Kulia	Kulia		st_list_current-072	39
+Telangana	Telangana		20	Manna Dhora	Manna Dhora		st_list_current-072	39
+Telangana	Telangana		21	Mukha Dhora, Nooka Dhora	Mukha Dhora|Nooka Dhora		st_list_current-072	39
+Telangana	Telangana		22	Nayaks (in the Agency tracts)	Nayaks (in the Agency tracts)		st_list_current-072	39
+Telangana	Telangana		23	Pardhan	Pardhan		st_list_current-072	39
+Telangana	Telangana		24	Porja, Parangiperja	Porja|Parangiperja		st_list_current-072	39
+Telangana	Telangana		25	Reddi Dhoras	Reddi Dhoras		st_list_current-072	39
+Telangana	Telangana		26	Rona, Rena	Rona|Rena		st_list_current-072	39
+Telangana	Telangana		27	Savaras, Kapu Savaras, Maliya Savaras, Khutto Savaras	Savaras|Kapu Savaras|Maliya Savaras|Khutto Savaras		st_list_current-072	40
+Telangana	Telangana		28	Sugalis, Lambadis, Banjara	Sugalis|Lambadis|Banjara		st_list_current-072	40
+Telangana	Telangana		29	Thoti (in Adilabad, Hyderabad, Karimnagar, Khammam, Mahbubnagar, Medak, Nalgonda, Nizamabad and Warangal districts)	Thoti	in Adilabad, Hyderabad, Karimnagar, Khammam, Mahbubnagar, Medak, Nalgonda, Nizamabad and Warangal districts	st_list_current-072	40
+Telangana	Telangana		30	Yenadis, Chella Yenadi, Kappala Yenadi, Manchi Yenadi, Reddi Yenadi	Yenadis|Chella Yenadi|Kappala Yenadi|Manchi Yenadi|Reddi Yenadi		st_list_current-072	40
+Telangana	Telangana		31	Yerukulas, Koracha, Dabba Yerukula, Kunchapuri Yerukula, Uppu Yerukula	Yerukulas|Koracha|Dabba Yerukula|Kunchapuri Yerukula|Uppu Yerukula		st_list_current-072	40
+Telangana	Telangana		32	Nakkala, Kurvikaran	Nakkala|Kurvikaran		st_list_current-072	40
+Tripura	Tripura		1	Bhil	Bhil		st_list_current-072	40
+Tripura	Tripura		2	Bhutia	Bhutia		st_list_current-072	40
+Tripura	Tripura		3	Chaimal	Chaimal		st_list_current-072	40
+Tripura	Tripura		4	Chakma	Chakma		st_list_current-072	40
+Tripura	Tripura		5	Garoo	Garoo		st_list_current-072	40
+Tripura	Tripura		6	Halam, Bengshel, Dub, Kaipeng, Kalai, Karbong, Lengui, Mussum, Rupini, Sukuchep, Thangchep	Halam|Bengshel|Dub|Kaipeng|Kalai|Karbong|Lengui|Mussum|Rupini|Sukuchep|Thangchep		st_list_current-072	40
+Tripura	Tripura		7	Jamatia	Jamatia		st_list_current-072	40
+Tripura	Tripura		8	Khasia	Khasia		st_list_current-072	40
+Tripura	Tripura		9	Kuki, including the following sub- tribes:- (i) Balte (ii) Belalhut	Kuki|including the following sub- tribes:- (i) Balte (ii) Belalhut		st_list_current-072	40
+Tripura	Tripura		10	Lepcha	Lepcha		st_list_current-072	41
+Tripura	Tripura		11	Lushai	Lushai		st_list_current-072	41
+Tripura	Tripura		12	Mag	Mag		st_list_current-072	41
+Tripura	Tripura		13	Munda, Kaur	Munda|Kaur		st_list_current-072	41
+Tripura	Tripura		14	Noatia, Murashing	Noatia|Murashing		st_list_current-072	41
+Tripura	Tripura		15	Orang	Orang		st_list_current-072	41
+Tripura	Tripura		16	Riang	Riang		st_list_current-072	41
+Tripura	Tripura		17	Santal	Santal		st_list_current-072	41
+Tripura	Tripura		18	Tripura, Tripuri, Tippera	Tripura|Tripuri|Tippera		st_list_current-072	41
+Tripura	Tripura		19	Uchai	Uchai		st_list_current-072	41
+Uttarakhand	Uttrakhand		1	Bhotia	Bhotia		st_list_current-072	42
+Uttarakhand	Uttrakhand		2	Buksa	Buksa		st_list_current-072	42
+Uttarakhand	Uttrakhand		3	Jannsari	Jannsari		st_list_current-072	42
+Uttarakhand	Uttrakhand		4	Raji	Raji		st_list_current-072	42
+Uttarakhand	Uttrakhand		5	Tharu	Tharu		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		1	Bhotia	Bhotia		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		2	Buksa	Buksa		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		3	Jaunsari	Jaunsari		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		4	Raji	Raji		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		5	Tharu	Tharu		st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		6	Gond, Dhuria, Nayak, Ojha, Pathari, Raj Gond (in the districts of Mehrajganj, Sidharth Nagar, Basti, Gorakhpur, Deoria, Mau, Azamgarh, Jonpur, Balia, Gazipur, Varanasi, Mirzapur,Sonbhadra, Sant Kabir Nagar, Kushinagar, Chandauli and Bhadohi)	Gond|Dhuria|Nayak|Ojha|Pathari|Raj Gond	in the districts of Mehrajganj, Sidharth Nagar, Basti, Gorakhpur, Deoria, Mau, Azamgarh, Jonpur, Balia, Gazipur, Varanasi, Mirzapur,Sonbhadra, Sant Kabir Nagar, Kushinagar, Chandauli and Bhadohi	st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		7	Kharwar, Khairwar (in the districts of Deoria, Balia, Ghazipur, Varanasi and Sonbhadra)	Kharwar|Khairwar	in the districts of Deoria, Balia, Ghazipur, Varanasi and Sonbhadra	st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		8	Saharya (in the district of Lalitpur)	Saharya	in the district of Lalitpur	st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		9	Parahiya (in the district of Sonbhadra)	Parahiya	in the district of Sonbhadra	st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		10	Baiga (in the district of Sonbhadra)	Baiga	in the district of Sonbhadra	st_list_current-072	42
+Uttar Pradesh	Uttar Pradesh		11	Pankha, Panika (in the districts of Sonbhadra and Mirzapur)	Pankha|Panika	in the districts of Sonbhadra and Mirzapur	st_list_current-072	43
+Uttar Pradesh	Uttar Pradesh		12	Agariya (in the district of Sonbhadra)	Agariya	in the district of Sonbhadra	st_list_current-072	43
+Uttar Pradesh	Uttar Pradesh		13	Patari (in the district of Sonbhadra)	Patari	in the district of Sonbhadra	st_list_current-072	43
+Uttar Pradesh	Uttar Pradesh		14	Chero (in the districts of Sonbhadra and Varanasi)	Chero	in the districts of Sonbhadra and Varanasi	st_list_current-072	43
+Uttar Pradesh	Uttar Pradesh		15	Bhuiya, Bhuinya (in the district of Sonbhadra)	Bhuiya|Bhuinya	in the district of Sonbhadra	st_list_current-072	43
+West Bengal	West Bengal		1	Asur	Asur		st_list_current-072	43
+West Bengal	West Bengal		2	Baiga	Baiga		st_list_current-072	43
+West Bengal	West Bengal		3	Bedia, Bediya	Bedia|Bediya		st_list_current-072	43
+West Bengal	West Bengal		4	Bhumij	Bhumij		st_list_current-072	43
+West Bengal	West Bengal		5	Bhutia, Sherpa, Toto, Dukpa, Kagatay, Tibetan, Yolmo	Bhutia|Sherpa|Toto|Dukpa|Kagatay|Tibetan|Yolmo		st_list_current-072	43
+West Bengal	West Bengal		6	Birhor	Birhor		st_list_current-072	43
+West Bengal	West Bengal		7	Birjia	Birjia		st_list_current-072	43
+West Bengal	West Bengal		8	Chakma	Chakma		st_list_current-072	43
+West Bengal	West Bengal		9	Chero	Chero		st_list_current-072	43
+West Bengal	West Bengal		10	Chik Baraik	Chik Baraik		st_list_current-072	43
+West Bengal	West Bengal		11	Garo	Garo		st_list_current-072	43
+West Bengal	West Bengal		12	Gond	Gond		st_list_current-072	43
+West Bengal	West Bengal		13	Gorait	Gorait		st_list_current-072	43
+West Bengal	West Bengal		14	Hajang	Hajang		st_list_current-072	43
+West Bengal	West Bengal		15	Ho	Ho		st_list_current-072	43
+West Bengal	West Bengal		16	Karmali	Karmali		st_list_current-072	43
+West Bengal	West Bengal		17	Kharwar	Kharwar		st_list_current-072	43
+West Bengal	West Bengal		18	Khond	Khond		st_list_current-072	44
+West Bengal	West Bengal		19	Kisan	Kisan		st_list_current-072	44
+West Bengal	West Bengal		20	Kora	Kora		st_list_current-072	44
+West Bengal	West Bengal		21	Korwa	Korwa		st_list_current-072	44
+West Bengal	West Bengal		22	Lepcha	Lepcha		st_list_current-072	44
+West Bengal	West Bengal		23	Lodha, Kheria, Kharia	Lodha|Kheria|Kharia		st_list_current-072	44
+West Bengal	West Bengal		24	Lohara, Lohra	Lohara|Lohra		st_list_current-072	44
+West Bengal	West Bengal		25	Magh	Magh		st_list_current-072	44
+West Bengal	West Bengal		26	Mahali	Mahali		st_list_current-072	44
+West Bengal	West Bengal		27	Mahli	Mahli		st_list_current-072	44
+West Bengal	West Bengal		28	Mal Pahariya	Mal Pahariya		st_list_current-072	44
+West Bengal	West Bengal		29	Mech	Mech		st_list_current-072	44
+West Bengal	West Bengal		30	Mru	Mru		st_list_current-072	44
+West Bengal	West Bengal		31	Munda	Munda		st_list_current-072	44
+West Bengal	West Bengal		32	Nagesia	Nagesia		st_list_current-072	44
+West Bengal	West Bengal		33	Oraon	Oraon		st_list_current-072	44
+West Bengal	West Bengal		34	Parhaiya	Parhaiya		st_list_current-072	44
+West Bengal	West Bengal		35	Rabha	Rabha		st_list_current-072	44
+West Bengal	West Bengal		36	Santal	Santal		st_list_current-072	44
+West Bengal	West Bengal		37	Sauria Paharia	Sauria Paharia		st_list_current-072	44
+West Bengal	West Bengal		38	Savar	Savar		st_list_current-072	44
+West Bengal	West Bengal		39	Limbu (Subba)	Limbu (Subba)		st_list_current-072	44
+West Bengal	West Bengal		40	Tamang	Tamang		st_list_current-072	44
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		1	Andamanese, Chariar, Chari, Kora, Tabo, Bo, Yere, Kede, Bea, Balawa, Bojigiyab, Juwai, Kol	Andamanese|Chariar|Chari|Kora|Tabo|Bo|Yere|Kede|Bea|Balawa|Bojigiyab|Juwai|Kol		st_list_current-072	45
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		2	Jarawas	Jarawas		st_list_current-072	45
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		3	Nicobarese	Nicobarese		st_list_current-072	45
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		4	Onges	Onges		st_list_current-072	45
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		5	Sentinelese	Sentinelese		st_list_current-072	45
+Andaman and Nicobar Islands	Andaman and Nicobar Islands		6	Shom Pens	Shom Pens		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		1	Dhodia	Dhodia		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		2	Dubla including Halpati	Dubla including Halpati		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		3	Kathodi	Kathodi		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		4	Kokna	Kokna		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		5	Koli Dhor including Kolgha	Koli Dhor including Kolgha		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		6	Naikda or Nayaka	Naikda or Nayaka		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		7	Varli	Varli		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		1	Dhodia	Dhodia		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		2	Dubla (Halpati)	Dubla (Halpati)		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		3	Naikda (Talavia)	Naikda (Talavia)		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		4	Siddi (Nayaka)	Siddi (Nayaka)		st_list_current-072	45
+Dadra and Nagar Haveli and Daman and Diu	Dadra and Nagar Haveli and Daman and Diu		5	Varli	Varli		st_list_current-072	45
+Lakshadweep	Lakshadweep		0	Throughout the Union territory: - Inhabitants of the Laccadive, Minicoy and Aminidivi Islands who, and both of whose parents, were born in those islands. Provided that the children who are born to inhabitants of Lakshadweep in any other place in the mainland of India shall be deemed to be inhabitants born in the islands if such children settle permanently in the islands. Explanation: The term “settle permanently” shall have the same meaning as defined under clause 3(1)(d) of the Lakshadweep Panchayats Regulation, 1994	Throughout the Union territory: - Inhabitants of the Laccadive|Minicoy|Aminidivi Islands who|both of whose parents|were born in those islands. Provided that the children who are born to inhabitants of Lakshadweep in any other place in the mainland of India shall be deemed to be inhabitants born in the islands if such children settle permanently in the islands. Explanation: The term “settle permanently” shall have the same meaning as defined under clause 3(1)(d) of the Lakshadweep Panchayats Regulation|1994		st_list_current-072	46
+Puducherry	Puducherry		0	Irular (including Villi and Vettaikaran)	Irular|Villi|Vettaikaran		st_list_current-072	46

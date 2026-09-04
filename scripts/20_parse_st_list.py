@@ -49,52 +49,75 @@ OUT = HERE / "lists/st_entries.tsv"
 # tail of Odisha's entry 6 -- as the start of a new state, and produced 53
 # states and 6 Odisha entries against a true 62. The set is public and
 # closed, so there is no reason to guess.
-STATES = {
-    "andhra pradesh",
-    "arunachal pradesh",
-    "assam",
-    "bihar",
-    "chhattisgarh",
-    "chattisgarh",
-    "goa",
-    "gujarat",
-    "haryana",
-    "himachal pradesh",
-    "jharkhand",
-    "karnataka",
-    "kerala",
-    "madhya pradesh",
-    "maharashtra",
-    "manipur",
-    "meghalaya",
-    "mizoram",
-    "nagaland",
-    "odisha",
-    "orissa",
-    "punjab",
-    "rajasthan",
-    "sikkim",
-    "tamil nadu",
-    "telangana",
-    "tripura",
-    "uttar pradesh",
-    "uttarakhand",
-    "uttaranchal",
-    "west bengal",
-    "andaman and nicobar islands",
-    "andaman & nicobar islands",
-    "dadra and nagar haveli",
-    "dadra and nagar haveli and daman and diu",
-    "daman and diu",
-    "delhi",
-    "jammu and kashmir",
-    "jammu & kashmir",
-    "ladakh",
-    "lakshadweep",
-    "puducherry",
-    "pondicherry",
-    "chandigarh",
+# Headings are matched against the fixed set of States and Union Territories,
+# canonicalised, because neither the printed spelling nor the shape can be
+# trusted. Two failures drove this. Accepting any capitalised unnumbered line
+# read the wrapped continuation "Bhuyan" -- the tail of Odisha's entry 6 -- as a
+# new state, giving 53 states and 6 Odisha entries against a true 64. And the
+# Order misspells Uttarakhand as "Uttrakhand", so a set holding only the correct
+# spelling lost a whole State whose five tribes were in the document all along.
+CANONICAL = {
+    "andhra pradesh": "Andhra Pradesh",
+    "arunachal pradesh": "Arunachal Pradesh",
+    "assam": "Assam",
+    "bihar": "Bihar",
+    "chhattisgarh": "Chhattisgarh",
+    "chattisgarh": "Chhattisgarh",
+    "goa": "Goa",
+    "gujarat": "Gujarat",
+    "haryana": "Haryana",
+    "himachal pradesh": "Himachal Pradesh",
+    "jharkhand": "Jharkhand",
+    "karnataka": "Karnataka",
+    "kerala": "Kerala",
+    "madhya pradesh": "Madhya Pradesh",
+    "maharashtra": "Maharashtra",
+    "manipur": "Manipur",
+    "meghalaya": "Meghalaya",
+    "mizoram": "Mizoram",
+    "nagaland": "Nagaland",
+    "odisha": "Odisha",
+    "orissa": "Odisha",
+    "punjab": "Punjab",
+    "rajasthan": "Rajasthan",
+    "sikkim": "Sikkim",
+    "tamil nadu": "Tamil Nadu",
+    "telangana": "Telangana",
+    "tripura": "Tripura",
+    "uttar pradesh": "Uttar Pradesh",
+    "uttarakhand": "Uttarakhand",
+    "uttrakhand": "Uttarakhand",
+    "uttaranchal": "Uttarakhand",
+    "west bengal": "West Bengal",
+    "andaman and nicobar islands": "Andaman and Nicobar Islands",
+    "andaman & nicobar islands": "Andaman and Nicobar Islands",
+    "dadra and nagar haveli": "Dadra and Nagar Haveli and Daman and Diu",
+    "dadra and nagar haveli and daman and diu": "Dadra and Nagar Haveli and Daman and Diu",
+    "daman and diu": "Dadra and Nagar Haveli and Daman and Diu",
+    "delhi": "Delhi",
+    "jammu and kashmir": "Jammu and Kashmir",
+    "jammu & kashmir": "Jammu and Kashmir",
+    "ladakh": "Ladakh",
+    "lakshadweep": "Lakshadweep",
+    "puducherry": "Puducherry",
+    "pondicherry": "Puducherry",
+    "chandigarh": "Chandigarh",
 }
+
+# States and UTs with no Scheduled Tribes at all. Recorded so that "the Order
+# schedules nobody here" can be told apart from "this parse missed them",
+# which is the only thing that makes the gap report worth reading.
+NO_SCHEDULED_TRIBES = {"Punjab", "Haryana", "Delhi", "Chandigarh"}
+
+# A line ending in a colon, or opening with a roman numeral, introduces a
+# section rather than a tribe. Assam's list is split into "I. In the autonomous
+# Districts of..." and "II. In the State of Assam including...", and Arunachal
+# opens "All tribes in the State including:". Read as entries these become
+# phantom tribes; read as context they are the state-level area restriction.
+SECTION = re.compile(r"(:\s*$)|(^(?:[IVX]+|[A-H])\s*[.)]\s)")
+
+# Trailing editorial matter that is not part of any entry.
+NOTE = re.compile(r"\s*Note\s*:.*$", re.I | re.S)
 
 
 def is_state(line: str) -> bool:
@@ -106,7 +129,7 @@ def is_state(line: str) -> bool:
     Returns:
         True when the line names a State or UT.
     """
-    return re.sub(r"[^a-z& ]", "", line.lower()).strip() in STATES
+    return re.sub(r"[^a-z& ]", "", line.lower()).strip() in CANONICAL
 
 
 ENTRY = re.compile(r"^(\d{1,3})\s*[.)]\s*(.*)$")
@@ -181,12 +204,26 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
     rows: list[dict] = []
     barren: list[str] = []
     state = ""
+    printed_state = ""
+    section = ""
     opened = False
     with pdfplumber.open(path) as pdf:
         for number, page in enumerate(pdf.pages, 1):
             before = len(rows)
             pending: dict | None = None
-            for line in latin_column(page):
+            lines = latin_column(page)
+            # A heading can wrap: "Dadra and Nagar Haveli and Daman" / "and Diu"
+            # is one UT split by the column width. Joining a line with its
+            # successor before testing recovers it; the join is only kept when
+            # the pair names a State, so it cannot swallow an entry.
+            joined = set()
+            for index in range(len(lines) - 1):
+                pair = f"{lines[index]} {lines[index + 1]}".strip()
+                if is_state(pair) and not is_state(lines[index]):
+                    lines[index] = pair
+                    joined.add(index + 1)
+            lines = [line for index, line in enumerate(lines) if index not in joined]
+            for line in lines:
                 if NOISE.match(line):
                     continue
                 match = ENTRY.match(line)
@@ -196,6 +233,8 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                         rows.append(pending)
                     pending = {
                         "state": state,
+                        "state_as_printed": printed_state,
+                        "section": section,
                         "entry_no": int(match.group(1)),
                         "name_as_printed": match.group(2).strip(),
                         "source_id": source_id,
@@ -205,13 +244,21 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                     if pending:
                         rows.append(pending)
                         pending = None
-                    state = line.strip()
+                    printed_state = line.strip()
+                    state = CANONICAL[re.sub(r"[^a-z& ]", "", line.lower()).strip()]
+                    section = ""
                     opened = False
-                elif pending is None and state and not opened:
+                elif SECTION.search(line) and not opened:
+                    # Section heading, not a tribe. Kept as context for the
+                    # entries that follow rather than emitted as one.
+                    section = f"{section} {line}".strip()
+                elif pending is None and state and not opened and not SECTION.search(line):
                     # An unnumbered entry directly under a state heading.
                     opened = True
                     pending = {
                         "state": state,
+                        "state_as_printed": printed_state,
+                        "section": section,
                         "entry_no": 0,
                         "name_as_printed": line.strip(),
                         "source_id": source_id,
@@ -225,7 +272,7 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
             if len(rows) == before:
                 barren.append(str(number))
     for row in rows:
-        printed = row["name_as_printed"].rstrip(" .,;")
+        printed = NOTE.sub("", row["name_as_printed"]).rstrip(" .,;")
         restrictions = [m.group(1).strip() for m in AREA.finditer(printed)]
         row["area_restriction"] = " | ".join(restrictions)
         without = AREA.sub(" ", printed)
@@ -260,6 +307,8 @@ def main() -> None:
             handle,
             fieldnames=[
                 "state",
+                "state_as_printed",
+                "section",
                 "entry_no",
                 "name_as_printed",
                 "synonyms",
@@ -288,9 +337,13 @@ def main() -> None:
         writer.writerow(["state", "n_entries"])
         for name in sorted(counts):
             writer.writerow([name, counts[name]])
-    missing = sorted(s for s in STATES if s not in {x.lower() for x in states})
+    seen = set(states)
+    missing = sorted(set(CANONICAL.values()) - seen - NO_SCHEDULED_TRIBES)
     print(f"per-state counts -> {report}")
-    print(f"States/UTs in the reference set with no entry read: {len(missing)}")
+    if missing:
+        print(f"States/UTs with STs but no entry read: {', '.join(missing)}")
+    else:
+        print("every State/UT with Scheduled Tribes yielded at least one entry")
 
 
 if __name__ == "__main__":

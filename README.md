@@ -55,7 +55,7 @@ is legally **not** SC, while `କନ୍ଧ ଖ୍ରୀଷ୍ଟିୟାନ` �
 still ST. A crosswalk that reads only the caste half of the label gets one of
 those wrong.
 
-**Many entries are scheduled only in named places.** 34 of 773 ST entries carry
+**Many entries are scheduled only in named places.** 34 of 772 ST entries carry
 an area restriction: Gujarat's *Kunbi* only in the Dangs district, Andhra's
 *Dhulia, Paiko, Putiya* only in Vishakhapatnam and Vijayanagaram. Category is
 therefore a function of *(label, district)*, not of label alone, which is why
@@ -82,24 +82,44 @@ and the amendment trail back to a 1936 Order predating the Constitution — was
 recovered from the Wayback Machine rather than the live site.**
 
 **Step 20** reads the ST Order's two-column layout by word position, splitting on
-the gutter found per page. It recovers the Order's own synonym lists
-(`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora, Bhatara` is one tribe,
-Odisha entry 5), splits area restrictions into their own column, and picks up
-the entries the Order prints without a number.
+the gutter found per page. **772 entries across 32 States and UTs — every State
+and UT that has Scheduled Tribes yields at least one.** It recovers the Order's
+own synonym lists (`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora,
+Bhatara` is one tribe, Odisha entry 5), splits the 34 area restrictions into
+their own column, keeps section headings as context rather than emitting them as
+phantom tribes, and picks up the entries the Order prints without a number.
+
+## What the source gets wrong, and how that is handled
+
+The Order is a scanned-and-retyped legal document and it has typos. Each is
+recorded rather than corrected in place: `state` carries the canonical name and
+`state_as_printed` carries what the page actually says.
+
+- **The Order misspells Uttarakhand as `Uttrakhand`**, and spells Jaunsari as
+  `Jannsari` under that heading while spelling it correctly under Uttar Pradesh.
+  Matching only the correct spelling lost the whole State — its five tribes were
+  in the document the entire time.
+- **A heading can wrap.** `Dadra and Nagar Haveli and Daman` / `and Diu` is one
+  UT split by the column width.
+- **Not every entry is numbered.** Puducherry's sole tribe and Lakshadweep's
+  descriptive entry are bare text.
+- **Some lines are sections, not tribes.** Assam's list splits into `I. In the
+  autonomous Districts of...` and `II. In the State of Assam...`; Arunachal opens
+  `All tribes in the State including:`. These are kept in a `section` column as
+  context for the entries beneath them.
+- Puducherry's entry trails into editorial boilerplate (`Note: In case of any
+  discrepancies...`), which is stripped.
 
 ## Known gaps
 
-Recorded rather than papered over.
-
-- **Uttarakhand does not appear in the 2025 ST Order PDF at all** — zero
-  mentions. A gap in the document as retrieved, not in the parser.
-- Arunachal Pradesh and Assam open with section headers (`All tribes in the
-  State including:`) that land as entry 0 rather than as tribes.
-- Puducherry's entry carries trailing document boilerplate.
+- SC, OBC and PVTG lists are fetched but not yet parsed. Only the ST Order has a
+  reader.
+- 6 of 74 registered sources resolved neither live nor in the archive. They are
+  manifest rows with a status and no checksum; four are amendment Acts and two
+  are administrative circulars.
 - `tribal.nic.in` does not present a complete certificate chain; verification is
   disabled for that host alone and the manifest records `tls_verified=false` on
   the affected rows.
-- SC, OBC and PVTG lists are fetched but not yet parsed.
 
 ## Not yet built
 
