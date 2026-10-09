@@ -68,7 +68,9 @@ Numbered, re-runnable, each step writing only its own layer.
 | step | writes |
 |---|---|
 | `scripts/01_fetch_sources.py` | `sources/raw/<sha256>.<ext>`, `sources/manifest.tsv` |
+| `scripts/02_crawl_archive_history.py` | `sources/discovered.tsv`; with `--promote`, new rows in `sources/registry.tsv` |
 | `scripts/03_parse_st_list.py` | `lists/st_entries.tsv`, `lists/st_parse_report.tsv` |
+| `scripts/04_over_time.py` | `lists/presence_matrix.tsv`, `lists/n_communities.tsv`, `out/fig/*.png` |
 | `scripts/05_parse_wb_obc.py` | `lists/wb_obc_entries.tsv`, `lists/wb_obc_reconcile.tsv`, `lists/wb_obc_parse_report.tsv` |
 
 **Step 01** fetches every URL in `sources/registry.tsv`, records the newest
@@ -82,6 +84,14 @@ was written, and **every Scheduled Castes document here — the consolidated Ord
 and the amendment trail back to a 1936 Order predating the Constitution — was
 recovered from the Wayback Machine rather than the live site.**
 
+**Step 02** uses the archive as a record rather than a fallback. Ministries mint
+a new URL for each edition instead of replacing bytes, so change lives in the
+index pages that link to documents, not in the documents. It walks every capture
+of each page in `sources/index_pages.tsv` and writes the union of what they ever
+linked to `sources/discovered.tsv`. The 2022 capture of the SC page alone links
+29 PDFs the live page no longer mentions. Promoting a discovered URL into the
+registry is a separate `--promote` decision.
+
 **Step 03** reads the ST Order's two-column layout by word position, splitting on
 the gutter found per page. **772 entries across 32 States and UTs — every State
 and UT that has Scheduled Tribes yields at least one.** It recovers the Order's
@@ -89,6 +99,12 @@ own synonym lists (`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora,
 Bhatara` is one tribe, Odisha entry 5), splits the 34 area restrictions into
 their own column, keeps section headings as context rather than emitting them as
 phantom tribes, and picks up the entries the Order prints without a number.
+
+**Step 04** compares ST editions. It builds a presence matrix of synonyms by
+edition, per state, and counts entries and distinct synonyms per edition. The
+two counts are kept separate because they move for different reasons: entries
+change when a community is scheduled or de-scheduled, synonyms when the same
+community is written more ways.
 
 ## West Bengal's State List of OBCs
 

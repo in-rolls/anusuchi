@@ -51,6 +51,8 @@ from pathlib import Path
 
 import requests
 import urllib3
+from wayback import WaybackClient, WaybackSession
+from wayback.exceptions import WaybackException
 
 HERE = Path(__file__).resolve().parent.parent
 REGISTRY = HERE / "sources/registry.tsv"
@@ -66,9 +68,12 @@ UNVERIFIED_HOSTS = {"tribal.nic.in"}
 RATE_LIMIT_RETRIES = 4
 RATE_LIMIT_WAIT = 60.0
 
-# The CDX index, not the `wayback/available` endpoint: the latter answered
-# "no capture" for 4 of 6 PDFs that CDX listed, and a different 4 on each run.
-CDX = "https://web.archive.org/cdx/search/cdx"
+# Captures are looked up in the CDX index through the `wayback` library, as in
+# step 02. The `wayback/available` endpoint answered "no capture" for 4 of 6
+# PDFs that CDX listed, a different 4 on each run; and a hand-built CDX call
+# reads the archive's HTTP 200 "Temporarily Offline" page as no capture, where
+# the library raises and retries. CDX itself takes 10 to 50 seconds to answer.
+ARCHIVE_TIMEOUT = 120
 SAVE = "https://web.archive.org/save/"
 UA = "anusuchi/0.1 (statutory caste list archive; research use)"
 
@@ -103,31 +108,23 @@ def read_registry() -> list[dict]:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
-def wayback_snapshot(url: str, session: requests.Session) -> tuple[str, str]:
+def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str]:
     """Return the newest Wayback capture of a URL.
 
     Args:
         url: The original URL.
-        session: A requests session.
+        archive: A Wayback client.
 
     Returns:
         The capture URL and its timestamp, or two empty strings.
     """
-    params = {"url": url, "output": "json", "limit": "-1", "filter": "statuscode:200"}
-    rows = []
-    # CDX answers in 10 to 50 seconds and sometimes not at all; a single
-    # timed-out query is not an answer.
-    for _ in range(3):
-        try:
-            response = session.get(CDX, params=params, timeout=120, headers={"User-Agent": UA})
-            response.raise_for_status()
-            rows = response.json() if response.text.strip() else []
-            break
-        except (requests.RequestException, ValueError):
-            continue
-    if len(rows) < 2:
+    try:
+        records = list(archive.search(url, limit=-1, filter_field="statuscode:200"))
+    except WaybackException:
         return "", ""
-    timestamp = rows[-1][rows[0].index("timestamp")]
+    if not records:
+        return "", ""
+    timestamp = records[-1].timestamp.strftime("%Y%m%d%H%M%S")
     return f"http://web.archive.org/web/{timestamp}/{url}", timestamp
 
 
@@ -165,12 +162,13 @@ def extension_for(url: str, content_type: str) -> str:
     return suffix if 1 < len(suffix) <= 5 else ".bin"
 
 
-def fetch_one(row: dict, session: requests.Session) -> dict:
+def fetch_one(row: dict, session: requests.Session, archive: WaybackClient) -> dict:
     """Acquire one source and return its manifest row.
 
     Args:
         row: A registry row.
         session: A requests session.
+        archive: A Wayback client.
 
     Returns:
         The manifest row, with empty checksum fields when the fetch failed.
@@ -205,12 +203,12 @@ def fetch_one(row: dict, session: requests.Session) -> dict:
             # The live site failed. Fall back to the archive, which is why the
             # archive is queried for every source rather than only for the
             # ones that happen to break.
-            target, _ = wayback_snapshot(url, session)
+            target, _ = wayback_snapshot(url, archive)
             if not target:
                 record["note"] = "live fetch failed and no wayback capture"
                 break
             record["note"] = "recovered from wayback"
-        for retry in range(RATE_LIMIT_RETRIES):
+        for _ in range(RATE_LIMIT_RETRIES):
             try:
                 response = session.get(
                     target, timeout=120, verify=verify, headers={"User-Agent": UA}
@@ -243,10 +241,10 @@ def fetch_one(row: dict, session: requests.Session) -> dict:
             stored.write_bytes(body)
         record.update(n_bytes=str(len(body)), sha256=digest, stored_as=stored.name)
 
-    wayback_url, wayback_timestamp = wayback_snapshot(url, session)
+    wayback_url, wayback_timestamp = wayback_snapshot(url, archive)
     if not wayback_url:
         request_archive(url, session)
-        wayback_url, wayback_timestamp = wayback_snapshot(url, session)
+        wayback_url, wayback_timestamp = wayback_snapshot(url, archive)
     record.update(wayback_url=wayback_url, wayback_timestamp=wayback_timestamp)
     return record
 
@@ -278,9 +276,12 @@ def main() -> None:
     already = {(r["source_id"], r["sha256"]) for r in existing if r.get("sha256")}
 
     session = requests.Session()
+    archive = WaybackClient(
+        session=WaybackSession(retries=6, backoff=2, timeout=ARCHIVE_TIMEOUT, user_agent=UA)
+    )
     written = []
     for index, row in enumerate(rows, 1):
-        record = fetch_one(row, session)
+        record = fetch_one(row, session, archive)
         key = (record["source_id"], record["sha256"])
         # A lookup that comes back empty is not evidence the capture is gone;
         # the archive's index is intermittent. Keep the one already on record.

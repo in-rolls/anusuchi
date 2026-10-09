@@ -3,13 +3,19 @@ name = "anusuchi"
 version = "0.1.0"
 description = "Statutory caste lists for India, stored as published and parsed into rows"
 requires-python = ">=3.11"
-dependencies = ["pandas>=2.2", "pdfplumber>=0.11", "requests>=2.32"]
+dependencies = [
+    "matplotlib>=3.10",
+    "pdfplumber>=0.11",
+    "requests>=2.32",
+    "wayback>=0.5.1",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "black>=24", "isort>=5", "flake8>=7"]
 
 [tool.black]
 line-length = 100
+target-version = ["py311"]
 
 [tool.isort]
 profile = "black"
