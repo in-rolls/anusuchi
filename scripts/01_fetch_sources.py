@@ -28,12 +28,12 @@ able to answer, and it cannot answer it if editions overwrite each other.
 `tribal.nic.in` does not present a complete certificate chain, so verification
 is disabled for it and the manifest says so in `tls_verified`. For legal
 reference data an unverified channel is a fact to record, not to hide; the
-checksum and the independent entry-count check in step 20 are what stand in
+checksum and the independent entry-count check in step 03 are what stand in
 for it.
 
 Run:
 
-    python scripts/10_fetch_sources.py [--limit N] [--kind st_list_current]
+    python scripts/01_fetch_sources.py [--limit N] [--kind st_list_current]
 
 Writes `sources/raw/<sha256>.<ext>` and `sources/manifest.tsv`.
 """
@@ -66,7 +66,9 @@ UNVERIFIED_HOSTS = {"tribal.nic.in"}
 RATE_LIMIT_RETRIES = 4
 RATE_LIMIT_WAIT = 60.0
 
-AVAILABILITY = "https://archive.org/wayback/available"
+# The CDX index, not the `wayback/available` endpoint: the latter answered
+# "no capture" for 4 of 6 PDFs that CDX listed, and a different 4 on each run.
+CDX = "https://web.archive.org/cdx/search/cdx"
 SAVE = "https://web.archive.org/save/"
 UA = "anusuchi/0.1 (statutory caste list archive; research use)"
 
@@ -111,16 +113,22 @@ def wayback_snapshot(url: str, session: requests.Session) -> tuple[str, str]:
     Returns:
         The capture URL and its timestamp, or two empty strings.
     """
-    try:
-        response = session.get(
-            AVAILABILITY, params={"url": url}, timeout=30, headers={"User-Agent": UA}
-        )
-        snapshot = response.json().get("archived_snapshots", {}).get("closest", {})
-        if snapshot.get("available"):
-            return snapshot.get("url", ""), snapshot.get("timestamp", "")
-    except (requests.RequestException, ValueError):
-        pass
-    return "", ""
+    params = {"url": url, "output": "json", "limit": "-1", "filter": "statuscode:200"}
+    rows = []
+    # CDX answers in 10 to 50 seconds and sometimes not at all; a single
+    # timed-out query is not an answer.
+    for _ in range(3):
+        try:
+            response = session.get(CDX, params=params, timeout=120, headers={"User-Agent": UA})
+            response.raise_for_status()
+            rows = response.json() if response.text.strip() else []
+            break
+        except (requests.RequestException, ValueError):
+            continue
+    if len(rows) < 2:
+        return "", ""
+    timestamp = rows[-1][rows[0].index("timestamp")]
+    return f"http://web.archive.org/web/{timestamp}/{url}", timestamp
 
 
 def request_archive(url: str, session: requests.Session) -> None:
@@ -274,6 +282,13 @@ def main() -> None:
     for index, row in enumerate(rows, 1):
         record = fetch_one(row, session)
         key = (record["source_id"], record["sha256"])
+        # A lookup that comes back empty is not evidence the capture is gone;
+        # the archive's index is intermittent. Keep the one already on record.
+        known = next((r for r in existing if (r["source_id"], r["sha256"]) == key), None)
+        if known and known.get("wayback_url") and not record["wayback_url"]:
+            record.update(
+                wayback_url=known["wayback_url"], wayback_timestamp=known["wayback_timestamp"]
+            )
         if record["sha256"] and key in already:
             record["note"] = (record["note"] + " unchanged").strip()
         else:

@@ -1,0 +1,67 @@
+entry_no	gazette_number_as_read	gazette_ocr	gazette_score	copy_number_as_read	copy_ocr	copy_score	typed_entry_no	typed_name	copies_agree
+1	I	Kapali	1.000	I	Kapali	1.000	15	Kapali	true
+2	2	Baisirya Kapali	0.889	2	Baishya Kapali	1.000	16	Baishya Kapali	true
+3	3	Kurmi	1.000	J	Kurmi	1.000	17	Kurmi	true
+4	4	Sutradhar	1.000	4	Sutradhar	1.000	18	Sutradhar	true
+5	5	Karmakar	1.000	5	Karmakar	1.000	19	Karmakar	true
+6	6	Kumbhakar	1.000	6	Kumbhakar	1.000	1	Kumbhakar	true
+7	7	Swarnakar	1.000	7	Swamakar	0.824	20	Swarnakar	true
+8	8	Teli, Kolu	1.000	8	Teli, Kolu	1.000	21	Teli, Kolu	true
+9	9	Napit	1.000	9	Napit	1.000	2	Napit	true
+10	10	Yogi, Nath	1.000	l0	Yogi, Nath	1.000	3	Yogi, Nath	true
+11	t1	Goala, Gope (Pallav Gope, Ballav Gope, Yadav Gope, Gope, Ahir and Yadav)	1.000	1l	Goala, Gope (Pallav Gope, Ballav Gope, Yadav Gope, Gope, Ahir and Yadav	1.000	4	Goala, Gope (Pallav Gope, Ballav Gope, Yadav Gope, Gope, Ahir and Yadav)	true
+12	t2	Moira (Halwai), Modak (Halwai)	1.000	t2	Moira (Halwai), Modak (Halwai)	1.000	22	Moira (Halwai), Modak (Halwai)	true
+13	13	Baruj ibi	1.000	l3	Barujibi	1.000	23	Barujibi	true
+14	t4	Satchasi	1.000	t4	Satchasi	1.000	5	Satchasi	true
+15	15	Malakar	1.000	15	Malakar	1.000	24	Malakar	true
+16	r6	Jolah (Ansari-Momin)	1.000	16	Jolah (Ansari-Momin)	1.000	6	Jolah (Ansari-Momin)	true
+17	t7	Kansari	1.000	t7	Kansari	1.000	25	Kansari	true
+18	18	Tanti, Tantub aya	1.000	l8	Tanti, Tantubaya	1.000	7	Tanti, Tantubaya	true
+19	19	Dhanuk	1.000	t9	Dhanuk	1.000	8	Dhanuk	true
+20	20	Shankakar	1.000	20	Shankakar	1.000	26	Shankakar	true
+21	2t	Keori/Koiri	1.000	2t	Keori/Koiri	1.000	9	Keori / Koiri	true
+22	22	Raju	1.000	22	Raju	1.000	27	Raju	true
+23	23	Nagar	1.000	23	Nagar	1.000	10	Nagar	true
+24	24	Karani	1.000	24	Karani	1.000	56	Karani	true
+25	25	Sarak	1.000	25	Sarak	1.000	28	Sarak	true
+26	26	Tamboli/Tamali	1.000	26	Tamboli/Tamali	1.000	29	Tamboli / Tamali	true
+27	27	Kosta/Kostha	1.000	27	Kosta,/Kostha	1.000	58	Kosta / Kostha	true
+28	28	r\.oniwar/Rauniyar	1.000	28	Roniwar/Rauniyar	1.000	30	Roniwar / Rauniyar	true
+29	29	Scheduled Castes converts to Christianity and their progeny	1.000	29	Scheduled Castes converts to Christianity and their progeny	1.000	31	Scheduled Castes converts to Christianity and their progeny	true
+30	30	LakheralLaahera	0.966	30	Lakhera/Laahera	1.000	64	Lakhera / Laahera	true
+31	31	Fakir, Sain	1.000	3l	Fakir, Sain	1.000	32	Fakir, Sain	true
+32	32	Kahar	1.000	)Z	Kahar	1.000	11	Kahar	true
+33	33	Betkar (Bentkar)	1.000	33	Betkar (Bentkar)	1.000	33	Betkar (Bentkar)	true
+34	34	Chitrakar	1.000	34	Chitrakar	1.000	34	Chitrakar	true
+35	35	Bhujel	1.000	35	Bhujel	1.000	35	Bhujel	true
+36	36	Newar	1.000	36	Newar	1.000	36	Newar	true
+37	37	Mangar	1.000	37	Mangar	1.000	37	Mangar	true
+38	38	Nembang	1.000	38	Nembang	1.000	63	Nembang	true
+39	39	Sampang	1.000	39	Sampang	1.000	38	Sampang	true
+40	40	Bungchheng	1.000	40	Bungchheng	1.000	57	Bungchheng	true
+41	4l	Thami	1.000	4t	Thami	1.000	39	Thami	true
+42	42	Jogi	1.000	42	Jogi	1.000	40	Jogi	true
+43	43	Dhimal	1.000	43	Dhimal	1.000	41	Dhimal	true
+44	44	Hawari, Dhobi (other than those included in the list of Scheduled Castes)	1.000	44	Hawari, Dhobi (other than those included in the list of Scheduled Castes)	1.000	54	Hawari, Dhobi (other than those included in the list of Scheduled Castes)	true
+45	45	Bhar	1.000	45	Bhar	1.000	60	Bhar	true
+46	46	Khandait	1.000	46	Khandait	1.000	42	Khandait	true
+47	41	Gangot	1.000	47	Gangot	1.000	43	Gangot	true
+48	48	Turha	1.000	48	Turha	1.000	59	Turha	true
+49	49	Dhunia	1.000	49	Dhunia	1.000	44	Dhunia	true
+50	50	Patidar	1.000	50	Patidar	1.000	14	Patidar	true
+51	51	Kasai	1.000	5l	Kasai	1.000	61	Kasai	true
+52	52	I Hele/H ahal Chasi-Kaibartta. Das Kaibartta	0.930	52	Hele / Halia / Chasi-Kaibarffa, Das Kaibartta	0.943	45	Hele / Halia / Chasi-Kaibartta, Das Kaibartta	true
+53	53	Bansi Barman	1.000	53	Bansi Barman	1.000	62	Bansi Barman	true
+54	54	Nashya-Sekh	1.000	54	Nashya-Sekh	1.000	12	Nashya-Sekh	true
+55	55	Pahadia Muslim	1.000	55	Pahadia Muslim	1.000	55	Pahadia Muslim	true
+56	56	Khen (Non-Bania category)	1.000	56	Khen (Non-Bania category)	1.000	13	Khen (Non-Bania category)	true
+57	57	Sukli	1.000	57	Sukli	1.000	46	Sukli	true
+58	58	Sunuwar	1.000	58	Sunuwar	1.000	47	Sunuwar	true
+59	s9	Bharbhuja	0.615	59	Bharbhuja	0.615			true
+60	60	Dewan	1.000	60	Dewan	1.000	48	Dewan	true
+61	61	Rai (including Chamling)	1.000	6l	Rai (including Chamling)	1.000	49	Rai (including Chamling)	true
+62	62	Rayeen (Kunjra)	1.000	62	Rayeen (Kunjra)	1.000	50	Rayeen (Kunjra)	true
+63	63	Shershabadia	1.000	63	Shershabadia	1.000	51	Shershabadia	true
+64	64	Devanga	0.667	64	Devanga	0.667			true
+65	65	Hajjam (Muslim)	1.000	65	Hajjam (Muslim)	1.000	52	Hajjam (Muslim)	true
+66	66	Chowduli (Muslim)	1.000	66	Chowduli (Muslim)	1.000	53	Chowduli (Muslim)	true

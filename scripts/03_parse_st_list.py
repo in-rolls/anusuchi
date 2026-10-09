@@ -2,7 +2,7 @@
 
 Mechanical, and deliberately so. This step decides nothing: it turns a PDF the
 government published into the same content as rows, so that the crosswalk in
-step 30 can cite a numbered entry rather than an opinion. Anything requiring
+crosswalk can cite a numbered entry rather than an opinion. Anything requiring
 judgment belongs downstream, and anything this step cannot read is reported
 rather than guessed at.
 
