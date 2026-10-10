@@ -294,6 +294,8 @@ def fetch_one(
     # gone; the archive's index is intermittent. Keep the one already on record.
     if not (found and found[0]) and known_capture:
         found = f"http://web.archive.org/web/{known_capture}/{url}", known_capture
+    if found is None and "archive lookup failed" not in record["note"]:
+        record["note"] = ", ".join(filter(None, [record["note"], "archive lookup failed"]))
     wayback_url, wayback_timestamp = found or ("", "")
     record.update(wayback_url=wayback_url, wayback_timestamp=wayback_timestamp)
     return record
@@ -305,12 +307,16 @@ def write_manifest(rows: list[dict]) -> None:
     Args:
         rows: Every manifest row, old and new.
     """
-    with MANIFEST.open("w", encoding="utf8", newline="") as handle:
+    # Written beside and then swapped in, so that a full disk or a kill
+    # mid-write leaves the previous manifest whole rather than truncated.
+    staged = MANIFEST.with_suffix(".tsv.tmp")
+    with staged.open("w", encoding="utf8", newline="") as handle:
         writer = csv.DictWriter(
             handle, fieldnames=FIELDS, delimiter="\t", lineterminator="\n", extrasaction="ignore"
         )
         writer.writeheader()
         writer.writerows(sorted(rows, key=lambda r: (r["source_id"], r["fetched_at"])))
+    staged.replace(MANIFEST)
 
 
 def main() -> None:
@@ -353,7 +359,7 @@ def main() -> None:
         record = fetch_one(row, session, archive, known_capture)
         key = (record["source_id"], record["sha256"])
         if record["sha256"] and key in already:
-            record["note"] = (record["note"] + " unchanged").strip()
+            record["note"] = ", ".join(filter(None, [record["note"], "unchanged"]))
         else:
             written.append(record)
         status = record["http_status"] or "--"
