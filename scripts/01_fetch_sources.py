@@ -34,6 +34,7 @@ for it.
 Run:
 
     python scripts/01_fetch_sources.py [--limit N] [--kind st_list_current]
+        [--source wb_obc_notification-087 ...]
 
 Writes `sources/raw/<sha256>.<ext>` and `sources/manifest.tsv`.
 """
@@ -52,7 +53,7 @@ from pathlib import Path
 import requests
 import urllib3
 from wayback import WaybackClient, WaybackSession
-from wayback.exceptions import WaybackException
+from wayback.exceptions import RateLimitError, WaybackException
 
 HERE = Path(__file__).resolve().parent.parent
 REGISTRY = HERE / "sources/registry.tsv"
@@ -108,7 +109,7 @@ def read_registry() -> list[dict]:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
-def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str]:
+def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str] | None:
     """Return the newest Wayback capture of a URL.
 
     Args:
@@ -116,16 +117,28 @@ def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str]:
         archive: A Wayback client.
 
     Returns:
-        The capture URL and its timestamp, or two empty strings.
+        The capture's viewing URL and its timestamp; two empty strings when the
+        archive has no capture; None when the archive could not be asked.
     """
-    try:
-        records = list(archive.search(url, limit=-1, filter_field="statuscode:200"))
-    except WaybackException:
-        return "", ""
-    if not records:
-        return "", ""
-    timestamp = records[-1].timestamp.strftime("%Y%m%d%H%M%S")
-    return f"http://web.archive.org/web/{timestamp}/{url}", timestamp
+    for _ in range(RATE_LIMIT_RETRIES):
+        try:
+            records = list(archive.search(url, limit=-1, filter_field="statuscode:200"))
+        except RateLimitError as error:
+            # Same rule as for downloads: a 429 names its wait, and waiting
+            # costs a minute where giving up costs the capture.
+            wait = float(error.retry_after or RATE_LIMIT_WAIT)
+            print(f"      archive 429; sleeping {wait:.0f}s", file=sys.stderr)
+            time.sleep(wait)
+            continue
+        # The library raises its own errors for archive faults but lets a reset
+        # connection through as a plain requests error.
+        except (WaybackException, requests.RequestException):
+            return None
+        if not records:
+            return "", ""
+        timestamp = records[-1].timestamp.strftime("%Y%m%d%H%M%S")
+        return f"http://web.archive.org/web/{timestamp}/{url}", timestamp
+    return None
 
 
 def request_archive(url: str, session: requests.Session) -> None:
@@ -162,13 +175,16 @@ def extension_for(url: str, content_type: str) -> str:
     return suffix if 1 < len(suffix) <= 5 else ".bin"
 
 
-def fetch_one(row: dict, session: requests.Session, archive: WaybackClient) -> dict:
+def fetch_one(
+    row: dict, session: requests.Session, archive: WaybackClient, known_capture: str = ""
+) -> dict:
     """Acquire one source and return its manifest row.
 
     Args:
         row: A registry row.
         session: A requests session.
         archive: A Wayback client.
+        known_capture: A capture timestamp an earlier run recorded for this URL.
 
     Returns:
         The manifest row, with empty checksum fields when the fetch failed.
@@ -203,10 +219,22 @@ def fetch_one(row: dict, session: requests.Session, archive: WaybackClient) -> d
             # The live site failed. Fall back to the archive, which is why the
             # archive is queried for every source rather than only for the
             # ones that happen to break.
-            target, _ = wayback_snapshot(url, archive)
-            if not target:
+            found = wayback_snapshot(url, archive)
+            # The index times out for minutes at a time while the captures
+            # themselves stay reachable, so a capture already on record still
+            # serves when the lookup fails.
+            if found is None and known_capture:
+                found = ("", known_capture)
+            if found is None:
+                record["note"] = "live fetch failed and archive lookup failed"
+                break
+            if not found[1]:
                 record["note"] = "live fetch failed and no wayback capture"
                 break
+            # `id_` asks for the bytes as captured. The plain viewing URL
+            # rewrites links and injects the archive's toolbar into HTML,
+            # which is the archive's page, not the publisher's.
+            target = f"http://web.archive.org/web/{found[1]}id_/{url}"
             record["note"] = "recovered from wayback"
         for _ in range(RATE_LIMIT_RETRIES):
             try:
@@ -241,12 +269,37 @@ def fetch_one(row: dict, session: requests.Session, archive: WaybackClient) -> d
             stored.write_bytes(body)
         record.update(n_bytes=str(len(body)), sha256=digest, stored_as=stored.name)
 
-    wayback_url, wayback_timestamp = wayback_snapshot(url, archive)
-    if not wayback_url:
+    # A pinned row's capture is the one its bytes came from, so the index has
+    # nothing to add; asking anyway spends the archive's rate limit.
+    found = (f"http://web.archive.org/web/{capture}/{url}", capture) if capture else None
+    found = found or wayback_snapshot(url, archive)
+    # Ask for a capture only when the archive said it has none. A failed lookup
+    # says nothing about the archive, and submitting on it adds load to an
+    # archive that is already refusing us.
+    if found == ("", ""):
         request_archive(url, session)
-        wayback_url, wayback_timestamp = wayback_snapshot(url, archive)
+        found = wayback_snapshot(url, archive)
+    # A lookup that fails or comes back empty is not evidence the capture is
+    # gone; the archive's index is intermittent. Keep the one already on record.
+    if not (found and found[0]) and known_capture:
+        found = f"http://web.archive.org/web/{known_capture}/{url}", known_capture
+    wayback_url, wayback_timestamp = found or ("", "")
     record.update(wayback_url=wayback_url, wayback_timestamp=wayback_timestamp)
     return record
+
+
+def write_manifest(rows: list[dict]) -> None:
+    """Write the manifest, one row per artefact or failure.
+
+    Args:
+        rows: Every manifest row, old and new.
+    """
+    with MANIFEST.open("w", encoding="utf8", newline="") as handle:
+        writer = csv.DictWriter(
+            handle, fieldnames=FIELDS, delimiter="\t", lineterminator="\n", extrasaction="ignore"
+        )
+        writer.writeheader()
+        writer.writerows(sorted(rows, key=lambda r: (r["source_id"], r["fetched_at"])))
 
 
 def main() -> None:
@@ -254,6 +307,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--limit", type=int)
     parser.add_argument("--kind", help="only fetch sources of this kind")
+    parser.add_argument("--source", nargs="+", help="only fetch these source ids")
     parser.add_argument("--pause", type=float, default=1.0)
     arguments = parser.parse_args()
 
@@ -263,6 +317,8 @@ def main() -> None:
     rows = read_registry()
     if arguments.kind:
         rows = [r for r in rows if r["kind"] == arguments.kind]
+    if arguments.source:
+        rows = [r for r in rows if r["source_id"] in arguments.source]
     if arguments.limit:
         rows = rows[: arguments.limit]
 
@@ -281,15 +337,10 @@ def main() -> None:
     )
     written = []
     for index, row in enumerate(rows, 1):
-        record = fetch_one(row, session, archive)
+        recorded = [r for r in existing if r["source_id"] == row["source_id"]]
+        known_capture = max((r.get("wayback_timestamp") or "" for r in recorded), default="")
+        record = fetch_one(row, session, archive, known_capture)
         key = (record["source_id"], record["sha256"])
-        # A lookup that comes back empty is not evidence the capture is gone;
-        # the archive's index is intermittent. Keep the one already on record.
-        known = next((r for r in existing if (r["source_id"], r["sha256"]) == key), None)
-        if known and known.get("wayback_url") and not record["wayback_url"]:
-            record.update(
-                wayback_url=known["wayback_url"], wayback_timestamp=known["wayback_timestamp"]
-            )
         if record["sha256"] and key in already:
             record["note"] = (record["note"] + " unchanged").strip()
         else:
@@ -303,14 +354,10 @@ def main() -> None:
         )
         existing = [r for r in existing if (r["source_id"], r["sha256"]) != key]
         existing.append(record)
+        # Written after every source: a run is hours of archive waits, and one
+        # unhandled error at the end must not discard them.
+        write_manifest(existing)
         time.sleep(arguments.pause)
-
-    with MANIFEST.open("w", encoding="utf8", newline="") as handle:
-        writer = csv.DictWriter(
-            handle, fieldnames=FIELDS, delimiter="\t", lineterminator="\n", extrasaction="ignore"
-        )
-        writer.writeheader()
-        writer.writerows(sorted(existing, key=lambda r: (r["source_id"], r["fetched_at"])))
 
     got = sum(1 for r in existing if r.get("sha256"))
     print(
