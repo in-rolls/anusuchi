@@ -37,7 +37,6 @@ from __future__ import annotations
 
 import argparse
 import csv
-import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -106,7 +105,7 @@ def counts_table(rows: list[dict], dates: list[str]) -> list[dict]:
                     "state": state,
                     "notified_date": date,
                     "n_entries": len({(r["state"], r["section"], r["entry_no"]) for r in sub}),
-                    "n_synonyms": len({(r["state"], r["synonym"].lower()) for r in sub}),
+                    "n_synonyms": len({(r["state"], r["synonym"]) for r in sub}),
                 }
             )
     return out
@@ -123,24 +122,18 @@ def presence(rows: list[dict], dates: list[str], state: str) -> list[dict]:
     Returns:
         One dict per synonym, carrying a column per edition.
     """
+    # Step 03 gives each name one spelling across editions, so a name missing
+    # from an edition is missing from its text, not spelled differently there.
     seen: dict[str, set[str]] = defaultdict(set)
-    printed: dict[str, str] = {}
     for row in rows:
         # An omitted entry has no name to be present.
         if row["state"] != state or not row["notified_date"] or not row["synonym"]:
             continue
-        # Whitespace is not evidence. The 2024 PDF's text layer drops the space
-        # in five Odisha names -- "Gutob Gadaba" comes out "GutobGadaba" -- and
-        # keying on the printed form turned five communities into ten rows,
-        # five of them apparently vanishing in 2024 and five appearing. That is
-        # an artefact of the typesetting, not a change in the law.
-        key = re.sub(r"\s+", "", row["synonym"].lower())
-        seen[key].add(row["notified_date"])
-        printed.setdefault(key, row["synonym"])
+        seen[row["synonym"]].add(row["notified_date"])
 
     out = []
-    for key, where in seen.items():
-        record = {"state": state, "synonym": printed[key]}
+    for synonym, where in seen.items():
+        record = {"state": state, "synonym": synonym}
         record.update({date: int(date in where) for date in dates})
         record["n_editions"] = len(where)
         record["first_seen"] = min(where)

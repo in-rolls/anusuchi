@@ -20,8 +20,8 @@ Bihar	2024	32	42
 Bihar	2024-11-25	32	42
 Bihar	2025-09-26	32	42
 Chhattisgarh	2023-08-04	43	158
-Chhattisgarh	2024	43	157
-Chhattisgarh	2024-11-25	43	157
+Chhattisgarh	2024	43	158
+Chhattisgarh	2024-11-25	43	158
 Chhattisgarh	2025-09-26	43	158
 Dadra and Nagar Haveli and Daman and Diu	2023-08-04	7	11
 Dadra and Nagar Haveli and Daman and Diu	2024	7	11
@@ -48,8 +48,8 @@ Jharkhand	2024	33	51
 Jharkhand	2024-11-25	33	51
 Jharkhand	2025-09-26	33	51
 Karnataka	2023-08-04	50	109
-Karnataka	2024	50	108
-Karnataka	2024-11-25	50	108
+Karnataka	2024	50	109
+Karnataka	2024-11-25	50	109
 Karnataka	2025-09-26	50	109
 Kerala	2023-08-04	37	64
 Kerala	2024	37	64
@@ -66,7 +66,7 @@ Lakshadweep	2025-09-26	1	1
 Madhya Pradesh	2023-08-04	43	146
 Madhya Pradesh	2024	43	146
 Madhya Pradesh	2024-11-25	43	146
-Madhya Pradesh	2025-09-26	43	147
+Madhya Pradesh	2025-09-26	43	146
 Maharashtra	2023-08-04	45	180
 Maharashtra	2024	45	180
 Maharashtra	2024-11-25	45	180
@@ -128,6 +128,6 @@ West Bengal	2024	40	50
 West Bengal	2024-11-25	40	50
 West Bengal	2025-09-26	40	50
 ALL INDIA	2023-08-04	745	1779
-ALL INDIA	2024	752	1835
-ALL INDIA	2024-11-25	751	1834
-ALL INDIA	2025-09-26	751	1837
+ALL INDIA	2024	752	1837
+ALL INDIA	2024-11-25	751	1836
+ALL INDIA	2025-09-26	751	1836

@@ -64,7 +64,7 @@ MANIFEST = HERE / "sources/manifest.tsv"
 # Hosts whose certificate chain does not validate. Listed explicitly rather
 # than disabling verification globally, so the exception stays visible and the
 # manifest can record which rows it applied to.
-UNVERIFIED_HOSTS = {"tribal.nic.in"}
+UNVERIFIED_HOSTS = {"tribal.nic.in", "egazette.gov.in"}
 
 # The archive answers a burst with 429 and a Retry-After header.
 RATE_LIMIT_RETRIES = 4

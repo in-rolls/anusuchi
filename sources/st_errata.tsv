@@ -1,0 +1,5 @@
+state	entry_no	printed	corrected	basis	evidence
+Chhattisgarh	16	Abhuj Maria	Abujh Maria	Act 13 of 2023 substitutes entry 16 and spells it Abujh; the three later files print Abhuj	st_amendment-117
+Chhattisgarh	16	Sonjhari Jhareka	Sonjhari, Jhareka	Act 13 of 2023 prints two names; the two 2024 files run them together	st_amendment-117
+Madhya Pradesh	16	Sonjhari, Jhareka	Sonjhari Jhareka	the 2023 and both 2024 files print one name; only the 2025 file adds the comma, matching the Chhattisgarh text; the enacted Madhya Pradesh text is not checked	st_list_prior-074
+Karnataka	4	Bhil Garasia Dholi Bhil	Bhil Garasia, Dholi Bhil	the 2023 and 2025 files print the comma; the two 2024 files drop it	st_list_current-072

@@ -57,6 +57,7 @@ from __future__ import annotations
 import argparse
 import csv
 import re
+import unicodedata
 from pathlib import Path
 
 import pdfplumber
@@ -252,6 +253,66 @@ NOISE = re.compile(
     r"|state\s*/\s*union territory wise)",
     re.I,
 )
+# The same title can share a line with the last entry above it: Uttar Pradesh's
+# "Bhuinya (in the district of Sonbhadra) State / Union Territory".
+TRAILER = re.compile(r"\s*\bstate\s*/\s*union territory\b.*$", re.I)
+
+# Typesetting faults that differ between files of the same text, so that an
+# unchanged tribe reads as dropped in one edition and added in the next: words
+# run together ("SonjhariJhareka", "NookaDhora"), stray marks ("Langoli ;Pardhi",
+# "Koli `"), and an accented "María". No name in these Orders has a capital
+# inside a word or a Latin diacritic, so undoing all three is safe.
+GLUED = re.compile(r"(?<=[a-z])(?=[A-Z])")
+STRAY = re.compile(r"\s*[`;]\s*(?=\S)|\s*`$")
+
+# Faults that need a reading of the law rather than a rule, kept by hand with
+# the evidence for each. `name_as_printed` always keeps what the file says.
+ERRATA = HERE / "sources/st_errata.tsv"
+
+
+def clean(text: str) -> str:
+    """Undo the typesetting faults that vary between files of the same text.
+
+    Args:
+        text: An entry as printed.
+
+    Returns:
+        The entry with glued words split, stray marks removed and Latin
+        diacritics dropped.
+    """
+    text = "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
+    text = STRAY.sub(" ", GLUED.sub(" ", text))
+    return " ".join(text.split())
+
+
+def read_errata() -> list[dict]:
+    """Return the hand-kept corrections, one per state, entry and phrase."""
+    with ERRATA.open(encoding="utf8") as handle:
+        return list(csv.DictReader(handle, delimiter="\t"))
+
+
+def correct(rows: list[dict], errata: list[dict]) -> None:
+    """Apply each erratum to the entries it names, recording it on the row.
+
+    Args:
+        rows: Entry rows with `text` set to the cleaned entry.
+        errata: Rows of `sources/st_errata.tsv`.
+    """
+    for erratum in errata:
+        for row in rows:
+            if (
+                row["state"] == erratum["state"]
+                and str(row["entry_no"]) == erratum["entry_no"]
+                and re.search(rf"\b{re.escape(erratum['printed'])}\b", row["text"])
+            ):
+                row["text"] = re.sub(
+                    rf"\b{re.escape(erratum['printed'])}\b", erratum["corrected"], row["text"]
+                )
+                row["corrected"] = "; ".join(
+                    filter(
+                        None, [row["corrected"], f"{erratum['printed']} -> {erratum['corrected']}"]
+                    )
+                )
 
 
 def latin_column(page) -> list[str]:
@@ -305,12 +366,13 @@ def latin_column(page) -> list[str]:
     return out
 
 
-def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
+def parse(path: Path, source_id: str, errata: list[dict]) -> tuple[list[dict], list[str]]:
     """Read every entry out of the Order.
 
     Args:
         path: The stored PDF.
         source_id: The manifest id to stamp on each row.
+        errata: Hand-kept corrections to apply after cleaning.
 
     Returns:
         The entry rows, and a list of pages that yielded no entries.
@@ -347,7 +409,8 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
             for line in lines:
                 if NOTE.match(line):
                     break
-                if NOISE.match(line):
+                line = TRAILER.sub("", line)
+                if not line or NOISE.match(line):
                     continue
                 match = ENTRY.match(line)
                 bare = BARE.match(line)
@@ -409,9 +472,14 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                 barren.append(str(number))
     if pending:
         rows.append(pending)
+    for row in rows:
+        row["name_as_printed"] = row["name_as_printed"].rstrip(" .,;")
+        row["text"] = clean(row["name_as_printed"]).rstrip(" .,;")
+        row["corrected"] = ""
+    correct(rows, errata)
     exploded = []
     for row in rows:
-        printed = row["name_as_printed"].rstrip(" .,;")
+        printed = row.pop("text")
         restrictions = [m.group(1).strip() for m in BRACKETED.finditer(printed)]
         without = BRACKETED.sub(" ", printed)
         restrictions += [m.group(1).strip() for m in AREA.finditer(without)]
@@ -424,7 +492,6 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
         # Pnar". Every " or " in these Orders joins two names for one tribe.
         without = without.replace(" and ", ", ").replace(" or ", ", ")
         without = " ".join(without.split()).rstrip(" .,;")
-        row["name_as_printed"] = printed
         if OMITTED.match(printed):
             exploded.append({**row, "synonym": "", "synonym_rank": 0})
             continue
@@ -477,10 +544,11 @@ def main() -> None:
             raise SystemExit(f"{arguments.source_id} has no bytes; step 01 could not fetch it")
         wanted = [record]
 
+    errata = read_errata()
     rows: list[dict] = []
     summary = []
     for record in sorted(wanted, key=lambda r: r["source_id"]):
-        parsed, barren = parse(RAW / record["stored_as"], record["source_id"])
+        parsed, barren = parse(RAW / record["stored_as"], record["source_id"], errata)
         date = notified_date(record["title"])
         for row in parsed:
             row["edition_id"] = record["source_id"]
@@ -501,9 +569,44 @@ def main() -> None:
                 "n_omitted": len(parsed) - len(live),
                 "n_synonyms": len(live),
                 "n_area_restricted": sum(1 for r in live if r["area_restriction"]),
+                "n_corrected": 0,
                 "barren_pages": ",".join(barren),
             }
         )
+
+    # The same name is spaced and capitalised differently between files of the
+    # same text: "Borokachari" in three editions, "Boro kachari" in the fourth.
+    # Each name takes the form most editions print, the latest breaking a tie.
+    forms: dict[tuple, dict[str, list]] = {}
+    for row in rows:
+        if row["synonym"]:
+            key = (row["state"], re.sub(r"\W", "", row["synonym"].lower()))
+            forms.setdefault(key, {}).setdefault(row["synonym"], []).append(row["notified_date"])
+    for row in rows:
+        if not row["synonym"]:
+            continue
+        spellings = forms[(row["state"], re.sub(r"\W", "", row["synonym"].lower()))]
+        usual = max(spellings, key=lambda s: (len(set(spellings[s])), max(spellings[s])))
+        if usual != row["synonym"]:
+            row["corrected"] = "; ".join(
+                filter(None, [row["corrected"], f"{row['synonym']} -> {usual}"])
+            )
+            row["synonym"] = usual
+    for line in summary:
+        line["n_corrected"] = len(
+            {
+                (r["state"], r["section"], r["entry_no"])
+                for r in rows
+                if r["edition_id"] == line["edition_id"] and r["corrected"]
+            }
+        )
+
+    # An erratum that no longer matches anything has gone stale, either because
+    # the parse changed or the text was corrected at source; it must not linger.
+    applied = " ; ".join(r["corrected"] for r in rows)
+    stale = [e for e in errata if f"{e['printed']} -> {e['corrected']}" not in applied]
+    if arguments.all and stale:
+        raise SystemExit(f"errata matching no entry: {stale}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     with OUT.open("w", encoding="utf8", newline="") as handle:
@@ -521,6 +624,7 @@ def main() -> None:
                 "synonym_rank",
                 "name_as_printed",
                 "area_restriction",
+                "corrected",
                 "source_id",
                 "page",
             ],

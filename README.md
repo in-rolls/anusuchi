@@ -16,7 +16,7 @@ not have to invent either.
 
 | layer | what it is | changes when | who judges |
 |---|---|---|---|
-| `sources/` | gazette PDFs and pages exactly as fetched | the government republishes | nobody — bytes |
+| `sources/` | gazette PDFs and pages exactly as fetched; `st_errata.tsv`, the misprints corrected, each with its evidence | the government republishes | nobody for the bytes; a person, citing a stored Act, for an erratum |
 | `lists/` | one row per gazetted entry | `sources/` changes | nobody — mechanical parse |
 | `crosswalks/` | one row per *dataset label* → entry | a dataset is added, or a call is revised | a person, on the record |
 
@@ -107,6 +107,25 @@ section headings as context, so Assam's two sections each numbered from 1 stay
 apart; records the 16 entries printed `Omitted` as numbering gaps rather than as
 tribes; and picks up the entries the Order prints without a number.
 
+Files of the same Order are typeset differently, so a tribe present in every
+edition can read as dropped in one and back in the next. Three repairs give
+each name one spelling across editions, and `name_as_printed` keeps what each
+file says:
+
+- Typesetting faults are undone by rule: words run together (`SonjhariJhareka`,
+  `NookaDhora`), stray marks (`Langoli ;Pardhi`, ``Koli ` ``) and an accented
+  `Bada María`.
+- Misprints that need a reading of the law are corrected from
+  `sources/st_errata.tsv`, which gives the evidence for each. The `corrected`
+  column records the change on every row it touched, and the step fails if an
+  erratum stops matching. There are four errata: Chhattisgarh's `Abhuj Maria`
+  and `Sonjhari Jhareka`, which Act 13 of 2023 prints as `Abujh Maria` and
+  `Sonjhari, Jhareka`; Karnataka's `Bhil Garasia Dholi Bhil`, which loses its
+  comma in the 2024 files; and Madhya Pradesh's `Sonjhari Jhareka`, which only
+  the 2025 file splits.
+- Spacing and capitals that differ between files (`Borokachari`, `Boro
+  kachari`) take the form most editions print, the latest breaking a tie.
+
 Four editions are read: 4 August 2023, an undated 2024 file, 25 November 2024,
 and 26 September 2025. The 2017 list is stored, from two URLs that hold the same
 bytes, but set in three columns, which this reader does not split.
@@ -116,6 +135,12 @@ edition, per state, and counts entries and distinct synonyms per edition. The
 two counts are kept separate because they move for different reasons: entries
 change when a community is scheduled or de-scheduled, synonyms when the same
 community is written more ways.
+
+After step 03's repairs, 58 names are not in all four editions, and every one is
+a change in the text, not a reading error. 57 are the names the February 2024
+Acts added: 50 for Odisha (No. 6 of 2024), 4 for Jammu and Kashmir (No. 3) and 3
+for Andhra Pradesh (No. 7). Each appears in the stored text of its Act. The
+58th is Telangana's `Malis`, below.
 
 ## West Bengal's State List of OBCs
 
@@ -189,8 +214,11 @@ recorded rather than corrected in place: `state` carries the canonical name and
 - **Some numbers have no dot.** Chhattisgarh's `36 Pardhi` is read as entry 36
   only because it follows 35; a bare number out of sequence stays text.
 - **Spacing varies between files.** The 2024 files print `NookaDhora` and
-  `PattidiKoya` where 2023 and 2025 print `Nooka Dhora`; `lists/` keeps what each
-  file prints, and step 04 ignores whitespace when matching names across editions.
+  `PattidiKoya` where 2023 and 2025 print `Nooka Dhora`. Step 03 splits the
+  joined words, as above.
+- **Later files can lag the law.** Act 13 of 2023 restated Chhattisgarh's entry
+  16 with `Abujh Maria`; the 2023 file follows it, and the three later files
+  print `Abhuj Maria` instead. Each erratum cites the Act it rests on.
 
 ## Known gaps
 
@@ -200,17 +228,20 @@ recorded rather than corrected in place: `state` carries the canonical name and
   exhibits start in 2023.
 - The undated 2024 ST file lists Telangana's `Malis` (entry 20); the 2023,
   November 2024 and 2025 editions do not. Its date comes from its file name
-  alone, so where it falls in that sequence is unconfirmed.
+  alone, so where it falls in that sequence is unconfirmed. None of the 2024
+  amendment Acts adds or removes it.
+- Madhya Pradesh's `Sonjhari Jhareka` is corrected to one name, the form three
+  of four files print, but no Act for Madhya Pradesh is stored to settle it.
 - West Bengal's notifications before 2025 are scans with no text layer and are
   stored but not read; the 2010 Category A/B split is therefore not in `lists/`.
   Corrigendum 1172-BCW/MR-38/2025, which the 2025 list cites for four classes,
   is not among the sources.
-- 7 of 123 registered sources resolved neither live nor in the archive. They are
+- 7 of 127 registered sources resolved neither live nor in the archive. They are
   manifest rows with a status and no checksum: two amendment Acts, two
   administrative circulars, the Sikkim SC Order of 1978, a Meghalaya page, and a
   2019 PVTG list whose pinned capture the archive no longer serves.
-- `tribal.nic.in` does not present a complete certificate chain; verification is
-  disabled for that host alone and the manifest records `tls_verified=false` on
+- `tribal.nic.in` and `egazette.gov.in` do not present a complete certificate chain; verification is
+  disabled for those hosts alone and the manifest records `tls_verified=false` on
   the affected rows.
 
 ## Not yet built
