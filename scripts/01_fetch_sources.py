@@ -127,7 +127,10 @@ def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str] | None
     """
     for _ in range(RATE_LIMIT_RETRIES):
         try:
-            records = list(archive.search(url, limit=-1, filter_field="statuscode:200"))
+            # limit=-1 asks for the newest capture alone. Reading past it makes
+            # the library request a further page, which the archive can leave
+            # hanging until the read times out, losing the record already in hand.
+            newest = next(iter(archive.search(url, limit=-1, filter_field="statuscode:200")), None)
         except RateLimitError as error:
             # Same rule as for downloads: a 429 names its wait, and waiting
             # costs a minute where giving up costs the capture.
@@ -139,9 +142,9 @@ def wayback_snapshot(url: str, archive: WaybackClient) -> tuple[str, str] | None
         # connection through as a plain requests error.
         except (WaybackException, requests.RequestException):
             return None
-        if not records:
+        if newest is None:
             return "", ""
-        timestamp = records[-1].timestamp.strftime("%Y%m%d%H%M%S")
+        timestamp = newest.timestamp.strftime("%Y%m%d%H%M%S")
         return f"http://web.archive.org/web/{timestamp}/{url}", timestamp
     return None
 
