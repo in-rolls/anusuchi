@@ -44,6 +44,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import re
 import sys
 import time
 import urllib.parse
@@ -76,6 +77,10 @@ RATE_LIMIT_WAIT = 60.0
 # the library raises and retries. CDX itself takes 10 to 50 seconds to answer.
 ARCHIVE_TIMEOUT = 120
 SAVE = "https://web.archive.org/save/"
+# The archive answers a request for one capture with the nearest one it holds,
+# by redirect: the ST list pinned at 20170512235904 is served from
+# 20170712142147. The timestamp in the final URL is the capture the bytes are.
+SERVED = re.compile(r"/web/(\d{14})id_/")
 UA = "anusuchi/0.1 (statutory caste list archive; research use)"
 
 FIELDS = [
@@ -211,6 +216,7 @@ def fetch_one(
     )
 
     body = b""
+    served = ""
     attempts = [f"http://web.archive.org/web/{capture}id_/{url}"] if capture else [url, ""]
     for attempt, target in enumerate(attempts):
         if capture:
@@ -249,6 +255,8 @@ def fetch_one(
             record["content_type"] = response.headers.get("content-type", "").split(";")[0]
             if response.ok and response.content:
                 body = response.content
+                match = SERVED.search(response.url)
+                served = match.group(1) if match else ""
                 break
             # The archive rate-limits with 429 and names the wait in a header.
             # Treating that as a dead source loses the document; waiting costs
@@ -271,7 +279,10 @@ def fetch_one(
 
     # A pinned row's capture is the one its bytes came from, so the index has
     # nothing to add; asking anyway spends the archive's rate limit.
-    found = (f"http://web.archive.org/web/{capture}/{url}", capture) if capture else None
+    if capture and served and served != capture:
+        record["note"] += f", served from {served}"
+    pinned = served or capture
+    found = (f"http://web.archive.org/web/{pinned}/{url}", pinned) if capture else None
     found = found or wayback_snapshot(url, archive)
     # Ask for a capture only when the archive said it has none. A failed lookup
     # says nothing about the archive, and submitting on it adds load to an

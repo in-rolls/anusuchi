@@ -97,13 +97,15 @@ def counts_table(rows: list[dict], dates: list[str]) -> list[dict]:
             sub = [
                 r
                 for r in rows
-                if r["notified_date"] == date and (state == "ALL INDIA" or r["state"] == state)
+                if r["notified_date"] == date
+                and r["synonym"]
+                and (state == "ALL INDIA" or r["state"] == state)
             ]
             out.append(
                 {
                     "state": state,
                     "notified_date": date,
-                    "n_entries": len({(r["state"], r["entry_no"]) for r in sub}),
+                    "n_entries": len({(r["state"], r["section"], r["entry_no"]) for r in sub}),
                     "n_synonyms": len({(r["state"], r["synonym"].lower()) for r in sub}),
                 }
             )
@@ -124,7 +126,8 @@ def presence(rows: list[dict], dates: list[str], state: str) -> list[dict]:
     seen: dict[str, set[str]] = defaultdict(set)
     printed: dict[str, str] = {}
     for row in rows:
-        if row["state"] != state or not row["notified_date"]:
+        # An omitted entry has no name to be present.
+        if row["state"] != state or not row["notified_date"] or not row["synonym"]:
             continue
         # Whitespace is not evidence. The 2024 PDF's text layer drops the space
         # in five Odisha names -- "Gutob Gadaba" comes out "GutobGadaba" -- and

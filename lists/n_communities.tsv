@@ -1,100 +1,133 @@
 state	notified_date	n_entries	n_synonyms
 Andaman and Nicobar Islands	2023-08-04	6	18
 Andaman and Nicobar Islands	2024	6	18
+Andaman and Nicobar Islands	2024-11-25	6	18
 Andaman and Nicobar Islands	2025-09-26	6	18
 Andhra Pradesh	2023-08-04	34	91
 Andhra Pradesh	2024	34	94
+Andhra Pradesh	2024-11-25	34	94
 Andhra Pradesh	2025-09-26	34	94
-Arunachal Pradesh	2023-08-04	16	24
-Arunachal Pradesh	2024	16	24
-Arunachal Pradesh	2025-09-26	16	24
-Assam	2023-08-04	16	43
-Assam	2024	16	41
-Assam	2025-09-26	16	41
-Bihar	2023-08-04	33	43
-Bihar	2024	33	43
-Bihar	2025-09-26	33	43
-Chhattisgarh	2023-08-04	42	186
-Chhattisgarh	2024	42	186
-Chhattisgarh	2025-09-26	42	189
-Dadra and Nagar Haveli and Daman and Diu	2023-08-04	7	12
-Dadra and Nagar Haveli and Daman and Diu	2024	7	10
-Dadra and Nagar Haveli and Daman and Diu	2025-09-26	7	10
+Arunachal Pradesh	2023-08-04	15	23
+Arunachal Pradesh	2024	15	23
+Arunachal Pradesh	2024-11-25	15	23
+Arunachal Pradesh	2025-09-26	15	23
+Assam	2023-08-04	29	74
+Assam	2024	29	74
+Assam	2024-11-25	29	74
+Assam	2025-09-26	29	74
+Bihar	2023-08-04	32	42
+Bihar	2024	32	42
+Bihar	2024-11-25	32	42
+Bihar	2025-09-26	32	42
+Chhattisgarh	2023-08-04	43	158
+Chhattisgarh	2024	43	157
+Chhattisgarh	2024-11-25	43	157
+Chhattisgarh	2025-09-26	43	158
+Dadra and Nagar Haveli and Daman and Diu	2023-08-04	7	11
+Dadra and Nagar Haveli and Daman and Diu	2024	7	11
+Dadra and Nagar Haveli and Daman and Diu	2024-11-25	7	11
+Dadra and Nagar Haveli and Daman and Diu	2025-09-26	7	11
 Goa	2023-08-04	8	8
 Goa	2024	8	8
+Goa	2024-11-25	8	8
 Goa	2025-09-26	8	8
-Gujarat	2023-08-04	32	75
-Gujarat	2024	32	75
-Gujarat	2025-09-26	32	75
+Gujarat	2023-08-04	29	72
+Gujarat	2024	29	72
+Gujarat	2024-11-25	29	72
+Gujarat	2025-09-26	29	72
 Himachal Pradesh	2023-08-04	11	18
 Himachal Pradesh	2024	11	18
+Himachal Pradesh	2024-11-25	11	18
 Himachal Pradesh	2025-09-26	11	18
 Jammu and Kashmir	2023-08-04	12	16
 Jammu and Kashmir	2024	16	20
+Jammu and Kashmir	2024-11-25	16	20
 Jammu and Kashmir	2025-09-26	16	20
 Jharkhand	2023-08-04	33	51
 Jharkhand	2024	33	51
+Jharkhand	2024-11-25	33	51
 Jharkhand	2025-09-26	33	51
-Karnataka	2023-08-04	50	110
+Karnataka	2023-08-04	50	109
 Karnataka	2024	50	108
+Karnataka	2024-11-25	50	108
 Karnataka	2025-09-26	50	109
-Kerala	2023-08-04	43	65
-Kerala	2024	43	65
-Kerala	2025-09-26	43	65
+Kerala	2023-08-04	37	64
+Kerala	2024	37	64
+Kerala	2024-11-25	37	64
+Kerala	2025-09-26	37	64
 Ladakh	2023-08-04	12	16
 Ladakh	2024	12	16
+Ladakh	2024-11-25	12	16
 Ladakh	2025-09-26	12	16
-Lakshadweep	2023-08-04	1	8
-Lakshadweep	2024	1	6
-Lakshadweep	2025-09-26	1	6
-Madhya Pradesh	2023-08-04	46	187
-Madhya Pradesh	2024	46	172
-Madhya Pradesh	2025-09-26	46	172
-Maharashtra	2023-08-04	47	181
-Maharashtra	2024	47	175
-Maharashtra	2025-09-26	47	175
+Lakshadweep	2023-08-04	1	1
+Lakshadweep	2024	1	1
+Lakshadweep	2024-11-25	1	1
+Lakshadweep	2025-09-26	1	1
+Madhya Pradesh	2023-08-04	43	146
+Madhya Pradesh	2024	43	146
+Madhya Pradesh	2024-11-25	43	146
+Madhya Pradesh	2025-09-26	43	147
+Maharashtra	2023-08-04	45	180
+Maharashtra	2024	45	180
+Maharashtra	2024-11-25	45	180
+Maharashtra	2025-09-26	45	180
 Manipur	2023-08-04	34	39
 Manipur	2024	34	39
+Manipur	2024-11-25	34	39
 Manipur	2025-09-26	34	39
-Meghalaya	2023-08-04	17	29
-Meghalaya	2024	17	33
-Meghalaya	2025-09-26	17	33
-Mizoram	2023-08-04	15	20
-Mizoram	2024	15	20
-Mizoram	2025-09-26	15	20
+Meghalaya	2023-08-04	17	65
+Meghalaya	2024	17	65
+Meghalaya	2024-11-25	17	65
+Meghalaya	2025-09-26	17	65
+Mizoram	2023-08-04	15	61
+Mizoram	2024	15	61
+Mizoram	2024-11-25	15	61
+Mizoram	2025-09-26	15	61
 Nagaland	2023-08-04	5	5
 Nagaland	2024	5	5
+Nagaland	2024-11-25	5	5
 Nagaland	2025-09-26	5	5
 Odisha	2023-08-04	62	192
-Odisha	2024	64	238
-Odisha	2025-09-26	64	238
+Odisha	2024	64	242
+Odisha	2024-11-25	64	242
+Odisha	2025-09-26	64	242
 Puducherry	2023-08-04	1	3
 Puducherry	2024	1	3
+Puducherry	2024-11-25	1	3
 Puducherry	2025-09-26	1	3
 Rajasthan	2023-08-04	12	45
 Rajasthan	2024	12	45
+Rajasthan	2024-11-25	12	45
 Rajasthan	2025-09-26	12	45
 Sikkim	2023-08-04	4	12
 Sikkim	2024	4	12
+Sikkim	2024-11-25	4	12
 Sikkim	2025-09-26	4	12
-Tamil Nadu	2023-08-04	37	43
+Tamil Nadu	2023-08-04	37	42
 Tamil Nadu	2024	37	42
+Tamil Nadu	2024-11-25	37	42
 Tamil Nadu	2025-09-26	37	42
 Telangana	2023-08-04	32	87
 Telangana	2024	33	88
+Telangana	2024-11-25	32	87
 Telangana	2025-09-26	32	87
-Tripura	2023-08-04	19	35
-Tripura	2024	19	34
-Tripura	2025-09-26	19	34
+Tripura	2023-08-04	19	52
+Tripura	2024	19	52
+Tripura	2024-11-25	19	52
+Tripura	2025-09-26	19	52
 Uttar Pradesh	2023-08-04	15	23
 Uttar Pradesh	2024	15	23
+Uttar Pradesh	2024-11-25	15	23
 Uttar Pradesh	2025-09-26	15	23
 Uttarakhand	2023-08-04	5	5
 Uttarakhand	2024	5	5
+Uttarakhand	2024-11-25	5	5
 Uttarakhand	2025-09-26	5	5
 West Bengal	2023-08-04	40	50
 West Bengal	2024	40	50
+West Bengal	2024-11-25	40	50
 West Bengal	2025-09-26	40	50
-ALL INDIA	2023-08-04	747	1740
-ALL INDIA	2024	754	1767
-ALL INDIA	2025-09-26	753	1770
+ALL INDIA	2023-08-04	745	1779
+ALL INDIA	2024	752	1835
+ALL INDIA	2024-11-25	751	1834
+ALL INDIA	2025-09-26	751	1837

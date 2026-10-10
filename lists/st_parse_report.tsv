@@ -1,4 +1,5 @@
-edition_id	notified_date	n_states	n_entries	n_synonyms	n_area_restricted	barren_pages
-st_list_current-072	2025-09-26	32	753	1802	54	
-st_list_prior-073	2024	32	754	1799	55	
-st_list_prior-074	2023-08-04	32	747	1790	50	
+edition_id	notified_date	n_states	n_entries	n_omitted	n_synonyms	n_area_restricted	barren_pages
+st_list_archived-007	2024-11-25	32	751	16	1854	76	
+st_list_current-072	2025-09-26	32	751	16	1857	76	
+st_list_prior-073	2024	32	752	16	1855	77	
+st_list_prior-074	2023-08-04	32	745	17	1799	72	

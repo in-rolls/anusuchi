@@ -9,8 +9,12 @@ rather than guessed at.
 The Order is printed in two columns, English on the left and Hindi on the
 right, with the entry number repeated in each. `extract_text` interleaves them,
 which is why this reads word positions and splits on the column gap instead.
-The split is found per page as the widest empty vertical band in the middle
-third, rather than hardcoded, because the gutter moves between pages.
+The split is found per page as the widest vertical band no word touches in the
+middle of the page, rather than hardcoded, because the gutter moves between
+pages. Measuring between where words *start* is not the same thing: on the page
+listing Meghalaya's Kuki sub-tribes in four columns (numeral, English, numeral,
+Hindi), the widest start-to-start gap is between the Hindi numerals and the
+Hindi, which put both on the English side.
 
 Entries wrap over several lines and carry their synonyms inline:
 
@@ -61,6 +65,15 @@ HERE = Path(__file__).resolve().parent.parent
 MANIFEST = HERE / "sources/manifest.tsv"
 RAW = HERE / "sources/raw"
 OUT = HERE / "lists/st_entries.tsv"
+
+# Editions whose layout this reader does not handle, by checksum. Parsing them
+# anyway yields plausible rows that are wrong: the 2017 list read as 240 entries
+# against a true ~750, with Telangana absent.
+UNREAD = {
+    "2524086b8fcc2535e2c28a8f12eb91e6c2ee3a553d7a2f83761b7bfc597e35c9": (
+        "the 2017 list is set in three columns; this reader splits two"
+    ),
+}
 
 # The ministry states the notified date in the document title and nowhere
 # machine-readable, so it is read from there: "(26-09-2025)", "(as on
@@ -159,8 +172,17 @@ NO_SCHEDULED_TRIBES = {"Punjab", "Haryana", "Delhi", "Chandigarh"}
 # phantom tribes; read as context they are the state-level area restriction.
 SECTION = re.compile(r"(:\s*$)|(^(?:[IVX]+|[A-H])\s*[.)]\s)")
 
-# Trailing editorial matter that is not part of any entry.
-NOTE = re.compile(r"\s*Note\s*:.*$", re.I | re.S)
+# A capital roman numeral opens a new section wherever it falls. Assam's "II. In
+# the State of Assam ..." follows entry 15 of section I, and testing only before
+# the first entry glued it onto that entry and filed all of section II under I.
+NEW_SECTION = re.compile(r"^[IVX]+\s*[.)]\s+\S")
+
+# Editorial matter: "Note: In case of any discrepancies in the spelling ...". It
+# always closes a page, every page in the 2023 edition and the last page in the
+# others, so it ends the page rather than being cut out of an entry afterwards.
+# Cutting it out afterwards deleted whatever followed it, which once entries are
+# carried across pages was the rest of the entry.
+NOTE = re.compile(r"^note\s*:", re.I)
 
 
 def is_state(line: str) -> bool:
@@ -184,6 +206,20 @@ def is_state(line: str) -> bool:
 
 ENTRY = re.compile(r"^(\d{1,3})\s*[.)]\s*(.*)$")
 
+# Some numbers are printed without their dot: Chhattisgarh's "36 Pardhi". A bare
+# number opens an entry only when it is the next in sequence, so that a number
+# inside a name or a restriction cannot.
+BARE = re.compile(r"^(\d{1,3})\s+([A-Z].*)$")
+
+# Sub-tribe and area lists are enumerated: "i. Biate", "(iii) Chhalya",
+# "(iiia) Darlong". The enumerator separates names the way a comma does.
+ENUMERATOR = re.compile(r"(?:(?<=\s)|^)(?:\([ivxl]+a?\)|[ivxl]+a?\.(?=\s|$))")
+
+# A deleted entry keeps its number and says "Omitted". It is a gap in the
+# numbering, not a tribe called Omitted.
+OMITTED = re.compile(r"^omitted\.?$", re.I)
+INCLUDING = re.compile(r"\bincluding(?: the following sub-\s*tribes)?\s*:\s*-?", re.I)
+
 # Not every entry is numbered. Puducherry's sole tribe is printed as bare text
 # ("Irular (including Villi and Vettaikaran)") and Lakshadweep's is a
 # descriptive paragraph. A number-anchored reader drops both silently, so a
@@ -195,13 +231,26 @@ ENTRY = re.compile(r"^(\d{1,3})\s*[.)]\s*(.*)$")
 # restriction, so it is split off into its own column.
 AREA = re.compile(
     r"\(([^()]*\b(?:district|districts|taluk|taluka|tahsil|tehsil|sub-division|"
-    r"division|block|region|area|areas|excluding|including the)\b[^()]*)\)",
+    r"division|block|region|area|areas|excluding|including the|forests|nesses)\b[^()]*)\)",
     re.I,
 )
 
-# Lines that are page furniture rather than content.
+# Long restrictions are set in square brackets and enumerate places inside them:
+# Pardhi "[In (i) Bastar, ... and (viii) Dhamtari ... district]". Every square
+# bracket in these Orders is a restriction.
+BRACKETED = re.compile(r"\[([^\[\]]*)\]?")
+
+# The English column never holds Devanagari, so a Devanagari word on the English
+# side is the Hindi column leaking across a misplaced split, never content.
+DEVANAGARI = re.compile(r"[\u0900-\u097F]")
+
+# Lines that are page furniture rather than content. The 2023 edition repeats a
+# running title on every page; now that an entry is carried over a page break,
+# it would otherwise be read into it.
 NOISE = re.compile(
-    r"^(the constitution|scheduled tribes order|the schedule|part |page |\d+$)", re.I
+    r"^(the constitution|scheduled tribes order|the schedule|part |page |\d+$"
+    r"|state\s*/\s*union territory wise)",
+    re.I,
 )
 
 
@@ -217,25 +266,40 @@ def latin_column(page) -> list[str]:
     words = page.extract_words()
     if not words:
         return []
-    # The gutter is the widest gap between word starts in the middle of the
-    # page. Finding it per page beats a constant: the columns shift.
-    middle = sorted(w["x0"] for w in words if 0.35 * page.width < w["x0"] < 0.75 * page.width)
+    # A point is in the gutter when fewer than a tenth of the page's lines
+    # touch it. Requiring that no line touches it fails on every page whose
+    # title runs across both columns.
+    low, high = int(0.35 * page.width), int(0.75 * page.width)
+    touching: dict[int, set[int]] = {}
+    for word in words:
+        for x in range(max(low, int(word["x0"])), min(high, int(word["x1"]) + 1)):
+            touching.setdefault(x, set()).add(round(word["top"] / 3))
+    limit = 0.1 * len({round(w["top"] / 3) for w in words})
     split = 0.55 * page.width
-    if len(middle) > 1:
-        gaps = [(b - a, (a + b) / 2) for a, b in zip(middle, middle[1:])]
-        widest, centre = max(gaps)
-        if widest > 20:
-            split = centre
+    widest, start = 0, low
+    for x in range(low, high + 1):
+        if x < high and len(touching.get(x, ())) < limit:
+            continue
+        if x - start > widest:
+            widest, split = x - start, (x + start) / 2
+        start = x + 1
+    if widest <= 8:
+        split = 0.55 * page.width
 
     lines: dict[int, list[dict]] = {}
     for word in words:
-        if word["x0"] >= split:
+        if word["x0"] >= split or DEVANAGARI.search(word["text"]):
             continue
         lines.setdefault(round(word["top"] / 3), []).append(word)
     out = []
     for key in sorted(lines):
-        text = " ".join(w["text"] for w in sorted(lines[key], key=lambda w: w["x0"]))
-        text = " ".join(text.split())
+        tokens = [w["text"] for w in sorted(lines[key], key=lambda w: w["x0"])]
+        # The Hindi column repeats the line's entry number or enumerator, and
+        # where the gutter is narrow it lands on this side: "38. Sor 38".
+        if tokens and re.fullmatch(r"\(?(\d{1,3}|[ivxl]+a?)[.)]?", tokens[0]):
+            bare = tokens[0].strip("().")
+            tokens = tokens[:1] + [t for t in tokens[1:] if t.strip("().") != bare]
+        text = " ".join(" ".join(tokens).split())
         if text:
             out.append(text)
     return out
@@ -257,10 +321,17 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
     printed_state = ""
     section = ""
     opened = False
+    # Set while a section heading may still be wrapping onto further lines:
+    # Assam's "I. In the autonomous Districts of" / "Karbi Anglong and North
+    # Cachar Hills" otherwise made the second line a tribe.
+    heading = False
+    # An entry can run over a page break: Tripura's Kuki sub-tribes continue
+    # from "(ii) Belalhut" to "(iii) Chhalya" overleaf. So the open entry is
+    # carried across pages, not closed at the foot of each.
+    pending: dict | None = None
     with pdfplumber.open(path) as pdf:
         for number, page in enumerate(pdf.pages, 1):
-            before = len(rows)
-            pending: dict | None = None
+            started = 0
             lines = latin_column(page)
             # A heading can wrap: "Dadra and Nagar Haveli and Daman" / "and Diu"
             # is one UT split by the column width. Joining a line with its
@@ -274,11 +345,18 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                     joined.add(index + 1)
             lines = [line for index, line in enumerate(lines) if index not in joined]
             for line in lines:
+                if NOTE.match(line):
+                    break
                 if NOISE.match(line):
                     continue
                 match = ENTRY.match(line)
+                bare = BARE.match(line)
+                if not match and bare and pending and int(bare.group(1)) == pending["entry_no"] + 1:
+                    match = bare
                 if match:
                     opened = True
+                    heading = False
+                    started += 1
                     if pending:
                         rows.append(pending)
                     pending = {
@@ -298,13 +376,23 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                     state = CANONICAL[re.sub(r"[^a-z& ]", "", line.lower()).strip()]
                     section = ""
                     opened = False
-                elif SECTION.search(line) and not opened:
+                    heading = False
+                elif NEW_SECTION.match(line):
+                    if pending:
+                        rows.append(pending)
+                        pending = None
+                    section = line.strip()
+                    opened = False
+                    heading = True
+                elif heading or (SECTION.search(line) and not opened):
                     # Section heading, not a tribe. Kept as context for the
                     # entries that follow rather than emitted as one.
                     section = f"{section} {line}".strip()
+                    heading = True
                 elif pending is None and state and not opened and not SECTION.search(line):
                     # An unnumbered entry directly under a state heading.
                     opened = True
+                    started += 1
                     pending = {
                         "state": state,
                         "state_as_printed": printed_state,
@@ -317,20 +405,34 @@ def parse(path: Path, source_id: str) -> tuple[list[dict], list[str]]:
                 elif pending is not None:
                     # A continuation of the entry above; entries wrap freely.
                     pending["name_as_printed"] = f"{pending['name_as_printed']} {line}".strip()
-            if pending:
-                rows.append(pending)
-            if len(rows) == before:
+            if not started:
                 barren.append(str(number))
+    if pending:
+        rows.append(pending)
     exploded = []
     for row in rows:
-        printed = NOTE.sub("", row["name_as_printed"]).rstrip(" .,;")
-        restrictions = [m.group(1).strip() for m in AREA.finditer(printed)]
+        printed = row["name_as_printed"].rstrip(" .,;")
+        restrictions = [m.group(1).strip() for m in BRACKETED.finditer(printed)]
+        without = BRACKETED.sub(" ", printed)
+        restrictions += [m.group(1).strip() for m in AREA.finditer(without)]
         row["area_restriction"] = " | ".join(restrictions)
-        without = AREA.sub(" ", printed)
+        without = AREA.sub(" ", without)
         # "X (including Y and Z)" names aliases the same way a comma does.
         without = re.sub(r"\(\s*including ([^()]*)\)", r", \1", without, flags=re.I)
-        without = " ".join(without.replace(" and ", ", ").split()).rstrip(" .,;")
+        without = ENUMERATOR.sub(",", INCLUDING.sub(",", without))
+        # Mizoram writes alternatives with "or": "Biate or Biete", "Synteng or
+        # Pnar". Every " or " in these Orders joins two names for one tribe.
+        without = without.replace(" and ", ", ").replace(" or ", ", ")
+        without = " ".join(without.split()).rstrip(" .,;")
         row["name_as_printed"] = printed
+        if OMITTED.match(printed):
+            exploded.append({**row, "synonym": "", "synonym_rank": 0})
+            continue
+        # Lakshadweep's entry defines its tribe by birthplace in full sentences.
+        # Split on commas it becomes fragments such as "1994", so it stays whole.
+        if row["entry_no"] == 0 and re.search(r"[a-z]\. [A-Z]", printed):
+            exploded.append({**row, "synonym": printed, "synonym_rank": 1})
+            continue
         # The Order's own comma list is the synonym set. The first is the head
         # name only by printing order, not by any legal precedence.
         names = [p.strip(" .,;") for p in without.split(",") if p.strip(" .,;")]
@@ -355,7 +457,16 @@ def main() -> None:
     by_id = {r["source_id"]: r for r in manifest}
 
     if arguments.all:
-        wanted = [r for r in manifest if r["kind"].startswith("st_list") and r["stored_as"]]
+        # One document published at two URLs is one edition: the 2017 list moved
+        # paths unchanged and is held twice, from 2017 and from 2021.
+        first: dict[str, dict] = {}
+        for r in sorted(manifest, key=lambda r: r["source_id"]):
+            if r["kind"].startswith("st_list") and r["stored_as"]:
+                first.setdefault(r["sha256"], r)
+        wanted = list(first.values())
+        for record in [r for r in wanted if r["sha256"] in UNREAD]:
+            print(f"skipping {record['source_id']}: {UNREAD[record['sha256']]}")
+        wanted = [r for r in wanted if r["sha256"] not in UNREAD]
         if not wanted:
             raise SystemExit("no ST list editions with bytes; run step 01 first")
     else:
@@ -376,7 +487,10 @@ def main() -> None:
             row["notified_date"] = date
             row["category"] = "ST"
         rows.extend(parsed)
-        entries = {(r["state"], r["entry_no"]) for r in parsed}
+        # Assam's two sections each number from 1, so the section is part of
+        # an entry's identity.
+        live = [r for r in parsed if r["synonym"]]
+        entries = {(r["state"], r["section"], r["entry_no"]) for r in live}
         states = {r["state"] for r in parsed if r["state"]}
         summary.append(
             {
@@ -384,8 +498,9 @@ def main() -> None:
                 "notified_date": date,
                 "n_states": len(states),
                 "n_entries": len(entries),
-                "n_synonyms": len(parsed),
-                "n_area_restricted": sum(1 for r in parsed if r["area_restriction"]),
+                "n_omitted": len(parsed) - len(live),
+                "n_synonyms": len(live),
+                "n_area_restricted": sum(1 for r in live if r["area_restriction"]),
                 "barren_pages": ",".join(barren),
             }
         )

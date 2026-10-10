@@ -55,7 +55,7 @@ is legally **not** SC, while `କନ୍ଧ ଖ୍ରୀଷ୍ଟିୟାନ` �
 still ST. A crosswalk that reads only the caste half of the label gets one of
 those wrong.
 
-**Many entries are scheduled only in named places.** 34 of 772 ST entries carry
+**Many entries are scheduled only in named places.** 40 of 751 ST entries carry
 an area restriction: Gujarat's *Kunbi* only in the Dangs district, Andhra's
 *Dhulia, Paiko, Putiya* only in Vishakhapatnam and Vijayanagaram. Category is
 therefore a function of *(label, district)*, not of label alone, which is why
@@ -75,7 +75,10 @@ Numbered, re-runnable, each step writing only its own layer.
 
 **Step 01** fetches every URL in `sources/registry.tsv`, records the newest
 Wayback capture and submits one where none exists, stores bytes under their own
-SHA-256, and writes a manifest row per artefact. A source that fails is a row
+SHA-256, and writes a manifest row per artefact. Bytes recovered from the archive
+are the raw capture, not the archive's viewer, which wraps HTML in its own
+player; and a pinned capture is recorded as the one the archive actually served,
+which can be months from the one requested. A source that fails is a row
 with a status and no checksum, not a silence. Nothing is ever overwritten: a
 republished document is a new file and a new row beside the old one.
 
@@ -92,13 +95,21 @@ linked to `sources/discovered.tsv`. The 2022 capture of the SC page alone links
 29 PDFs the live page no longer mentions. Promoting a discovered URL into the
 registry is a separate `--promote` decision.
 
-**Step 03** reads the ST Order's two-column layout by word position, splitting on
-the gutter found per page. **772 entries across 32 States and UTs — every State
-and UT that has Scheduled Tribes yields at least one.** It recovers the Order's
-own synonym lists (`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora,
-Bhatara` is one tribe, Odisha entry 5), splits the 34 area restrictions into
-their own column, keeps section headings as context rather than emitting them as
-phantom tribes, and picks up the entries the Order prints without a number.
+**Step 03** reads the ST Order's two-column layout by word position, splitting at
+the widest vertical band on each page that almost no line touches. **751 entries
+across 32 States and UTs in the 2025 edition — every State and UT that has
+Scheduled Tribes yields at least one.** It recovers the Order's own synonym lists
+(`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora, Bhatara` is one tribe,
+Odisha entry 5) and the enumerated sub-tribes of the Kuki entries in Assam,
+Meghalaya, Mizoram and Tripura; carries an entry across a page break; splits the
+40 area restrictions, bracketed or parenthesised, into their own column; keeps
+section headings as context, so Assam's two sections each numbered from 1 stay
+apart; records the 16 entries printed `Omitted` as numbering gaps rather than as
+tribes; and picks up the entries the Order prints without a number.
+
+Four editions are read: 4 August 2023, an undated 2024 file, 25 November 2024,
+and 26 September 2025. The 2017 list is stored, from two URLs that hold the same
+bytes, but set in three columns, which this reader does not split.
 
 **Step 04** compares ST editions. It builds a presence matrix of synonyms by
 edition, per state, and counts entries and distinct synonyms per edition. The
@@ -173,19 +184,31 @@ recorded rather than corrected in place: `state` carries the canonical name and
   `All tribes in the State including:`. These are kept in a `section` column as
   context for the entries beneath them.
 - Puducherry's entry trails into editorial boilerplate (`Note: In case of any
-  discrepancies...`), which is stripped.
+  discrepancies...`), which closes the page; the 2023 edition prints it at the
+  foot of every page, under a running title on every page.
+- **Some numbers have no dot.** Chhattisgarh's `36 Pardhi` is read as entry 36
+  only because it follows 35; a bare number out of sequence stays text.
+- **Spacing varies between files.** The 2024 files print `NookaDhora` and
+  `PattidiKoya` where 2023 and 2025 print `Nooka Dhora`; `lists/` keeps what each
+  file prints, and step 04 ignores whitespace when matching names across editions.
 
 ## Known gaps
 
 - The SC list, the Central OBC list and the PVTG list are fetched but not yet
   parsed. Only the ST Order and West Bengal's State List of OBCs have readers.
+- The 2017 ST list is set in three columns and is not read, so the over-time
+  exhibits start in 2023.
+- The undated 2024 ST file lists Telangana's `Malis` (entry 20); the 2023,
+  November 2024 and 2025 editions do not. Its date comes from its file name
+  alone, so where it falls in that sequence is unconfirmed.
 - West Bengal's notifications before 2025 are scans with no text layer and are
   stored but not read; the 2010 Category A/B split is therefore not in `lists/`.
   Corrigendum 1172-BCW/MR-38/2025, which the 2025 list cites for four classes,
   is not among the sources.
-- 6 of 74 registered sources resolved neither live nor in the archive. They are
-  manifest rows with a status and no checksum; four are amendment Acts and two
-  are administrative circulars.
+- 7 of 123 registered sources resolved neither live nor in the archive. They are
+  manifest rows with a status and no checksum: two amendment Acts, two
+  administrative circulars, the Sikkim SC Order of 1978, a Meghalaya page, and a
+  2019 PVTG list whose pinned capture the archive no longer serves.
 - `tribal.nic.in` does not present a complete certificate chain; verification is
   disabled for that host alone and the manifest records `tls_verified=false` on
   the affected rows.
