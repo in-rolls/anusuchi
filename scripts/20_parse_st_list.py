@@ -44,14 +44,14 @@ RAW = HERE / "sources/raw"
 OUT = HERE / "lists/st_entries.tsv"
 
 # A state heading is matched against the fixed set of States and Union
-# Territories, not against a shape. An earlier version accepted any capitalised
+# Territories, not against a shape. An earlier version accepted any capitalized
 # line without a number, which read the wrapped continuation "Bhuyan" -- the
 # tail of Odisha's entry 6 -- as the start of a new state, and produced 53
 # states and 6 Odisha entries against a true 62. The set is public and
 # closed, so there is no reason to guess.
 # Headings are matched against the fixed set of States and Union Territories,
 # canonicalised, because neither the printed spelling nor the shape can be
-# trusted. Two failures drove this. Accepting any capitalised unnumbered line
+# trusted. Two failures drove this. Accepting any capitalized unnumbered line
 # read the wrapped continuation "Bhuyan" -- the tail of Odisha's entry 6 -- as a
 # new state, giving 53 states and 6 Odisha entries against a true 64. And the
 # Order misspells Uttarakhand as "Uttrakhand", so a set holding only the correct

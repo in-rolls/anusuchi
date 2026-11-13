@@ -72,7 +72,7 @@ Numbered, re-runnable, each step writing only its own layer.
 
 **Step 10** fetches every URL in `sources/registry.tsv`, records the newest
 Wayback capture and submits one where none exists, stores bytes under their own
-SHA-256, and writes a manifest row per artefact. A source that fails is a row
+SHA-256, and writes a manifest row per artifact. A source that fails is a row
 with a status and no checksum, not a silence. Nothing is ever overwritten: a
 republished document is a new file and a new row beside the old one.
 
