@@ -5,6 +5,7 @@ source prints, or the parse report recounted from the rows it summarises.
 """
 
 import csv
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -153,3 +154,13 @@ def test_poi_pages_match_the_printed_folio(poi):
     """The Introduction's printed folio runs 12 behind the PDF page."""
     for r in poi:
         assert int(r["page"]) - int(r["page_printed"]) == 12
+
+
+def test_readme_source_counts_match_the_registry(manifest, registry):
+    """The README's count of registered and unresolved sources is not stale."""
+    text = (ROOT / "README.md").read_text(encoding="utf8")
+    unresolved, total = map(int, re.search(r"(\d+) of (\d+) registered sources", text).groups())
+    assert total == len(registry)
+    assert unresolved == len([s for s in registry if not manifest.get(s, {}).get("stored_as")])
+    wb = [s for s, r in registry.items() if r["kind"].startswith("wb_obc")]
+    assert f"{len(wb)} documents are registered" in text

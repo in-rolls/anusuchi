@@ -31,8 +31,16 @@ The chain has two links, and they do not have the same standing.
 **jati → category is official.** The gazette settles it. That is what this repo
 holds.
 
-**surname → jati is irreducibly statistical.** No Order names a surname, and no
-amount of gazette work changes that. In Odisha's land records, of 2,052
+**surname → jati is irreducibly statistical.** The Orders schedule communities,
+not surnames, and the rare entry that names one shows why. The SC Order lists
+West Bengal's `Sunri (excluding Saha)`, and Saha is a surname. In 1983 the
+Government of India told the State that a Sunri "may be using any surname
+including 'Saha' and the Government of India is not concerned with that"; in
+1999 the State, on its Legal Remembrancer's opinion, held that Sunris "having
+the surname 'Saha' are not included" (`sc_admin-130`). Two governments read the
+same word two ways. Maharashtra's consolidated OBC list labels entry 189 `पोवार
+किंवा पवार (पोवार किंवा पवार आडनावे)`, Powar or Pawar *surnames*
+(`mh_obc_list-129`). Exceptions like these do not add up to a mapping. In Odisha's land records, of 2,052
 surnames carried by 100 or more people, **67 (3.3%) belong to a single jati**,
 covering 0.3% of tenants; the median surname spans **12** jatis and the widest
 spans **421**. `Behera` has 153,016 bearers across 421 jatis, its commonest at
@@ -281,7 +289,7 @@ recorded rather than corrected in place: `state` carries the canonical name and
   stored but not read; the 2010 Category A/B split is therefore not in `lists/`.
   Corrigendum 1172-BCW/MR-38/2025, which the 2025 list cites for four classes,
   is not among the sources.
-- 7 of 127 registered sources resolved neither live nor in the archive. They are
+- 7 of 137 registered sources resolved neither live nor in the archive. They are
   manifest rows with a status and no checksum: two amendment Acts, two
   administrative circulars, the Sikkim SC Order of 1978, a Meghalaya page, and a
   2019 PVTG list whose pinned capture the archive no longer serves.
