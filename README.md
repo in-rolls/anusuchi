@@ -248,8 +248,8 @@ Surnames and Titles*, and the other state volumes are not yet held.
 every community the survey studied, with its category, religion and the states
 it was found in. `scripts/06_parse_poi_national_list.py` reads it from a scan
 with no text layer into `lists/poi_national_list.tsv`, one row per community
-and state: 3,205 entries (2,209 main communities, 586 segments, 400 variants
-and 10 segment variants) over 4,682 rows.
+and state: 3,203 entries (2,209 main communities, 586 segments, 398 variants
+and 10 segment variants) over 4,667 rows.
 
 The appendix prints its own totals, and the parse must reproduce them: 2,209
 main communities and 586 segments, or the step fails. Within those counts every
@@ -259,15 +259,20 @@ every number after it and also fails the step.
 
 What it does not settle:
 
-- **Names.** 104 rows carry a visible OCR mark (`CIIRISTIAN`, `BAISIIYA`), and
-  `name_suspect` flags them. Fewer visible errors survive too (`AITLUWALIA` for
+- **Names.** 50 names, on 93 rows, carry a visible OCR mark (`CIIRISTIAN`,
+  `BAISIIYA`), and `name_suspect` flags them. Fewer visible errors survive too (`AITLUWALIA` for
   Ahluwalia), so names need correcting before they are joined to anything.
 - **Category totals.** The appendix counts 374 SC main communities; the parsed
-  table has 381 with an SC row. The appendix splits communities of mixed status
+  table has 381 with SC on the main line or a variant, and 383 counting
+  segments. The appendix splits communities of mixed status
   into territorial units by a rule it does not state, so its category counts
   are not reproduced.
-- **8 state strings** are OCR debris and are left blank, with what was read in
-  `state_as_read`; 12 religion code groups do not resolve against the legend.
+- **12 religion code groups** do not resolve against the legend; what was read
+  stays in `religion_as_read` and `religion_certain` is false.
+
+A variant printed as codes alone, such as `(NON ST) (H)` under `MINA /MEENA`
+for Haryana and Delhi, is the main community under another category, and takes
+its name.
 
 `category` is as the survey recorded it in 1985–92, not as the Orders stand
 now: a community scheduled since, or de-scheduled, shows its old status.
@@ -300,7 +305,9 @@ recorded rather than corrected in place: `state` carries the canonical name and
   joined words, as above.
 - **Later files can lag the law.** Act 13 of 2023 restated Chhattisgarh's entry
   16 with `Abujh Maria`; the 2023 file follows it, and the three later files
-  print `Abhuj Maria` instead. Each erratum cites the Act it rests on.
+  print `Abhuj Maria` instead. Each erratum cites its evidence: the Act where
+  one is stored, otherwise the edition whose reading the others are corrected
+  to.
 
 ## Known gaps
 

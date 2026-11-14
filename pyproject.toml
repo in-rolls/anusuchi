@@ -22,7 +22,7 @@ Changelog = "https://github.com/in-rolls/anusuchi/blob/main/CHANGELOG.md"
 dev = ["pytest>=8", "black>=24", "isort>=5", "flake8>=7"]
 
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 # A repository of data and numbered scripts, not an importable package:

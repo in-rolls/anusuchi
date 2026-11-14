@@ -31,16 +31,16 @@ ones with readers parsed into rows.
 - **`st_entries.tsv`**: the Scheduled Tribes Order in four editions (August
   2023, 2024, November 2024, September 2025), one row per synonym. 756 entries
   in 32 States and UTs in 2025, with area restrictions in their own column and
-  four misprints corrected from `sources/st_errata.tsv`, each citing the Act it
-  rests on. `presence_matrix.tsv` and `n_communities.tsv` compare editions.
+  four misprints corrected from `sources/st_errata.tsv`, each citing its
+  evidence (an Act for two, the agreeing editions for the others). `presence_matrix.tsv` and `n_communities.tsv` compare editions.
 - **`wb_obc_entries.tsv`**: West Bengal's State List of OBCs, the typed 2025
   list (140 classes) and the 2026 list in force (66), matched entry by entry
   against two independent scans.
 - **`poi_national_list.tsv`**: the People of India National List of
-  Communities, read from a scan by OCR. 3,205 entries over 4,682 rows; the
+  Communities, read from a scan by OCR. 3,203 entries over 4,667 rows; the
   parse reproduces the appendix's printed totals of 2,209 main communities and
-  586 segments. 104 names carry a visible OCR error and are flagged
-  `name_suspect`.
+  586 segments. 50 names, on 93 rows, carry a visible OCR error and
+  are flagged `name_suspect`.
 
 ### Fixed before release
 
@@ -50,6 +50,16 @@ ones with readers parsed into rows.
 - Step 03 could parse a single edition, which gave that edition different
   rows from a full run and skipped the stale-erratum check. It now always
   parses every edition.
+- The People of India parse read scan-edge dust as text: two running page
+  numbers became empty variants, dust above the header was glued onto
+  `MARWARI` and `PAHARIYA`, and eight debris strings became state rows. It now
+  reads only the lines between the running header and the bottom margin.
+  Three segment counters printed past the state column's edge (361, 362, 505)
+  are now read as counters, so all 586 are read; only segments carry one.
+- Five variants printed as codes alone (`(NON ST) (H)` under `MINA /MEENA`)
+  had empty names; they now take their main community's name.
+- A stray repeated `43.` in the 2023 ST file had made an empty Chhattisgarh
+  entry, counted as omitted (17 omitted entries where the file has 16).
 - In `poi_national_list.tsv`, `page` is the PDF page, as in every other table,
   and the printed folio is `page_printed`.
 

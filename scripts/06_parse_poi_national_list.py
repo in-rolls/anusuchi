@@ -84,6 +84,9 @@ PAGE_OFFSET = 12
 DPI = 300
 MAIN_TOTAL = 2209
 SEGMENT_TOTAL = 586
+# Lines are about 35 pixels apart at 300 dpi; a larger jump at the foot of a
+# page is the bottom margin, and anything under it is scan-edge noise.
+FOOT_GAP = 120
 
 STATES = [
     "ANDHRA PRADESH", "ARUNACHAL PRADESH", "ASSAM", "BIHAR", "GOA", "GUJARAT",
@@ -221,6 +224,31 @@ def serial_column(lines: list) -> float | None:
     return Counter(xs).most_common(1)[0][0] if xs else None
 
 
+def page_text(lines: list, folio: int) -> list:
+    """Return the lines between the running header and the foot of the page.
+
+    The scan's edges carry dust and gutter shadow that tesseract reads as words
+    (`EEPTCCEE?`, `a ae`). Above the header line, which holds the printed page
+    number, nothing is printed; below the last entry a gap of several blank
+    lines separates the text from the edge.
+
+    Args:
+        lines: A page's OCR lines.
+        folio: The printed page number.
+
+    Returns:
+        The lines from just under the header to the last line of text.
+    """
+    for i, (_, words) in enumerate(lines[:4]):
+        if any(t.strip(".,'") == str(folio) for _, t in words) and len(words) <= 3:
+            lines = lines[i + 1 :]
+            break
+    end = len(lines)
+    while end > 1 and lines[end - 1][0] - lines[end - 2][0] > FOOT_GAP:
+        end -= 1
+    return lines[:end]
+
+
 def classify(lines: list, nx: float):
     """Yield (kind, left text, right text) per line; kind is main, variant, segment or cont.
 
@@ -236,7 +264,11 @@ def classify(lines: list, nx: float):
             continue  # running page number
         left = [(x, t) for x, t in words if x < nx + 0.47]
         left = left[:1] + [(x, t) for x, t in left[1:] if re.search(r"[A-Za-z0-9(]", t)]
-        right = " ".join(t for x, t in words if x >= nx + 0.47)
+        rest = [(x, t) for x, t in words if x >= nx + 0.47]
+        # A long segment line pushes its counter (`361.`) past the state column's edge.
+        if rest and left and re.fullmatch(r"[\d$S\]lI]{1,3}[.,]", rest[0][1]):
+            left, rest = left + rest[:1], rest[1:]
+        right = " ".join(t for _, t in rest)
         while left and not re.search(r"[A-Za-z0-9$]", left[0][1]):
             left = left[1:]  # stray mark before the text
         if not left:
@@ -359,7 +391,7 @@ def read(pages: dict[int, list]) -> list[dict]:
     cur: dict | None = None
     main: dict | None = None
     for p, lines in pages.items():
-        for kind, text, right in classify(lines, xs[p]):
+        for kind, text, right in classify(page_text(lines, p - PAGE_OFFSET), xs[p]):
             if p == PAGES[0] and re.search(r"Appendix|National|COMMUNITY", text):
                 continue
             if "Consolidated" in text:
@@ -368,6 +400,7 @@ def read(pages: dict[int, list]) -> list[dict]:
                 serial, body = text.split(" ", 1)
                 main = {"serial_as_read": serial.strip(".,")}
                 cur = {"level": "main", "main": main, "raw": body, "states": [], "page": p}
+                main["raw"] = body
                 entries.append(cur)
             elif kind == "segment":
                 m = re.match(r"^([\dSs$Il|]{1,2})[.,]?\s*(.*)", text)
@@ -480,6 +513,12 @@ def rows_of(entries: list[dict], dates: tuple[str, str, str]) -> list[dict]:
     rows = []
     for e in entries:
         name, cat, rel, counter, qual = split_codes(e["raw"])
+        if not name and e["level"] == "variant":
+            # A variant printed as codes alone, `(NON ST) (H)` under MINA /MEENA,
+            # is the main community under another category.
+            name = split_codes(e["main"]["raw"])[0]
+        if e["level"] not in ("segment", "segment_variant"):
+            counter = ""  # only segments are counted; DHARUA's stray printed 7 is not a count
         religion, sure = religion_codes(rel)
         states = [s for s in e["states"] if not re.fullmatch(r"[\d\s.,]+", s.strip())]
         for s in states or [""]:

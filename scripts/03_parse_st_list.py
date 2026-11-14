@@ -428,6 +428,13 @@ def parse(path: Path, source_id: str, errata: list[dict]) -> tuple[list[dict], l
                 bare = BARE.match(line)
                 if not match and bare and pending and int(bare.group(1)) == pending["entry_no"] + 1:
                     match = bare
+                if (
+                    match
+                    and not match.group(2).strip()
+                    and pending
+                    and int(match.group(1)) == pending["entry_no"]
+                ):
+                    continue  # the open entry's number printed again on its own (2023, "43.")
                 if match:
                     opened = True
                     heading = False
@@ -564,7 +571,7 @@ def main() -> None:
                 "notified_date": date,
                 "n_states": len(states),
                 "n_entries": len(entries),
-                "n_omitted": len(parsed) - len(live),
+                "n_omitted": sum(1 for r in parsed if r["synonym_rank"] == 0),
                 "n_synonyms": len(live),
                 "n_area_restricted": sum(1 for r in live if r["area_restriction"]),
                 "n_corrected": 0,

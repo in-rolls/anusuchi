@@ -22,8 +22,18 @@ def read(path: Path) -> list[dict]:
 
 
 @pytest.fixture(scope="module")
-def manifest():
-    return {r["source_id"]: r for r in read(SOURCES / "manifest.tsv")}
+def fetches():
+    return read(SOURCES / "manifest.tsv")
+
+
+@pytest.fixture(scope="module")
+def manifest(fetches):
+    """One row per source: its stored fetch where there is one, else its last attempt."""
+    rows = {}
+    for r in fetches:
+        if r["stored_as"] or not rows.get(r["source_id"], {}).get("stored_as"):
+            rows[r["source_id"]] = r
+    return rows
 
 
 @pytest.fixture(scope="module")
@@ -35,8 +45,8 @@ def test_every_fetched_source_is_registered(manifest, registry):
     assert set(manifest) <= set(registry)
 
 
-def test_stored_bytes_are_named_by_their_checksum(manifest):
-    for r in manifest.values():
+def test_stored_bytes_are_named_by_their_checksum(fetches):
+    for r in fetches:
         if r["stored_as"]:
             assert r["stored_as"].split(".")[0] == r["sha256"], r["source_id"]
 
@@ -70,15 +80,22 @@ def test_st_report_recounts_from_the_rows(st):
         entries = {(r["state"], r["section"], r["entry_no"]) for r in live}
         assert len(entries) == int(line["n_entries"])
         assert len(live) == int(line["n_synonyms"])
-        assert len(rows) - len(live) == int(line["n_omitted"])
+        assert sum(r["synonym_rank"] == "0" for r in rows) == int(line["n_omitted"])
         assert len({r["state"] for r in rows if r["state"]}) == int(line["n_states"])
 
 
-def test_st_2025_edition(st):
+def test_st_2025_edition():
     """756 entries in 32 States and UTs, the figures the README states."""
     line = {r["edition_id"]: r for r in read(LISTS / "st_parse_report.tsv")}
     assert line["st_list_current-072"]["n_entries"] == "756"
     assert line["st_list_current-072"]["n_states"] == "32"
+
+
+def test_st_rows_without_a_synonym_are_omitted_entries(st):
+    """An entry with no name is one the Order deleted, printed as `Omitted`."""
+    for r in st:
+        if not r["synonym"]:
+            assert (r["synonym_rank"], r["name_as_printed"]) == ("0", "Omitted"), r
 
 
 def test_st_synonym_ranks_start_at_one_and_run_on(st):
@@ -136,6 +153,24 @@ def test_poi_segments_are_numbered_from_one_within_each_community(poi):
             numbers.setdefault(r["serial"], set()).add(int(r["segment_no"]))
     for serial, seen in numbers.items():
         assert seen == set(range(1, len(seen) + 1)), serial
+
+
+def test_poi_every_entry_has_a_name(poi):
+    assert all(r["name"] for r in poi)
+
+
+def test_poi_every_segment_and_only_segments_carry_a_counter(poi):
+    """The appendix counts segments 1 to 586 across the list; nothing else is counted."""
+    for r in poi:
+        if r["level"] == "segment":
+            assert r["segment_counter"].isdigit(), r
+        else:
+            assert r["segment_counter"] == "" or r["level"] == "segment_variant", r
+
+
+def test_poi_every_state_read_is_a_state(poi):
+    for r in poi:
+        assert bool(r["state"]) == bool(r["state_as_read"]), r
 
 
 def test_poi_fields_use_the_legend(poi):
