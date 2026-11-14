@@ -92,7 +92,7 @@ def read_tsv(path: Path) -> list[dict]:
         return list(csv.DictReader(handle, delimiter="\t"))
 
 
-def normalise(url: str) -> str:
+def normalize(url: str) -> str:
     """Return a URL in the form used to compare against the registry.
 
     Args:
@@ -198,7 +198,7 @@ def promote(rows: list[dict], registry: list[dict]) -> int:
     added, taken = [], set()
     start = len(registry)
     for row in rows:
-        key = normalise(row["url"])
+        key = normalize(row["url"])
         if key in taken:
             continue
         taken.add(key)
@@ -236,15 +236,15 @@ def main() -> None:
     if not pages:
         raise SystemExit(f"no index pages listed in {INDEX_PAGES}")
     registry = read_tsv(REGISTRY)
-    known = {normalise(r["url"]) for r in registry}
+    known = {normalize(r["url"]) for r in registry}
 
     session = WaybackSession(retries=6, backoff=2, timeout=90, user_agent=UA)
     seen: dict[tuple[str, str], dict] = {}
     with WaybackClient(session=session) as client:
         for page in pages:
             for document, record in crawl(page, client, arguments.limit).items():
-                record["in_registry"] = str(normalise(document) in known).lower()
-                seen[(normalise(document), page["index_id"])] = record
+                record["in_registry"] = str(normalize(document) in known).lower()
+                seen[(normalize(document), page["index_id"])] = record
 
     rows = sorted(seen.values(), key=lambda r: (r["index_page"], r["first_seen"], r["url"]))
     DISCOVERED.parent.mkdir(parents=True, exist_ok=True)

@@ -152,7 +152,7 @@ def draw_matrix(matrix: list[dict], dates: list[str], state: str, path: Path) ->
     labels overlapped into a smear, and the rows that carried the finding -- the
     ones that come and go -- were the smallest part of it. The names present in
     every edition are the background: they collapse to one band with a count.
-    The rest get a labelled row each.
+    The rest get a labeled row each.
 
     Args:
         matrix: Presence rows, persistent first.
@@ -223,12 +223,12 @@ def draw_counts(counts: list[dict], dates: list[str], path: Path) -> None:
     """
     national = {r["notified_date"]: r for r in counts if r["state"] == "ALL INDIA"}
     figure, axes = plt.subplots(figsize=(7.0, 4.0))
-    for field, label, colour in (
+    for field, label, color in (
         ("n_entries", "gazetted entries", "#1a1a1a"),
         ("n_synonyms", "distinct names", "#b22222"),
     ):
         values = [national[d][field] for d in dates]
-        axes.plot(dates, values, "-o", color=colour, lw=2.0, ms=7, label=label)
+        axes.plot(dates, values, "-o", color=color, lw=2.0, ms=7, label=label)
         for x, y in zip(dates, values):
             axes.annotate(
                 f"{y:,}",
@@ -237,7 +237,7 @@ def draw_counts(counts: list[dict], dates: list[str], path: Path) -> None:
                 xytext=(0, 9),
                 ha="center",
                 fontsize=9,
-                color=colour,
+                color=color,
             )
     axes.set_ylabel("count, all India")
     axes.set_title(

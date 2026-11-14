@@ -305,7 +305,7 @@ def fetch_one(
 
 
 def write_manifest(rows: list[dict]) -> None:
-    """Write the manifest, one row per artefact or failure.
+    """Write the manifest, one row per artifact or failure.
 
     Args:
         rows: Every manifest row, old and new.

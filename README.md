@@ -113,7 +113,7 @@ Numbered, re-runnable, each step writing only its own layer.
 
 **Step 01** fetches every URL in `sources/registry.tsv`, records the newest
 Wayback capture and submits one where none exists, stores bytes under their own
-SHA-256, and writes a manifest row per artefact. Bytes recovered from the archive
+SHA-256, and writes a manifest row per artifact. Bytes recovered from the archive
 are the raw capture, not the archive's viewer, which wraps HTML in its own
 player; and a pinned capture is recorded as the one the archive actually served,
 which can be months from the one requested. A source that fails is a row

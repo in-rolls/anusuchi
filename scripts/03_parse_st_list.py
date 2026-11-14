@@ -101,14 +101,14 @@ def notified_date(title: str) -> str:
 
 
 # A state heading is matched against the fixed set of States and Union
-# Territories, not against a shape. An earlier version accepted any capitalised
+# Territories, not against a shape. An earlier version accepted any capitalized
 # line without a number, which read the wrapped continuation "Bhuyan" -- the
 # tail of Odisha's entry 6 -- as the start of a new state, and produced 53
 # states and 6 Odisha entries against a true 62. The set is public and
 # closed, so there is no reason to guess.
 # Headings are matched against the fixed set of States and Union Territories,
 # canonicalised, because neither the printed spelling nor the shape can be
-# trusted. Two failures drove this. Accepting any capitalised unnumbered line
+# trusted. Two failures drove this. Accepting any capitalized unnumbered line
 # read the wrapped continuation "Bhuyan" -- the tail of Odisha's entry 6 -- as a
 # new state, giving 53 states and 6 Odisha entries against a true 64. And the
 # Order misspells Uttarakhand as "Uttrakhand", so a set holding only the correct
@@ -195,7 +195,7 @@ def is_state(line: str) -> bool:
     Returns:
         True when the line names a State or UT.
     """
-    # No State or UT name contains a digit. Without this test the normaliser,
+    # No State or UT name contains a digit. Without this test the normalizer,
     # which strips punctuation, read the joined pair "43. Goa" as "goa": the
     # wrapped-heading join then fired, the entry regex claimed it as entry 43
     # named "Goa" under the previous state, and Goa and Telangana vanished from
@@ -579,7 +579,7 @@ def main() -> None:
             }
         )
 
-    # The same name is spaced and capitalised differently between files of the
+    # The same name is spaced and capitalized differently between files of the
     # same text: "Borokachari" in three editions, "Boro kachari" in the fourth.
     # Each name takes the form most editions print, the latest breaking a tie.
     forms: dict[tuple, dict[str, list]] = {}

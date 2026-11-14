@@ -1,7 +1,7 @@
 """Checks on the committed tables, runnable without the raw sources.
 
 Each count is checked against a second route to the same number: a total the
-source prints, or the parse report recounted from the rows it summarises.
+source prints, or the parse report recounted from the rows it summarizes.
 """
 
 import csv

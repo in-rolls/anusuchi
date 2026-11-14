@@ -76,7 +76,7 @@ GAZETTE_SIZE = 66
 MATCH_FLOOR = 0.75
 
 # The number column of both scans sits left of x=130 points; class names are
-# centred well to the right of it. A line starting in the number column opens
+# centered well to the right of it. A line starting in the number column opens
 # an entry, anything else continues the open one.
 NUMBER_COLUMN = 130.0
 RUNNING_HEAD = re.compile(r"AZ\S*\s*\S*TTE|^Page \d+ of \d+$")

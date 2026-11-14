@@ -4,6 +4,7 @@ lint:
 	$(PY) -m black --check scripts tests
 	$(PY) -m isort --check-only scripts tests
 	$(PY) -m flake8 scripts tests
+	$(PY) -m codespell_lib
 
 test:
 	$(PY) -m pytest -q tests

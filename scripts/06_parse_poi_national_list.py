@@ -208,7 +208,7 @@ def page_lines(path: Path) -> list[tuple[int, list[tuple[float, str]]]]:
     lines = []
     for words in groups.values():
         words.sort(key=lambda w: int(w["left"]))
-        # Median, not min: one tall stray mark otherwise lifts a line above its neighbour.
+        # Median, not min: one tall stray mark otherwise lifts a line above its neighbor.
         top = sorted(int(w["top"]) for w in words)[len(words) // 2]
         lines.append((top, [(int(w["left"]) / width, w["text"]) for w in words]))
     return sorted(lines, key=lambda line: line[0])
