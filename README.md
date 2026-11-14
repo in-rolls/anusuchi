@@ -19,7 +19,7 @@ not have to invent either.
 
 | layer | what it is | changes when | who judges |
 |---|---|---|---|
-| `sources/` | gazette PDFs and pages exactly as fetched; `st_errata.tsv`, the misprints corrected, each with its evidence | the government republishes | nobody for the bytes; a person, citing a stored Act, for an erratum |
+| `sources/` | gazette PDFs and pages exactly as fetched; `st_errata.tsv`, the misprints corrected, each with its evidence | the government republishes | nobody for the bytes; a person, citing its evidence, for an erratum |
 | `lists/` | one row per gazetted entry | `sources/` changes | nobody — mechanical parse |
 | `crosswalks/` | one row per *dataset label* → entry | a dataset is added, or a call is revised | a person, on the record |
 

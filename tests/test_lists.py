@@ -165,7 +165,7 @@ def test_poi_every_segment_and_only_segments_carry_a_counter(poi):
         if r["level"] == "segment":
             assert r["segment_counter"].isdigit(), r
         else:
-            assert r["segment_counter"] == "" or r["level"] == "segment_variant", r
+            assert r["segment_counter"] == "", r
 
 
 def test_poi_every_state_read_is_a_state(poi):

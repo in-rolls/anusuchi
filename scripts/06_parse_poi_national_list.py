@@ -400,7 +400,7 @@ def read(pages: dict[int, list]) -> list[dict]:
                 serial, body = text.split(" ", 1)
                 main = {"serial_as_read": serial.strip(".,")}
                 cur = {"level": "main", "main": main, "raw": body, "states": [], "page": p}
-                main["raw"] = body
+                main["entry"] = cur
                 entries.append(cur)
             elif kind == "segment":
                 m = re.match(r"^([\dSs$Il|]{1,2})[.,]?\s*(.*)", text)
@@ -516,8 +516,8 @@ def rows_of(entries: list[dict], dates: tuple[str, str, str]) -> list[dict]:
         if not name and e["level"] == "variant":
             # A variant printed as codes alone, `(NON ST) (H)` under MINA /MEENA,
             # is the main community under another category.
-            name = split_codes(e["main"]["raw"])[0]
-        if e["level"] not in ("segment", "segment_variant"):
+            name = split_codes(e["main"]["entry"]["raw"])[0]
+        if e["level"] != "segment":
             counter = ""  # only segments are counted; DHARUA's stray printed 7 is not a count
         religion, sure = religion_codes(rel)
         states = [s for s in e["states"] if not re.fullmatch(r"[\d\s.,]+", s.strip())]
