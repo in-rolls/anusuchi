@@ -266,7 +266,7 @@ def main() -> None:
     rows = read_entries()
     dates = editions(rows)
     if len(dates) < 2:
-        raise SystemExit(f"only {len(dates)} edition(s) parsed; run step 03 with --all")
+        raise SystemExit(f"only {len(dates)} edition(s) parsed; run step 03 first")
 
     counts = counts_table(rows, dates)
     with COUNTS.open("w", encoding="utf8", newline="") as handle:

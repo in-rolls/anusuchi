@@ -45,7 +45,7 @@ there is no axis to put the editions on.
 
 Run:
 
-    python scripts/03_parse_st_list.py [--source-id ...] [--all]
+    python scripts/03_parse_st_list.py
 
 Writes `lists/st_entries.tsv`: edition_id, notified_date, category, state,
 state_as_printed, section, entry_no, synonym, synonym_rank, name_as_printed,
@@ -510,39 +510,25 @@ def parse(path: Path, source_id: str, errata: list[dict]) -> tuple[list[dict], l
 
 def main() -> None:
     """Parse ST Orders into one table of synonym-grain rows."""
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source-id", default="st_list_current-072")
-    parser.add_argument(
-        "--all",
-        action="store_true",
-        help="parse every ST list edition in the manifest, not just one",
-    )
-    arguments = parser.parse_args()
+    argparse.ArgumentParser(description=__doc__).parse_args()
 
     with MANIFEST.open(encoding="utf8") as handle:
         manifest = list(csv.DictReader(handle, delimiter="\t"))
-    by_id = {r["source_id"]: r for r in manifest}
 
-    if arguments.all:
-        # One document published at two URLs is one edition: the 2017 list moved
-        # paths unchanged and is held twice, from 2017 and from 2021.
-        first: dict[str, dict] = {}
-        for r in sorted(manifest, key=lambda r: r["source_id"]):
-            if r["kind"].startswith("st_list") and r["stored_as"]:
-                first.setdefault(r["sha256"], r)
-        wanted = list(first.values())
-        for record in [r for r in wanted if r["sha256"] in UNREAD]:
-            print(f"skipping {record['source_id']}: {UNREAD[record['sha256']]}")
-        wanted = [r for r in wanted if r["sha256"] not in UNREAD]
-        if not wanted:
-            raise SystemExit("no ST list editions with bytes; run step 01 first")
-    else:
-        if arguments.source_id not in by_id:
-            raise SystemExit(f"{arguments.source_id} is not in the manifest; run step 01 first")
-        record = by_id[arguments.source_id]
-        if not record.get("stored_as"):
-            raise SystemExit(f"{arguments.source_id} has no bytes; step 01 could not fetch it")
-        wanted = [record]
+    # Every edition is parsed together because spelling is settled across them:
+    # parsing one alone gives that edition different rows.
+    # One document published at two URLs is one edition: the 2017 list moved
+    # paths unchanged and is held twice, from 2017 and from 2021.
+    first: dict[str, dict] = {}
+    for r in sorted(manifest, key=lambda r: r["source_id"]):
+        if r["kind"].startswith("st_list") and r["stored_as"]:
+            first.setdefault(r["sha256"], r)
+    wanted = list(first.values())
+    for record in [r for r in wanted if r["sha256"] in UNREAD]:
+        print(f"skipping {record['source_id']}: {UNREAD[record['sha256']]}")
+    wanted = [r for r in wanted if r["sha256"] not in UNREAD]
+    if not wanted:
+        raise SystemExit("no ST list editions with bytes; run step 01 first")
 
     errata = read_errata()
     rows: list[dict] = []
@@ -605,7 +591,7 @@ def main() -> None:
     # the parse changed or the text was corrected at source; it must not linger.
     applied = " ; ".join(r["corrected"] for r in rows)
     stale = [e for e in errata if f"{e['printed']} -> {e['corrected']}" not in applied]
-    if arguments.all and stale:
+    if stale:
         raise SystemExit(f"errata matching no entry: {stale}")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
