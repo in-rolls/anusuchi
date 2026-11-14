@@ -1,5 +1,8 @@
 # anusuchi
 
+[![Release](https://img.shields.io/github/v/release/in-rolls/anusuchi)](https://github.com/in-rolls/anusuchi/releases)
+[![CI](https://github.com/in-rolls/anusuchi/actions/workflows/ci.yml/badge.svg)](https://github.com/in-rolls/anusuchi/actions/workflows/ci.yml)
+
 **Statutory caste lists for India, stored as published and parsed into rows.**
 
 *Anusuchi* (अनुसूची) is the Schedule of the Constitution — the one that gives
@@ -23,6 +26,32 @@ not have to invent either.
 `lists/` is shared by every state and every downstream repo. `crosswalks/` is
 per dataset and is the only place judgment lives. Mixing them is how a legal
 list quietly acquires someone's opinion.
+
+## Using the tables
+
+Every table in `lists/` is tab-separated UTF-8 with a header row. Read them at a
+release tag, so a result can be traced to the exact rows behind it:
+
+```python
+import pandas as pd
+
+base = "https://raw.githubusercontent.com/in-rolls/anusuchi/v0.1.0/lists/"
+st = pd.read_csv(base + "st_entries.tsv", sep="\t", dtype=str, keep_default_na=False)
+now = st[st.notified_date == "2025-09-26"]
+now[now.synonym == "Kunbi"][["state", "entry_no", "area_restriction"]]
+```
+
+```
+        state entry_no       area_restriction
+2275      Goa        6
+2328  Gujarat       17  in the Dangs district
+```
+
+The same tribe is scheduled throughout Goa and in one district of Gujarat, so
+a crosswalk keyed on the name alone would be wrong for most of Gujarat. Each
+row carries `source_id` and `page`, which point to the stored document in
+`sources/manifest.tsv`; columns ending `_as_printed` (from a text layer) or
+`_as_read` (from OCR) keep what the page said before any cleaning.
 
 ## What this does and does not license
 
