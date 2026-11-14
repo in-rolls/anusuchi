@@ -55,7 +55,7 @@ is legally **not** SC, while `କନ୍ଧ ଖ୍ରୀଷ୍ଟିୟାନ` �
 still ST. A crosswalk that reads only the caste half of the label gets one of
 those wrong.
 
-**Many entries are scheduled only in named places.** 40 of 751 ST entries carry
+**Many entries are scheduled only in named places.** 40 of 756 ST entries carry
 an area restriction: Gujarat's *Kunbi* only in the Dangs district, Andhra's
 *Dhulia, Paiko, Putiya* only in Vishakhapatnam and Vijayanagaram. Category is
 therefore a function of *(label, district)*, not of label alone, which is why
@@ -97,7 +97,7 @@ linked to `sources/discovered.tsv`. The 2022 capture of the SC page alone links
 registry is a separate `--promote` decision.
 
 **Step 03** reads the ST Order's two-column layout by word position, splitting at
-the widest vertical band on each page that almost no line touches. **751 entries
+the widest vertical band on each page that almost no line touches. **756 entries
 across 32 States and UTs in the 2025 edition — every State and UT that has
 Scheduled Tribes yields at least one.** It recovers the Order's own synonym lists
 (`Bhottada, Dhotada, Bhotra, Bhatra, Bhattara, Bhotora, Bhatara` is one tribe,

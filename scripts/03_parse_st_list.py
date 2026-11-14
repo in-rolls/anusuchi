@@ -253,6 +253,10 @@ NOISE = re.compile(
     r"|state\s*/\s*union territory wise)",
     re.I,
 )
+# A merged UT prints one list per former UT, each numbered from 1: "PART I -
+# Dadra and Nagar Haveli", "PART II - Daman and Diu". NOISE drops lines opening
+# "part ", so these are caught first, or the two lists collide.
+PART = re.compile(r"^part\s+[IVX]+\s*[\u2013\u2014-]\s*\S", re.I)
 # The same title can share a line with the last entry above it: Uttar Pradesh's
 # "Bhuinya (in the district of Sonbhadra) State / Union Territory".
 TRAILER = re.compile(r"\s*\bstate\s*/\s*union territory\b.*$", re.I)
@@ -410,6 +414,14 @@ def parse(path: Path, source_id: str, errata: list[dict]) -> tuple[list[dict], l
                 if NOTE.match(line):
                     break
                 line = TRAILER.sub("", line)
+                if PART.match(line):
+                    if pending:
+                        rows.append(pending)
+                        pending = None
+                    section = line.strip()
+                    opened = False
+                    heading = False
+                    continue
                 if not line or NOISE.match(line):
                     continue
                 match = ENTRY.match(line)
