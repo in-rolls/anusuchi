@@ -72,6 +72,7 @@ Numbered, re-runnable, each step writing only its own layer.
 | `scripts/03_parse_st_list.py` | `lists/st_entries.tsv`, `lists/st_parse_report.tsv` |
 | `scripts/04_over_time.py` | `lists/presence_matrix.tsv`, `lists/n_communities.tsv`, `out/fig/*.png` |
 | `scripts/05_parse_wb_obc.py` | `lists/wb_obc_entries.tsv`, `lists/wb_obc_reconcile.tsv`, `lists/wb_obc_parse_report.tsv` |
+| `scripts/06_parse_poi_national_list.py` | `sources/ocr/poi_volume-121/`, `lists/poi_national_list.tsv`, `lists/poi_national_list_report.tsv` |
 
 **Step 01** fetches every URL in `sources/registry.tsv`, records the newest
 Wayback capture and submits one where none exists, stores bytes under their own
@@ -189,6 +190,50 @@ Parentheses go verbatim into a `qualifier` column instead of being split. The
 list uses them both for aliases (`Rayeen (Kunjra)`) and for conditions
 (`Hajjam (Muslim)`, `Dhobi (other than those included in the list of
 Scheduled Castes)`), and deciding which is which is a crosswalk's call.
+
+## People of India
+
+The Anthropological Survey of India's *People of India* describes about 4,600
+communities, and many entries name the surnames or titles a community uses.
+It is official but not law: no category follows from it. It is stored as
+`kind=poi_volume`, apart from the Orders.
+
+Its date is not a notification date. Fieldwork ran from 2 October 1985 to 31
+March 1992, and each volume has its own publication year. Each registry title
+carries both, read off the volume's imprint, so an entry can be set against the
+Orders in force when it was observed.
+
+Stored: the Introduction (1992), Gujarat (Vol XXII, 3 parts, 2003) and Tamil
+Nadu (Vol XL, 3 parts, 1997). Vol VIII, *Communities, Segments, Synonyms,
+Surnames and Titles*, and the other state volumes are not yet held.
+
+**The National List of Communities.** Appendix G of the Introduction lists
+every community the survey studied, with its category, religion and the states
+it was found in. `scripts/06_parse_poi_national_list.py` reads it from a scan
+with no text layer into `lists/poi_national_list.tsv`, one row per community
+and state: 3,205 entries (2,209 main communities, 586 segments, 400 variants
+and 10 segment variants) over 4,682 rows.
+
+The appendix prints its own totals, and the parse must reproduce them: 2,209
+main communities and 586 segments, or the step fails. Within those counts every
+serial and segment counter the OCR read as a number equals its position, apart
+from misread digits (3 for 8, a dropped digit); a lost or doubled line shifts
+every number after it and also fails the step.
+
+What it does not settle:
+
+- **Names.** 104 rows carry a visible OCR mark (`CIIRISTIAN`, `BAISIIYA`), and
+  `name_suspect` flags them. Fewer visible errors survive too (`AITLUWALIA` for
+  Ahluwalia), so names need correcting before they are joined to anything.
+- **Category totals.** The appendix counts 374 SC main communities; the parsed
+  table has 381 with an SC row. The appendix splits communities of mixed status
+  into territorial units by a rule it does not state, so its category counts
+  are not reproduced.
+- **8 state strings** are OCR debris and are left blank, with what was read in
+  `state_as_read`; 12 religion code groups do not resolve against the legend.
+
+`category` is as the survey recorded it in 1985–92, not as the Orders stand
+now: a community scheduled since, or de-scheduled, shows its old status.
 
 ## What the source gets wrong, and how that is handled
 
