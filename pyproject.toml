@@ -13,6 +13,15 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8", "black>=24", "isort>=5", "flake8>=7"]
 
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+# A repository of data and numbered scripts, not an importable package:
+# installing it brings in the dependencies the scripts need.
+[tool.setuptools]
+packages = []
+
 [tool.black]
 line-length = 100
 target-version = ["py311"]
